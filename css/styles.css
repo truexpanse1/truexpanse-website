@@ -42,7 +42,7 @@ a  { text-decoration: none; color: inherit; }
 }
 
 /* ── Layout ── */
-.container { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
 .section    { padding: 96px 0; }
 .section-sm { padding: 60px 0; }
 
@@ -444,6 +444,7 @@ footer {
   .mat-grid { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 768px) {
+  .container   { padding: 0 1.25rem; }
   .hero-grid   { grid-template-columns: 1fr; padding: 60px 0 80px; }
   .hero::before { display: none; }
   .hero-visual { display: none; }
@@ -455,9 +456,11 @@ footer {
   .trust-bar-inner { gap: 1.2rem; }
   .nav-links, .nav-cta .btn-outline { display: none; }
   .hamburger   { display: flex; }
-  .cta-section { padding: 44px 24px; border-radius: 16px; }
+  .cta-section { padding: 44px 28px; border-radius: 16px; }
   .hero-stats  { gap: 1.5rem; }
   .section     { padding: 64px 0; }
+  .ladder-step { padding: 18px 20px; flex-wrap: wrap; gap: 12px; }
+  .ladder-step .btn { width: 100%; justify-content: center; text-align: center; }
 }
 
 /* ── Animations ── */
