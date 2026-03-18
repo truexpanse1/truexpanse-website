@@ -22,7 +22,19 @@
         <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-trigger">Services &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="coaching.html"><span class="dd-icon">&#127919;</span>Business Coaching</a></li>
+          <li><a href="contractor-accelerator.html"><span class="dd-icon">&#128640;</span>Contractor Accelerator</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a href="web-design.html"><span class="dd-icon">&#128187;</span>Web Design</a></li>
+          <li><a href="crm.html"><span class="dd-icon">&#128279;</span>CRM Setup</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a href="life-coaching.html"><span class="dd-icon">&#128155;</span>Life Coaching</a></li>
+          <li><a href="courses.html"><span class="dd-icon">&#128218;</span>Courses &amp; Workshops</a></li>
+        </ul>
+      </li>
       <li><a href="mat.html">MAT App</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -182,26 +194,7 @@
   </div>
 </footer>
 
-<script>
-  function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    if (links.style.display === 'flex') {
-      links.style.display = 'none';
-    } else {
-      links.style.display = 'flex';
-      links.style.flexDirection = 'column';
-      links.style.position = 'absolute';
-      links.style.top = '68px';
-      links.style.left = '0';
-      links.style.right = '0';
-      links.style.background = 'var(--white)';
-      links.style.padding = '1rem';
-      links.style.borderBottom = '1px solid var(--border)';
-      links.style.zIndex = '999';
-      links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
-    }
-  }
-</script>
+<script src="../js/nav.js"></script>
 
 </body>
 </html>

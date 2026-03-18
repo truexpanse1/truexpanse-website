@@ -61,7 +61,19 @@
         <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/coaching.html">Coaching</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="dropdown-trigger">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="pages/coaching.html"><span class="dd-icon">🎯</span>Business Coaching</a></li>
+          <li><a href="pages/contractor-accelerator.html"><span class="dd-icon">🚀</span>Contractor Accelerator</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a href="pages/web-design.html"><span class="dd-icon">💻</span>Web Design</a></li>
+          <li><a href="pages/crm.html"><span class="dd-icon">🔗</span>CRM Setup</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a href="pages/life-coaching.html"><span class="dd-icon">💛</span>Life Coaching</a></li>
+          <li><a href="pages/courses.html"><span class="dd-icon">📚</span>Courses & Workshops</a></li>
+        </ul>
+      </li>
       <li><a href="pages/mat.html">MAT App</a></li>
       <li><a href="pages/contact.html">Contact</a></li>
     </ul>
@@ -396,6 +408,92 @@
   </div>
 </section>
 
+<!-- ── Testimonials ── -->
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">Real Results</span>
+      <h2>What Clients Say About<br/>Working with Don</h2>
+      <p>From painting contractors to tech companies — these are the people who decided to stop leaving money on the table.</p>
+    </div>
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Working with Don has been a game-changer for both my business and my mindset. His extensive knowledge and professional approach are unparalleled. His impact on my business and personal growth has been profound."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div>
+            <div class="testimonial-name">Dylan Linnenkamp</div>
+            <div class="testimonial-role">Home Inspector | Harper Homes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"After working one on one with TrueXpanse for a year our company has never been headed in such an accelerated direction. Our sales team expressed that it has been a game changer and a highly invaluable perk."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Seth Peek</div>
+            <div class="testimonial-role">Owner | Peek Painting & Peek Realty, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Working with TrueXpanse has been a game-changer for our business. Their team is innovative, responsive, and truly understands data-driven strategies. From boosting our online presence to driving significant sales growth, they exceeded our expectations."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">T</div>
+          <div>
+            <div class="testimonial-name">Traci McMahan</div>
+            <div class="testimonial-role">Owner | Paso Robles Tech, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Your classes gave me a lot of confidence and knowledge. Your coaching is amazing and very helpful. I love your planner — it makes my life easier keeping me organized and on track."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Adela Ortiz</div>
+            <div class="testimonial-role">Owner | M&J Builders Inc, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Don Smith at TrueXpanse has been an invaluable asset to my company for over a year. His expertise in business coaching and marketing is evident and his knowledge has truly made a difference for us."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Mike Tanore</div>
+            <div class="testimonial-role">Owner | LVS Motorcars, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Don has that Central Coast 805 attitude — laid-back and mellow yet focused and driven. He's very responsive and helped our company grow through connections to new customers. We expect to work with him for a long time."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sean Casedy</div>
+            <div class="testimonial-role">Owner | Connected Energy 805, CA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── Final CTA ── -->
 <section class="cta-section">
   <div class="container" style="text-align:center;">
@@ -453,26 +551,7 @@
   </div>
 </footer>
 
-<script>
-  function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    if (links.style.display === 'flex') {
-      links.style.display = 'none';
-    } else {
-      links.style.display = 'flex';
-      links.style.flexDirection = 'column';
-      links.style.position = 'absolute';
-      links.style.top = '68px';
-      links.style.left = '0';
-      links.style.right = '0';
-      links.style.background = 'var(--white)';
-      links.style.padding = '1rem';
-      links.style.borderBottom = '1px solid var(--border)';
-      links.style.zIndex = '999';
-      links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
-    }
-  }
-</script>
+<script src="js/nav.js"></script>
 
 </body>
 </html>
