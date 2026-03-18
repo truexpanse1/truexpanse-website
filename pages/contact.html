@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Don Smith | TrueXpanse</title>
+  <meta name="description" content="Book a free 20-minute Contractor Revenue Audit with Don Smith. No pitch — just your numbers." />
+  <link rel="canonical" href="https://www.truexpanse.com/pages/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png" alt="TrueXpanse" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mat.html">MAT Platform</a></li>
+      <li><a href="coaching.html">Coaching</a></li>
+      <li><a href="web-design.html">Web Design</a></li>
+      <li><a href="crm.html">CRM</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://app.truexpanse.com/" class="btn btn-outline" style="padding:8px 16px;font-size:0.78rem;">Login</a>
+      <a href="contact.html" class="btn btn-red" style="padding:10px 20px;font-size:0.82rem;">Book a Call</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page Hero ── -->
+<section style="padding-top:68px;background:var(--light);border-bottom:1px solid var(--border);">
+  <div class="container" style="padding-top:60px;padding-bottom:60px;text-align:center;max-width:680px;">
+    <span class="label">Let's Talk</span>
+    <h1 style="margin-bottom:1rem;">Book Your Free<br/>Revenue Audit</h1>
+    <p style="font-size:1.1rem;">20 minutes. Your numbers. No pitch, no pressure. You'll know exactly where your revenue is leaking and what the path forward looks like.</p>
+  </div>
+</section>
+
+<!-- ── Contact Grid ── -->
+<section class="section section-white">
+  <div class="container">
+    <div class="split" style="gap:4rem;align-items:flex-start;">
+
+      <!-- Contact Form -->
+      <div>
+        <h2 style="font-size:1.4rem;margin-bottom:1.5rem;">Send a Message</h2>
+        <form name="contact" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:16px;">
+          <input type="hidden" name="form-name" value="contact" />
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">First Name</label>
+              <input type="text" name="first-name" required
+                style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;transition:border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--red)'" onblur="this.style.borderColor='var(--border)'" />
+            </div>
+            <div>
+              <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">Last Name</label>
+              <input type="text" name="last-name" required
+                style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;transition:border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--red)'" onblur="this.style.borderColor='var(--border)'" />
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">Email</label>
+            <input type="email" name="email" required
+              style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--red)'" onblur="this.style.borderColor='var(--border)'" />
+          </div>
+          <div>
+            <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">Phone</label>
+            <input type="tel" name="phone"
+              style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--red)'" onblur="this.style.borderColor='var(--border)'" />
+          </div>
+          <div>
+            <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">What best describes you?</label>
+            <select name="type" style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;background:var(--white);color:var(--text);">
+              <option value="">Select one...</option>
+              <option value="painting-contractor">Painting Contractor</option>
+              <option value="business-owner">Business Owner / Entrepreneur</option>
+              <option value="sales-team">Sales Team / Manager</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.8rem;font-weight:700;color:var(--slate);margin-bottom:6px;">What's your biggest challenge right now?</label>
+            <textarea name="message" rows="4" required
+              style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:0.92rem;font-family:inherit;outline:none;resize:vertical;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--red)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+          </div>
+          <button type="submit" class="btn btn-red btn-lg" style="width:100%;justify-content:center;">
+            Book My Free Revenue Audit →
+          </button>
+          <p style="font-size:0.78rem;color:var(--text2);text-align:center;">Don personally reviews every submission and responds within 24 hours.</p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div>
+          <h2 style="font-size:1.4rem;margin-bottom:1.5rem;">Get in Touch Directly</h2>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:12px;">📞</div>
+          <div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--text2);margin-bottom:4px;">Phone</div>
+          <a href="tel:8059093420" style="font-size:1.2rem;font-weight:900;color:var(--slate);">(805) 909-3420</a>
+          <p style="font-size:0.82rem;margin-top:6px;">Call or text — Don responds personally.</p>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:12px;">✉️</div>
+          <div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--text2);margin-bottom:4px;">Email</div>
+          <a href="mailto:don@truexpanse.com" style="font-size:1rem;font-weight:800;color:var(--red);">don@truexpanse.com</a>
+          <p style="font-size:0.82rem;margin-top:6px;">Response within 24 hours, usually much faster.</p>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <div style="font-size:1.5rem;margin-bottom:12px;">📍</div>
+          <div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--text2);margin-bottom:4px;">Location</div>
+          <div style="font-size:1rem;font-weight:800;color:var(--slate);">San Luis Obispo County, California</div>
+          <p style="font-size:0.82rem;margin-top:6px;">Serving clients locally and across the country.</p>
+        </div>
+
+        <!-- Guarantee reminder -->
+        <div style="background:var(--red-soft);border:1px solid rgba(200,16,46,0.2);border-radius:12px;padding:20px 24px;">
+          <div style="font-size:1.2rem;margin-bottom:8px;">🔒</div>
+          <div style="font-size:0.88rem;font-weight:800;color:var(--slate);margin-bottom:4px;">30-Day Guarantee</div>
+          <p style="font-size:0.82rem;margin:0;">Contractor Accelerator clients who do the work are guaranteed to close at least one job they would have left on the table — or month 2 is free.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png" alt="TrueXpanse" />
+        <p>Helping business owners close the gap between where they are and where they should be.</p>
+        <div style="margin-top:1rem;font-size:0.85rem;color:var(--red);font-weight:700;">📞 (805) 909-3420</div>
+        <div style="margin-top:4px;font-size:0.85rem;color:rgba(255,255,255,0.4);">don@truexpanse.com</div>
+      </div>
+      <div class="footer-col">
+        <h4>Coaching</h4>
+        <ul>
+          <li><a href="contractor-accelerator.html">90-Day Accelerator</a></li>
+          <li><a href="coaching.html">10X Business Coaching</a></li>
+          <li><a href="courses.html">Workshops & Courses</a></li>
+          <li><a href="life-coaching.html">Life Coaching</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="mat.html">MAT Platform</a></li>
+          <li><a href="crm.html">GHL CRM</a></li>
+          <li><a href="web-design.html">Web Design</a></li>
+          <li><a href="https://app.truexpanse.com/">Login to MAT</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Don</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TrueXpanse. All Rights Reserved.</span>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    if (links.style.display === 'flex') {
+      links.style.display = 'none';
+    } else {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '68px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'var(--white)';
+      links.style.padding = '1rem';
+      links.style.borderBottom = '1px solid var(--border)';
+      links.style.zIndex = '999';
+      links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
+    }
+  }
+</script>
+
+</body>
+</html>
