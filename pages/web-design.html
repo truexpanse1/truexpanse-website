@@ -23,11 +23,25 @@
 
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Service","name":"Web Design for Contractors","url":"https://www.truexpanse.com/pages/web-design.html","description":"Professional, mobile-first websites for painting contractors and service businesses. Fast-loading, CRM-integrated, and optimized for local SEO.","provider":{"@type":"Organization","name":"TrueXpanse","url":"https://www.truexpanse.com"},"areaServed":"United States","offers":[{"@type":"Offer","name":"Bronze — Starter Site","price":"2900","priceCurrency":"USD","description":"Up to 5 pages, mobile-first design, contact form, click-to-call, Google Analytics, 30-day support."},{"@type":"Offer","name":"Silver — Conversion Site","price":"3900","priceCurrency":"USD","description":"Up to 10 pages, GHL CRM integration, online booking, local SEO, review showcase, 90-day support."},{"@type":"Offer","name":"Gold — Site + CRM Bundle","price":"8000","priceCurrency":"USD","description":"Full conversion website plus GoHighLevel CRM setup, automated follow-up, pipeline tracking, 6-month support."}]}
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.truexpanse.com/"},
+      {"@type":"ListItem","position":2,"name":"Web Design","item":"https://www.truexpanse.com/pages/web-design.html"}
+    ]},
+    {"@type":"Service","name":"Web Design for Contractors","url":"https://www.truexpanse.com/pages/web-design.html","description":"Professional, mobile-first websites for painting contractors and service businesses in San Luis Obispo County and across the U.S. Fast-loading, CRM-integrated, and optimized for local SEO.","provider":{"@type":"Organization","name":"TrueXpanse","url":"https://www.truexpanse.com"},"areaServed":["San Luis Obispo County, CA","United States"],"offers":[{"@type":"Offer","name":"Bronze — Starter Site","price":"2900","priceCurrency":"USD"},{"@type":"Offer","name":"Silver — Conversion Site","price":"3900","priceCurrency":"USD"},{"@type":"Offer","name":"Gold — Site + CRM Bundle","price":"8000","priceCurrency":"USD"}]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"How much does a contractor website cost?","acceptedAnswer":{"@type":"Answer","text":"TrueXpanse web design packages start at $2,900 for a Bronze starter site (up to 5 pages), $3,900 for a Silver conversion site with CRM integration, and $8,000 for the Gold bundle including a full GoHighLevel CRM setup."}},
+      {"@type":"Question","name":"How long does it take to build a contractor website?","acceptedAnswer":{"@type":"Answer","text":"Most contractor websites are designed, built, and launched within 2–4 weeks from the first call."}},
+      {"@type":"Question","name":"Do you build websites for contractors outside California?","acceptedAnswer":{"@type":"Answer","text":"Yes — TrueXpanse builds websites for contractors across the United States, not just San Luis Obispo County."}}
+    ]}
+  ]}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
+  <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>

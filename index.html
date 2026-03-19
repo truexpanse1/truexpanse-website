@@ -20,35 +20,109 @@
   <meta name="twitter:description" content="Don Smith helps contractors and business owners close more jobs, build real systems, and reach $1M+ revenue." />
   <meta name="twitter:image" content="https://www.truexpanse.com/images/don_primary.jpg" />
 
-  <!-- Local Business Structured Data -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "TrueXpanse",
-    "description": "10X Business Coaching for contractors and entrepreneurs. Coaching, MAT Platform, CRM setup, and web design.",
-    "url": "https://www.truexpanse.com",
-    "telephone": "+18059093420",
-    "email": "don@truexpanse.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Luis Obispo",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Don Smith",
-      "jobTitle": "10X Business Coach"
-    },
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.truexpanse.com/#business",
+        "name": "TrueXpanse",
+        "legalName": "TrueXpanse",
+        "description": "10X Business Coaching for contractors and entrepreneurs in San Luis Obispo County, CA. Business coaching, MAT sales platform, GoHighLevel CRM setup, and web design.",
+        "url": "https://www.truexpanse.com",
+        "telephone": "+18059093420",
+        "email": "don@truexpanse.com",
+        "logo": "https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png",
+        "image": "https://www.truexpanse.com/images/don_primary.jpg",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Luis Obispo",
+          "addressRegion": "CA",
+          "postalCode": "93401",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.2828,
+          "longitude": -120.6596
+        },
+        "areaServed": [
+          {"@type": "State", "name": "California"},
+          {"@type": "Country", "name": "United States"}
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Don Smith",
+          "jobTitle": "10X Business Coach",
+          "url": "https://www.truexpanse.com/pages/about.html"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "TrueXpanse Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "10X Business Coaching"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "90-Day Contractor Accelerator"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GoHighLevel CRM Setup"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Contractor Web Design"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Life Coaching"}},
+            {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "Massive Action Tracker (MAT)"}}
+          ]
+        },
+        "sameAs": [
+          "https://www.facebook.com/truexpanse",
+          "https://www.instagram.com/truexpanse",
+          "https://www.linkedin.com/company/truexpanse"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.truexpanse.com/#website",
+        "url": "https://www.truexpanse.com",
+        "name": "TrueXpanse",
+        "description": "10X Business Coaching for Contractors & Entrepreneurs — Don Smith, San Luis Obispo County, CA",
+        "publisher": {"@id": "https://www.truexpanse.com/#business"},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.truexpanse.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.truexpanse.com/#don-smith",
+        "name": "Don Smith",
+        "jobTitle": "10X Business Coach",
+        "description": "Don Smith is a 10X certified business coach with 35+ years of business experience and 46 years of leadership. Founder of TrueXpanse and the Massive Action Tracker platform.",
+        "url": "https://www.truexpanse.com/pages/about.html",
+        "image": "https://www.truexpanse.com/images/don_primary.jpg",
+        "telephone": "+18059093420",
+        "email": "don@truexpanse.com",
+        "worksFor": {"@id": "https://www.truexpanse.com/#business"},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Luis Obispo",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      }
+    ]
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&q=80" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png" />
 </head>
 <body>
 

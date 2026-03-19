@@ -16,31 +16,32 @@
 
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Don Smith",
-    "jobTitle": "10X Business Coach",
-    "url": "https://www.truexpanse.com/pages/about.html",
-    "image": "https://www.truexpanse.com/images/don_primary.jpg",
-    "telephone": "+18059093420",
-    "email": "don@truexpanse.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Luis Obispo",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
-    "worksFor": {
-      "@type": "Organization",
-      "name": "TrueXpanse",
-      "url": "https://www.truexpanse.com"
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.truexpanse.com/"},
+      {"@type":"ListItem","position":2,"name":"About Don Smith","item":"https://www.truexpanse.com/pages/about.html"}
+    ]},
+    {"@type":"Person","@id":"https://www.truexpanse.com/#don-smith",
+      "name":"Don Smith",
+      "jobTitle":"10X Business Coach",
+      "description":"Don Smith is a 10X Business Coach with 35+ years in business and 46+ years of leadership. Founder of TrueXpanse and creator of the Massive Action Tracker (MAT) platform.",
+      "url":"https://www.truexpanse.com/pages/about.html",
+      "image":"https://www.truexpanse.com/images/don_primary.jpg",
+      "telephone":"+18059093420",
+      "email":"don@truexpanse.com",
+      "address":{"@type":"PostalAddress","addressLocality":"San Luis Obispo","addressRegion":"CA","addressCountry":"US"},
+      "alumniOf":{"@type":"Organization","name":"10X Certified"},
+      "knowsAbout":["Business Coaching","Sales Systems","Contractor Growth","Revenue Scaling","Sales Training","GoHighLevel CRM","Massive Action"],
+      "worksFor":{"@type":"Organization","name":"TrueXpanse","url":"https://www.truexpanse.com"}
     }
-  }
+  ]}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
+  <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/5ff6a5be77b4b627b0699b15/660daffb275567dc0601d6ca_truexpanse_logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
