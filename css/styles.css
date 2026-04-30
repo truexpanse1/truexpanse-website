@@ -42,7 +42,7 @@ a  { text-decoration: none; color: inherit; }
 }
 
 /* ── Layout ── */
-.container { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
+.container { max-width: 1160px; margin: 0 auto; padding: 0 2.5rem; }
 .section    { padding: 96px 0; }
 .section-sm { padding: 60px 0; }
 
@@ -532,7 +532,7 @@ footer {
   .mat-grid { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 768px) {
-  .container   { padding: 0 1.25rem; }
+  .container   { padding: 0 1.5rem; }
   .hero-grid   { grid-template-columns: 1fr; padding: 60px 0 80px; }
   .hero::before { display: none; }
   .hero-visual { display: none; }
