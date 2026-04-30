@@ -1,56 +1,58 @@
 /**
- * Quick Look — TrueXpanse welcome popup
+ * Quick Look — TrueXpanse welcome carousel
  *
- * Watkins-Plumbing-style centered popup that hits visitors ~1.5 seconds after
- * arrival with a pre-built lead magnet + sneak peek of what TrueXpanse offers.
+ * Centered popup that hits visitors ~1.5 seconds after arrival with a mini
+ * slideshow of TrueXpanse's most popular offers. Pre-built (no AI runtime
+ * delay), positive language, click-to-jump per slide, dismiss via X.
  *
- * Design intent (per Don, 2026-04-30): visitors won't wait for AI to scrub the
- * site at runtime. This popup is hand-curated and pre-built so it's instant.
- * The AI-auto-generated version is a v2 feature for client sites where the
- * agency curates once via MAT and the cache renders the popup.
+ * Per Don 2026-04-30: visitors won't wait for AI to scrub the site at run-
+ * time. The AI auto-generation lives on the agency side (one scan → cache);
+ * the visitor always sees pre-built content.
  *
- * One-and-done per session: dismiss persists in sessionStorage so we don't
- * pester the visitor on every page navigation inside the same session.
+ * One-and-done per session via sessionStorage.
  */
 (function () {
   'use strict';
   if (window.__truexpanseQuickLookLoaded) return;
   window.__truexpanseQuickLookLoaded = true;
 
-  // ── Curated content (pre-built, no AI calls) ───────────────────────────
-  const TILES = [
-    {
-      icon: '🚀',
-      label: 'Free Revenue Audit',
-      href: 'https://link.truexpanse.com/widget/booking/dHihuvadHB4f7h0XBW4i',
-      external: true,
-    },
+  // ── Slides (most popular offers, in priority order) ────────────────────
+  const SLIDES = [
     {
       icon: '🔥',
-      label: 'Quantum Marketing',
+      title: 'TrueXpanse Quantum Marketing',
+      desc: 'A full-service marketing system — ads, content, CRM, and AI-search visibility working together.',
       href: 'pages/quantum-marketing.html',
     },
     {
       icon: '💸',
-      label: 'Procrastination Tax',
+      title: 'How Much Is Procrastination Costing Your Business?',
+      desc: 'Calculate the real cost of waiting — your monthly Procrastination Tax in plain numbers.',
       href: 'pages/procrastination-tax.html',
     },
     {
+      icon: '🎯',
+      title: '90-Day Contractor Growth Accelerator',
+      desc: 'Built for painting contractors doing $500K–$2M and ready to break their ceiling.',
+      href: 'pages/contractor-accelerator.html',
+    },
+    {
+      icon: '🧭',
+      title: 'Business Coaching with Don',
+      desc: 'Strategy on the business, counsel on the people — 35 years of operator experience.',
+      href: 'pages/coaching.html',
+    },
+    {
       icon: '⚡',
-      label: 'MAT Platform',
+      title: 'Massive Action Tracker',
+      desc: 'Track the daily activity and KPIs that actually drive revenue. The platform behind it all.',
       href: 'https://massiveactiontracker.com/',
       external: true,
     },
   ];
 
-  const PRIMARY_CTA = {
-    label: '📞  Book My Free Revenue Audit',
-    href: 'https://link.truexpanse.com/widget/booking/dHihuvadHB4f7h0XBW4i',
-    external: true,
-  };
-
-  // ── Configuration ──────────────────────────────────────────────────────
   const SHOW_AFTER_MS = 1500;
+  const AUTO_ADVANCE_MS = 4500;
   const STORAGE_KEY = 'tx_quick_look_dismissed';
 
   // ── Styles ─────────────────────────────────────────────────────────────
@@ -75,9 +77,9 @@
   position: relative;
   background: #fff;
   border-radius: 22px;
-  max-width: 460px;
+  max-width: 480px;
   width: 100%;
-  padding: 38px 32px 28px;
+  padding: 36px 28px 28px;
   box-shadow: 0 30px 80px rgba(13,27,42,0.4);
   text-align: center;
   transform: scale(0.92) translateY(12px);
@@ -87,125 +89,153 @@
 .tx-ql-close {
   position: absolute;
   top: 14px; right: 14px;
-  width: 28px; height: 28px;
+  width: 32px; height: 32px;
   background: rgba(15,23,42,0.06);
   color: #1b2d4f;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
   display: flex; align-items: center; justify-content: center;
   transition: background .15s ease;
   font-family: inherit;
+  z-index: 2;
 }
 .tx-ql-close:hover { background: rgba(15,23,42,0.12); }
 .tx-ql-badge {
   display: inline-block;
   background: linear-gradient(135deg, #E63946 0%, #C8102E 100%);
   color: #fff;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 8px 18px;
+  padding: 7px 16px;
   border-radius: 100px;
-  margin-bottom: 18px;
-  box-shadow: 0 6px 16px rgba(200,16,46,0.32);
+  margin-bottom: 14px;
+  box-shadow: 0 6px 16px rgba(200,16,46,0.3);
 }
-.tx-ql-title {
-  font-size: 1.6rem;
+.tx-ql-heading {
+  font-size: 1.5rem;
   line-height: 1.18;
   font-weight: 900;
   color: #1b2d4f;
-  margin: 0 0 10px;
+  margin: 0 0 22px;
   letter-spacing: -0.01em;
 }
-.tx-ql-sub {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #5a6478;
-  margin: 0 0 22px;
-  max-width: 380px;
-  margin-left: auto; margin-right: auto;
+
+/* ── Carousel ──────────────────────────────────────────────────────── */
+.tx-ql-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f6f7fb 0%, #eef0f7 100%);
+  margin-bottom: 18px;
 }
-.tx-ql-tiles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 22px;
+.tx-ql-track {
+  display: flex;
+  transition: transform .45s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
 }
-.tx-ql-tile {
+.tx-ql-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 28px 24px 26px;
+  text-decoration: none;
+  color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 6px;
-  padding: 14px 8px;
-  background: #f6f7fb;
-  border: 1.5px solid #e6e8ef;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #1b2d4f;
-  transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
-  cursor: pointer;
-}
-.tx-ql-tile:hover {
-  border-color: #E63946;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(200,16,46,0.15);
-}
-.tx-ql-tile-icon { font-size: 1.7rem; line-height: 1; }
-.tx-ql-tile-label {
-  font-size: 0.74rem;
-  font-weight: 700;
   text-align: center;
-  line-height: 1.25;
-  color: #1b2d4f;
+  cursor: pointer;
+  transition: background .15s ease;
 }
-.tx-ql-cta {
-  display: block;
-  width: 100%;
-  background: linear-gradient(135deg, #E63946 0%, #C8102E 100%);
-  color: #fff;
-  border: none;
-  font-family: inherit;
-  font-size: 1rem;
+.tx-ql-slide:hover { background: rgba(230,57,70,0.04); }
+.tx-ql-slide-icon {
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.tx-ql-slide-title {
+  font-size: 1.1rem;
   font-weight: 800;
-  padding: 14px 18px;
-  border-radius: 12px;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  box-shadow: 0 8px 18px rgba(200,16,46,0.32);
-  transition: transform .15s ease, box-shadow .15s ease;
+  color: #1b2d4f;
+  margin: 0 0 10px;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
 }
-.tx-ql-cta:hover { transform: translateY(-1px); box-shadow: 0 12px 26px rgba(200,16,46,0.45); }
-.tx-ql-cta:active { transform: translateY(0); }
-.tx-ql-fineprint {
-  font-size: 0.78rem;
-  color: #94a0b3;
-  margin-top: 14px;
-  margin-bottom: 0;
-}
-.tx-ql-fineprint a {
+.tx-ql-slide-desc {
+  font-size: 0.88rem;
   color: #5a6478;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  line-height: 1.55;
+  margin: 0 0 16px;
+  max-width: 340px;
+}
+.tx-ql-slide-cta {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #E63946;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.tx-ql-slide-cta::after { content: '  →'; }
+
+.tx-ql-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: rgba(255,255,255,0.92);
+  color: #1b2d4f;
+  border-radius: 50%;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.12);
+  z-index: 1;
+  transition: background .15s ease, transform .15s ease;
+  font-family: inherit;
+}
+.tx-ql-arrow:hover { background: #fff; transform: translateY(-50%) scale(1.06); }
+.tx-ql-arrow.tx-ql-arrow-prev { left: 8px; }
+.tx-ql-arrow.tx-ql-arrow-next { right: 8px; }
+
+.tx-ql-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.tx-ql-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #d4d8e3;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+.tx-ql-dot:hover { background: #a8aebd; }
+.tx-ql-dot.is-active {
+  background: #E63946;
+  transform: scale(1.25);
 }
 
 @media (max-width: 480px) {
-  .tx-ql-popup { padding: 30px 22px 22px; border-radius: 18px; }
-  .tx-ql-badge { font-size: 0.66rem; padding: 7px 14px; margin-bottom: 14px; }
-  .tx-ql-title { font-size: 1.32rem; }
-  .tx-ql-sub { font-size: 0.88rem; margin-bottom: 18px; }
-  .tx-ql-tiles { gap: 8px; margin-bottom: 18px; }
-  .tx-ql-tile { padding: 12px 6px; border-radius: 12px; }
-  .tx-ql-tile-icon { font-size: 1.45rem; }
-  .tx-ql-tile-label { font-size: 0.68rem; }
-  .tx-ql-cta { font-size: 0.92rem; padding: 12px 16px; }
+  .tx-ql-popup { padding: 28px 18px 22px; border-radius: 18px; }
+  .tx-ql-badge { font-size: 0.66rem; padding: 6px 13px; }
+  .tx-ql-heading { font-size: 1.25rem; margin-bottom: 18px; }
+  .tx-ql-slide { padding: 22px 18px 20px; }
+  .tx-ql-slide-icon { font-size: 2.2rem; margin-bottom: 10px; }
+  .tx-ql-slide-title { font-size: 1rem; }
+  .tx-ql-slide-desc { font-size: 0.82rem; }
+  .tx-ql-arrow { width: 30px; height: 30px; font-size: 15px; }
+  .tx-ql-arrow.tx-ql-arrow-prev { left: 4px; }
+  .tx-ql-arrow.tx-ql-arrow-next { right: 4px; }
 }
 `;
 
@@ -222,30 +252,37 @@
     overlay.className = 'tx-ql-overlay';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-labelledby', 'tx-ql-title');
+    overlay.setAttribute('aria-labelledby', 'tx-ql-heading');
     overlay.style.display = 'none';
 
-    let tilesHtml = '';
-    TILES.forEach(t => {
-      const target = t.external ? ' target="_blank" rel="noopener"' : '';
-      tilesHtml += `
-        <a href="${t.href}" class="tx-ql-tile"${target} data-ql-tile="${t.label}">
-          <span class="tx-ql-tile-icon">${t.icon}</span>
-          <span class="tx-ql-tile-label">${t.label}</span>
+    let slidesHtml = '';
+    SLIDES.forEach((s, i) => {
+      const target = s.external ? ' target="_blank" rel="noopener"' : '';
+      slidesHtml += `
+        <a href="${s.href}" class="tx-ql-slide"${target} data-ql-slide="${i}" data-ql-title="${s.title}">
+          <span class="tx-ql-slide-icon">${s.icon}</span>
+          <h3 class="tx-ql-slide-title">${s.title}</h3>
+          <p class="tx-ql-slide-desc">${s.desc}</p>
+          <span class="tx-ql-slide-cta">Learn more</span>
         </a>`;
     });
 
-    const ctaTarget = PRIMARY_CTA.external ? ' target="_blank" rel="noopener"' : '';
+    let dotsHtml = '';
+    SLIDES.forEach((_, i) => {
+      dotsHtml += `<button type="button" class="tx-ql-dot${i === 0 ? ' is-active' : ''}" data-ql-dot="${i}" aria-label="Go to slide ${i + 1}"></button>`;
+    });
 
     overlay.innerHTML = `
       <div class="tx-ql-popup">
         <button type="button" class="tx-ql-close" aria-label="Close">×</button>
-        <div class="tx-ql-badge">🎁 Free 20-min Revenue Audit</div>
-        <h2 class="tx-ql-title" id="tx-ql-title">Don't browse the whole site.</h2>
-        <p class="tx-ql-sub">Here's a quick taste of what TrueXpanse offers — and a free audit if you want to skip ahead.</p>
-        <div class="tx-ql-tiles">${tilesHtml}</div>
-        <a href="${PRIMARY_CTA.href}" class="tx-ql-cta"${ctaTarget} data-ql-cta="primary">${PRIMARY_CTA.label}</a>
-        <p class="tx-ql-fineprint">Tap any tile to jump there — or <a data-ql-dismiss>browse normally →</a></p>
+        <div class="tx-ql-badge">✨ TrueXpanse Highlights</div>
+        <h2 class="tx-ql-heading" id="tx-ql-heading">The best of TrueXpanse, in 60 seconds.</h2>
+        <div class="tx-ql-stage">
+          <button type="button" class="tx-ql-arrow tx-ql-arrow-prev" aria-label="Previous offer">‹</button>
+          <div class="tx-ql-track">${slidesHtml}</div>
+          <button type="button" class="tx-ql-arrow tx-ql-arrow-next" aria-label="Next offer">›</button>
+        </div>
+        <div class="tx-ql-dots">${dotsHtml}</div>
       </div>`;
 
     document.body.appendChild(overlay);
@@ -259,19 +296,51 @@
     injectStyles();
     const overlay = buildPopup();
     const closeBtn = overlay.querySelector('.tx-ql-close');
-    const dismissLink = overlay.querySelector('[data-ql-dismiss]');
+    const track = overlay.querySelector('.tx-ql-track');
+    const prevBtn = overlay.querySelector('.tx-ql-arrow-prev');
+    const nextBtn = overlay.querySelector('.tx-ql-arrow-next');
+    const dots = Array.from(overlay.querySelectorAll('.tx-ql-dot'));
+    const slideCount = SLIDES.length;
+
+    let current = 0;
+    let autoTimer = null;
+
+    function render() {
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+    }
+
+    function go(i, opts) {
+      current = ((i % slideCount) + slideCount) % slideCount;
+      render();
+      if (opts && opts.userInitiated) restartAutoAdvance();
+    }
+
+    function startAutoAdvance() {
+      stopAutoAdvance();
+      autoTimer = setInterval(() => go(current + 1), AUTO_ADVANCE_MS);
+    }
+    function stopAutoAdvance() {
+      if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+    }
+    function restartAutoAdvance() {
+      stopAutoAdvance();
+      startAutoAdvance();
+    }
 
     function open() {
       overlay.style.display = 'flex';
-      void overlay.offsetWidth; // force reflow so the transition fires
+      void overlay.offsetWidth;
       overlay.classList.add('is-open');
       document.body.style.overflow = 'hidden';
+      startAutoAdvance();
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'quick_look_shown', { event_category: 'engagement' });
       }
     }
 
     function close(reason) {
+      stopAutoAdvance();
       overlay.classList.remove('is-open');
       document.body.style.overflow = '';
       sessionStorage.setItem(STORAGE_KEY, '1');
@@ -284,27 +353,41 @@
       }
     }
 
-    closeBtn.addEventListener('click', () => close('close-button'));
-    dismissLink.addEventListener('click', e => { e.preventDefault(); close('browse-link'); });
-    overlay.addEventListener('click', e => { if (e.target === overlay) close('backdrop'); });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && overlay.classList.contains('is-open')) close('escape');
+    // Carousel controls
+    prevBtn.addEventListener('click', () => go(current - 1, { userInitiated: true }));
+    nextBtn.addEventListener('click', () => go(current + 1, { userInitiated: true }));
+    dots.forEach((d, i) => d.addEventListener('click', () => go(i, { userInitiated: true })));
+
+    // Pause auto-advance on hover so users have time to read
+    const popup = overlay.querySelector('.tx-ql-popup');
+    popup.addEventListener('mouseenter', stopAutoAdvance);
+    popup.addEventListener('mouseleave', startAutoAdvance);
+
+    // Touch swipe for mobile
+    let touchStartX = 0;
+    track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) go(current + (dx < 0 ? 1 : -1), { userInitiated: true });
     });
 
-    // Track tile + CTA click-throughs but don't block the navigation.
+    // Close handlers
+    closeBtn.addEventListener('click', () => close('close-button'));
+    overlay.addEventListener('click', e => { if (e.target === overlay) close('backdrop'); });
+    document.addEventListener('keydown', e => {
+      if (!overlay.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close('escape');
+      if (e.key === 'ArrowLeft') go(current - 1, { userInitiated: true });
+      if (e.key === 'ArrowRight') go(current + 1, { userInitiated: true });
+    });
+
+    // Slide click analytics — don't block navigation
     overlay.addEventListener('click', e => {
-      const tile = e.target.closest('[data-ql-tile]');
-      const cta = e.target.closest('[data-ql-cta]');
-      if (typeof window.gtag !== 'function') return;
-      if (tile) {
-        window.gtag('event', 'quick_look_tile_click', {
+      const slide = e.target.closest('[data-ql-slide]');
+      if (slide && typeof window.gtag === 'function') {
+        window.gtag('event', 'quick_look_slide_click', {
           event_category: 'engagement',
-          event_label: tile.getAttribute('data-ql-tile'),
-        });
-      } else if (cta) {
-        window.gtag('event', 'quick_look_cta_click', {
-          event_category: 'engagement',
-          event_label: 'book_audit',
+          event_label: slide.getAttribute('data-ql-title'),
         });
       }
     });
