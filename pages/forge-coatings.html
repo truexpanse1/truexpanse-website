@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forge Coatings — Built to Last. Backed by Craftsmanship.</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'forge-bg': '#0b0d12',
+          'forge-card': '#13161e',
+          'forge-gold': '#c8a96e',
+          'forge-cream': '#ece6d8',
+          'forge-rule': '#2a2f3a',
+        },
+        fontFamily: {
+          'display': ['Bebas Neue', 'Impact', 'system-ui', 'sans-serif'],
+          'body': ['Inter', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; background: #0b0d12; color: #ece6d8; }
+  .display { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.02em; }
+  .gold-bar { background: #c8a96e; }
+  .hero-bg {
+    background-image: linear-gradient(180deg, rgba(11,13,18,0.75) 0%, rgba(11,13,18,0.4) 50%, rgba(11,13,18,0.95) 100%),
+                      url('https://d8j0ntlcm91z4.cloudfront.net/user_3CGHgSLlUv3jf31GxIYU1JR4BSs/hf_20260505_150422_6fa2a52e-b252-4912-913c-cdddea9071a1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .process-bg {
+    background-image: linear-gradient(180deg, rgba(11,13,18,0.6) 0%, rgba(11,13,18,0.3) 50%, rgba(11,13,18,0.95) 100%),
+                      url('https://d8j0ntlcm91z4.cloudfront.net/user_3CGHgSLlUv3jf31GxIYU1JR4BSs/hf_20260505_150426_5793846d-3e51-424b-bd9a-e7fb16a254b2.png');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- DEMO BANNER -->
+<div class="bg-forge-gold text-forge-bg text-center py-2 text-xs font-semibold tracking-wider uppercase">
+  DEMO MOCK-UP · For Quantum Marketing Coatings Pro prospect demonstrations · Forge Coatings is fictional
+</div>
+
+<!-- NAV -->
+<nav class="absolute top-10 left-0 right-0 z-30 px-8 py-6 flex items-center justify-between">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-sm flex items-center justify-center bg-forge-gold">
+      <span class="display text-forge-bg text-2xl">F</span>
+    </div>
+    <div>
+      <div class="display text-forge-cream text-2xl leading-none">FORGE</div>
+      <div class="text-[10px] text-forge-gold tracking-widest uppercase">Concrete Coatings</div>
+    </div>
+  </div>
+  <div class="hidden md:flex items-center gap-8 text-sm font-medium text-forge-cream/80">
+    <a href="#services" class="hover:text-forge-gold transition">Services</a>
+    <a href="#system" class="hover:text-forge-gold transition">The System</a>
+    <a href="#results" class="hover:text-forge-gold transition">Results</a>
+    <a href="#about" class="hover:text-forge-gold transition">About</a>
+    <a href="#quote" class="bg-forge-gold text-forge-bg px-5 py-2.5 rounded-sm uppercase tracking-wider text-xs font-bold hover:bg-forge-cream transition">Free Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center px-8 md:px-16 lg:px-24 pt-32 pb-24">
+  <div class="max-w-2xl">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-forge-gold"></div>
+      <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">Premium Concrete Coatings</span>
+    </div>
+    <h1 class="display text-6xl md:text-8xl text-forge-cream leading-none mb-6">
+      Built to last.<br/>
+      <span class="text-forge-gold">Backed by craftsmanship.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-forge-cream/80 mb-10 leading-relaxed max-w-xl">
+      Polyurea base. Decorative Chip broadcast. Polyaspartic topcoat. The three-layer system installed by craftsmen — not weekend warriors.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#quote" class="bg-forge-gold text-forge-bg px-8 py-4 rounded-sm uppercase tracking-wider text-sm font-bold hover:bg-forge-cream transition text-center">
+        Request Your Free On-Site Quote
+      </a>
+      <a href="#system" class="border border-forge-cream/30 text-forge-cream px-8 py-4 rounded-sm uppercase tracking-wider text-sm font-bold hover:border-forge-gold hover:text-forge-gold transition text-center">
+        See the System →
+      </a>
+    </div>
+
+    <!-- Trust strip -->
+    <div class="mt-16 grid grid-cols-3 gap-6 max-w-xl border-t border-forge-rule pt-8">
+      <div>
+        <div class="display text-3xl text-forge-gold">12+</div>
+        <div class="text-xs text-forge-cream/60 uppercase tracking-wider">Years in trade</div>
+      </div>
+      <div>
+        <div class="display text-3xl text-forge-gold">200+</div>
+        <div class="text-xs text-forge-cream/60 uppercase tracking-wider">Floors installed</div>
+      </div>
+      <div>
+        <div class="display text-3xl text-forge-gold">★★★★★</div>
+        <div class="text-xs text-forge-cream/60 uppercase tracking-wider">Verified reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANG STATEMENT -->
+<section class="bg-forge-card py-20 px-8 md:px-16 lg:px-24">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-forge-gold uppercase tracking-widest text-xs font-semibold mb-4">The Forge Promise</p>
+    <h2 class="display text-4xl md:text-6xl text-forge-cream leading-tight mb-6">
+      Same-day install.<br/>
+      Walk on it the next day.<br/>
+      <span class="text-forge-gold">Built to last.</span>
+    </h2>
+    <p class="text-forge-cream/70 max-w-2xl mx-auto">
+      Our cure window depends on temperature and traffic load — and we'll walk you through exactly when foot traffic and vehicle traffic are appropriate at the on-site quote. No mystery, no upsell.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 px-8 md:px-16 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-forge-gold"></div>
+      <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">What We Coat</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-forge-cream mb-16 leading-none">Six surfaces.<br/>One uncompromising system.</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-forge-rule">
+      <!-- Service 1 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">01</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Garage Floors</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">Residential garages from single-bay to 5-car luxury. Decorative Chip in 33 standard blends or custom-matched.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">02</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Pool Decks</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">UV-stable polyaspartic with anti-slip texture. Cooler underfoot than bare concrete in summer sun.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">03</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Patios</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">Outdoor entertaining surfaces engineered for the local climate. Same system, same warranty terms.</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">04</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Driveways</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">High-traffic surfaces with hot-tire resistance. The polyaspartic topcoat that won't blush, fade, or peel.</p>
+      </div>
+      <!-- Service 5 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">05</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Epoxy Floors</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">Industrial, commercial, residential. 100%-solids 1100SL system for floors that need to take a beating.</p>
+      </div>
+      <!-- Service 6 -->
+      <div class="bg-forge-card p-8 group hover:bg-forge-rule/30 transition">
+        <div class="w-12 h-12 mb-6 flex items-center justify-center bg-forge-gold/10 rounded-sm group-hover:bg-forge-gold/20 transition">
+          <span class="text-forge-gold display text-xl">06</span>
+        </div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Epoxy Countertops</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">A real alternative to a full kitchen remodel. Self-leveling, high-gloss, food-contact safe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE SYSTEM -->
+<section id="system" class="process-bg py-32 px-8 md:px-16 lg:px-24 relative">
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-forge-gold"></div>
+      <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">The Three-Layer System</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-forge-cream mb-16 leading-none">
+      Why most coatings fail.<br/>
+      <span class="text-forge-gold">Why ours doesn't.</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border-l-2 border-forge-gold pl-6">
+        <div class="display text-5xl text-forge-gold mb-4">01</div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Polyurea Basecoat</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">After diamond-grinding the slab, our polyurea base coat mechanically locks into the concrete pores. Fast-curing — chosen by temperature on install day. The bond is the foundation. Skip this, and everything fails.</p>
+      </div>
+      <div class="border-l-2 border-forge-gold pl-6">
+        <div class="display text-5xl text-forge-gold mb-4">02</div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Decorative Chip Broadcast</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">¼" vinyl chips broadcast into the wet polyurea, to refusal in full-broadcast applications. 33 standard blends plus custom color matching. Hides imperfections, adds slip resistance, gives every floor its character.</p>
+      </div>
+      <div class="border-l-2 border-forge-gold pl-6">
+        <div class="display text-5xl text-forge-gold mb-4">03</div>
+        <h3 class="display text-2xl text-forge-cream mb-3">Polyaspartic HS Topcoat</h3>
+        <p class="text-sm text-forge-cream/70 leading-relaxed">Up to 16 mils thick in a single pass. UV-stable, chemical-resistant, abrasion-resistant. The surface you actually walk on, drive on, and live on. The reason your floor still looks new years later.</p>
+      </div>
+    </div>
+
+    <div class="mt-16 inline-flex items-center gap-4 bg-forge-bg/60 backdrop-blur border border-forge-rule px-6 py-4 rounded-sm">
+      <span class="text-xs text-forge-cream/50 uppercase tracking-wider">Manufacturer:</span>
+      <span class="display text-2xl text-forge-cream">SIMIRON</span>
+      <span class="text-xs text-forge-cream/50">Made in USA · Since 1992</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS / GALLERY PLACEHOLDER -->
+<section id="results" class="py-24 px-8 md:px-16 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-forge-gold"></div>
+      <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">Recent Work</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-forge-cream mb-16 leading-none">Floors. From the families they belong to.</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+      <div class="aspect-square bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Job photo</span>
+      </div>
+    </div>
+    <p class="text-xs text-forge-cream/40 italic mt-6">Demo placeholder. Real client site populates with verified MGP/Forge job photos in the gallery section.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="bg-forge-card py-24 px-8 md:px-16 lg:px-24">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-forge-gold"></div>
+      <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">What customers say</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-forge-cream mb-16 leading-none">Verified five-star reviews.</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-forge-bg p-8 border-l-2 border-forge-gold">
+        <div class="text-forge-gold mb-4">★★★★★</div>
+        <p class="text-forge-cream/80 mb-6 italic leading-relaxed">"Best decision I made on this house. Crew was clean, on time, and the floor looks better than I imagined."</p>
+        <div class="text-xs text-forge-cream/50 uppercase tracking-wider">— Verified Google Review · Demo</div>
+      </div>
+      <div class="bg-forge-bg p-8 border-l-2 border-forge-gold">
+        <div class="text-forge-gold mb-4">★★★★★</div>
+        <p class="text-forge-cream/80 mb-6 italic leading-relaxed">"Other companies wanted twice as much for half the system. Forge explained the whole process before they did anything."</p>
+        <div class="text-xs text-forge-cream/50 uppercase tracking-wider">— Verified Google Review · Demo</div>
+      </div>
+      <div class="bg-forge-bg p-8 border-l-2 border-forge-gold">
+        <div class="text-forge-gold mb-4">★★★★★</div>
+        <p class="text-forge-cream/80 mb-6 italic leading-relaxed">"Done in a day, walking on it the next morning. Five years later, still looks new. No regrets."</p>
+        <div class="text-xs text-forge-cream/50 uppercase tracking-wider">— Verified Google Review · Demo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / OWNER -->
+<section id="about" class="py-24 px-8 md:px-16 lg:px-24">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div>
+      <div class="aspect-[3/4] bg-forge-card border border-forge-rule rounded-sm flex items-center justify-center">
+        <span class="text-forge-cream/30 text-xs uppercase tracking-wider">Owner portrait</span>
+      </div>
+      <p class="text-xs text-forge-cream/40 italic mt-4">Demo placeholder. Real client site populates with the contractor's actual portrait.</p>
+    </div>
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-px bg-forge-gold"></div>
+        <span class="text-forge-gold uppercase tracking-widest text-xs font-semibold">Meet the Owner</span>
+      </div>
+      <h2 class="display text-4xl md:text-5xl text-forge-cream mb-6 leading-none">12+ years.<br/>Hundreds of floors.<br/>One standard.</h2>
+      <p class="text-forge-cream/70 mb-4 leading-relaxed">I started Forge because I'd seen too many cheap coatings fail by year two — leaving the homeowner to pay twice. The system we install today is what I'd put in my own house. That's the only standard I work to.</p>
+      <p class="text-forge-cream/70 leading-relaxed">If you're thinking about coating your garage, pool deck, patio, or driveway — start with a free on-site quote. We come to you, evaluate the slab, and give you a written estimate. No phone quotes. No mystery numbers. No upsell.</p>
+      <p class="display text-2xl text-forge-cream mt-8">— Marcus Reyes</p>
+      <p class="text-xs text-forge-cream/50 uppercase tracking-wider">Founder, Forge Coatings · Lic #DEMO</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote" class="bg-forge-gold text-forge-bg py-24 px-8 md:px-16 lg:px-24">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="uppercase tracking-widest text-xs font-bold mb-4">Free On-Site Quote</p>
+    <h2 class="display text-5xl md:text-7xl mb-6 leading-none">No phone quotes.<br/>No upsell. We come to you.</h2>
+    <p class="text-forge-bg/70 mb-10 max-w-xl mx-auto">Tell us where you are and what surface you want coated. We'll schedule an on-site evaluation and send you a written estimate within a few business days.</p>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+      <input type="text" placeholder="Your name" class="px-5 py-4 rounded-sm bg-forge-bg/10 border border-forge-bg/20 placeholder-forge-bg/50 text-forge-bg focus:outline-none focus:border-forge-bg">
+      <input type="email" placeholder="Email" class="px-5 py-4 rounded-sm bg-forge-bg/10 border border-forge-bg/20 placeholder-forge-bg/50 text-forge-bg focus:outline-none focus:border-forge-bg">
+      <input type="tel" placeholder="Phone" class="px-5 py-4 rounded-sm bg-forge-bg/10 border border-forge-bg/20 placeholder-forge-bg/50 text-forge-bg focus:outline-none focus:border-forge-bg">
+      <select class="px-5 py-4 rounded-sm bg-forge-bg/10 border border-forge-bg/20 text-forge-bg focus:outline-none focus:border-forge-bg">
+        <option>Service interest</option>
+        <option>Garage floor</option>
+        <option>Pool deck</option>
+        <option>Patio</option>
+        <option>Driveway</option>
+        <option>Epoxy floor (commercial)</option>
+        <option>Epoxy countertops</option>
+      </select>
+      <textarea placeholder="Tell us about your project (sq ft, condition, timeline)" class="md:col-span-2 px-5 py-4 rounded-sm bg-forge-bg/10 border border-forge-bg/20 placeholder-forge-bg/50 text-forge-bg focus:outline-none focus:border-forge-bg h-32"></textarea>
+      <button type="button" class="md:col-span-2 bg-forge-bg text-forge-gold px-8 py-5 rounded-sm uppercase tracking-wider text-sm font-bold hover:bg-forge-cream hover:text-forge-bg transition">
+        Request Free On-Site Quote →
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-forge-bg py-16 px-8 md:px-16 lg:px-24 border-t border-forge-rule">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+    <div>
+      <div class="display text-2xl text-forge-cream mb-3">FORGE COATINGS</div>
+      <p class="text-forge-cream/50 text-xs leading-relaxed">Built to last. Backed by craftsmanship.</p>
+    </div>
+    <div>
+      <div class="text-forge-gold uppercase tracking-wider text-xs font-semibold mb-3">Contact</div>
+      <p class="text-forge-cream/70 text-xs">(555) 555-0100<br/>quote@forgecoatings.demo</p>
+    </div>
+    <div>
+      <div class="text-forge-gold uppercase tracking-wider text-xs font-semibold mb-3">Service Area</div>
+      <p class="text-forge-cream/70 text-xs">[Local metropolitan area]<br/>and surrounding counties</p>
+    </div>
+    <div>
+      <div class="text-forge-gold uppercase tracking-wider text-xs font-semibold mb-3">Follow</div>
+      <p class="text-forge-cream/70 text-xs">@forgecoatings<br/>Facebook · Instagram · Google</p>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-forge-rule flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-forge-cream/40">
+    <div>© Forge Coatings · CA Lic #DEMO · This is a Quantum Marketing Coatings Pro demonstration site</div>
+    <div class="flex items-center gap-3">
+      <span class="uppercase tracking-wider">Powered by</span>
+      <span class="display text-forge-gold text-base">TRUEXPANSE</span>
+      <span>· Quantum Marketing Coatings Pro</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
