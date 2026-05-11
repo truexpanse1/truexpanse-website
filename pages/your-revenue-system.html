@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Revenue System — TrueXpanse Quantum Marketing</title>
+<meta name="description" content="The complete CRM + marketing architecture TrueXpanse builds for every Quantum Marketing client. Six columns. Thirteen pipeline stages. One revenue machine.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'tx-bg': '#0a0e1a',
+          'tx-card': '#101728',
+          'tx-card2': '#1a2236',
+          'tx-amber': '#f59e0b',
+          'tx-amber-bright': '#fbbf24',
+          'tx-cream': '#f3f0e8',
+          'tx-rule': '#1f2937',
+          'tx-blue': '#3b82f6',
+          'tx-emerald': '#10b981',
+        }
+      }
+    }
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; background: #0a0e1a; color: #f3f0e8; }
+  .display { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.02em; }
+  .check::before { content: '✓'; color: #f59e0b; font-weight: bold; margin-right: 0.5rem; }
+  .x-mark::before { content: '—'; color: #6b7280; margin-right: 0.5rem; }
+  .hero-bg {
+    background-image: linear-gradient(180deg, rgba(10,14,26,0.7) 0%, rgba(10,14,26,0.55) 50%, rgba(10,14,26,0.95) 100%),
+                      url('https://d8j0ntlcm91z4.cloudfront.net/user_3CGHgSLlUv3jf31GxIYU1JR4BSs/hf_20260505_181908_d70568c6-88f5-42d5-b7c5-fdffc72ee144.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .machine-bg {
+    background-image: linear-gradient(180deg, rgba(10,14,26,0.85) 0%, rgba(10,14,26,0.7) 50%, rgba(10,14,26,0.95) 100%),
+                      url('https://d8j0ntlcm91z4.cloudfront.net/user_3CGHgSLlUv3jf31GxIYU1JR4BSs/hf_20260505_181911_913e3d35-8a39-47bb-9039-fbc8f259bf94.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .handoff-bg {
+    background-image: linear-gradient(180deg, rgba(10,14,26,0.85) 0%, rgba(10,14,26,0.7) 50%, rgba(10,14,26,0.95) 100%),
+                      url('https://d8j0ntlcm91z4.cloudfront.net/user_3CGHgSLlUv3jf31GxIYU1JR4BSs/hf_20260505_181915_3a868c71-4240-4d68-baa0-49fd19079025.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .pipeline-stage:hover .workflow-detail { display: block; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-tx-amber text-tx-bg text-center py-2 text-xs font-semibold tracking-wider uppercase">
+  TrueXpanse · Quantum Marketing · Your Revenue System
+</div>
+
+<!-- HEADER -->
+<header class="px-8 md:px-16 lg:px-24 pt-10 pb-4 absolute top-8 left-0 right-0 z-30">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <div>
+      <div class="display text-3xl text-tx-cream">TRUE<span class="text-tx-amber">X</span>PANSE</div>
+      <div class="text-[10px] text-tx-amber uppercase tracking-widest mt-1">Quantum Marketing Operations</div>
+    </div>
+    <div class="hidden md:block text-right text-xs text-tx-cream/60">
+      <div>Don Smith · Founder</div>
+      <div>(805) 210-1999 · don@truexpanse.com</div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center px-8 md:px-16 lg:px-24 pt-32 pb-24">
+  <div class="max-w-3xl">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">For business owners ready to scale</span>
+    </div>
+    <h1 class="display text-6xl md:text-8xl text-tx-cream leading-none mb-6">
+      We don't set up a CRM.<br/>
+      <span class="text-tx-amber">We install your revenue machine.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-tx-cream/80 mb-10 leading-relaxed max-w-2xl">
+      Most businesses run on hope, hustle, and a Google Sheet. We build the system that runs while you sleep — and keep it running.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#system-map" class="bg-tx-amber text-tx-bg px-8 py-4 rounded-sm uppercase tracking-wider text-sm font-bold hover:bg-tx-amber-bright transition text-center">
+        See the System →
+      </a>
+      <a href="#cta" class="border border-tx-cream/30 text-tx-cream px-8 py-4 rounded-sm uppercase tracking-wider text-sm font-bold hover:border-tx-amber hover:text-tx-amber transition text-center">
+        Schedule Strategy Call
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="px-8 md:px-16 lg:px-24 py-20 bg-tx-card">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-tx-amber uppercase tracking-widest text-xs font-semibold mb-6">What you're about to see</p>
+    <p class="text-xl md:text-2xl text-tx-cream/85 leading-relaxed">
+      The same architectural plan we install for <strong class="text-tx-cream">every Quantum Marketing client</strong>. It's not a tool. It's not a checklist. It's a complete revenue ecosystem — six interconnected columns, thirteen pipeline stages, and the workflows that fire automatically at every touchpoint.
+    </p>
+    <p class="text-tx-amber/80 mt-6 text-sm uppercase tracking-widest font-semibold">Built once. Tuned forever.</p>
+  </div>
+</section>
+
+<!-- THE 6-COLUMN MAP -->
+<section id="system-map" class="px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">The architecture</span>
+    </div>
+    <h2 class="display text-5xl md:text-7xl text-tx-cream mb-4 leading-none">The 6 columns of<br/><span class="text-tx-amber">your revenue machine.</span></h2>
+    <p class="text-tx-cream/70 mb-16 max-w-3xl text-lg leading-relaxed">Read it left to right. Every prospect's journey starts in TRAFFIC and ends at ONBOARDED. Every stage in between has a system, an asset, and an automation.</p>
+
+    <!-- 6 COLUMNS GRID -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-tx-rule mb-16">
+
+      <!-- Column 1: TRAFFIC -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-amber text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">01 · TRAFFIC</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">Where leads come from</p>
+        <ul class="space-y-2">
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Facebook Paid</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Email List</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Google Ads</li>
+        </ul>
+      </div>
+
+      <!-- Column 2: ADVERTISING -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-amber text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">02 · ADVERTISING</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">How we reach them</p>
+        <ul class="space-y-2">
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Level 1 Awareness</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Level 2 Engagement</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Level 3 Conversion</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: SERVICES -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-amber text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">03 · SERVICES</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">What we sell them</p>
+        <ul class="space-y-2">
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Service / Product 1</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Service / Product 2</li>
+          <li class="bg-tx-card2 p-3 rounded-sm text-sm text-tx-cream">Service / Product 3</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: ASSETS -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-emerald text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">04 · ASSETS</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">What feeds the system</p>
+        <ul class="space-y-2 text-xs">
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Images of Work</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Images of Team / Office / You</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Documents & Call Scripts</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Funnel Videos</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Funnel Assets</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">Video Testimonials & Reviews</li>
+        </ul>
+      </div>
+
+      <!-- Column 5: PIPELINE -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-blue text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">05 · PIPELINE</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">Their journey · 13 stages</p>
+        <ul class="space-y-1.5 text-xs">
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">1. New Lead — Opt-In</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">2. Pre-Qualify Survey</li>
+          <li class="bg-tx-amber/20 border border-tx-amber p-2 rounded-sm text-tx-cream font-semibold">3. Hot Lead</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">4. Book Initial Call</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">5. Call No-Show</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">6. Cancel / Reschedule</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">7. Consultation Call</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">8. Not a Fit</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">9. Not Ready · 1–3 Months</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">10. Not Ready · 3–6 Months</li>
+          <li class="bg-tx-card2 p-2 rounded-sm text-tx-cream">11. Itinerary Sent</li>
+          <li class="bg-tx-amber/20 border border-tx-amber p-2 rounded-sm text-tx-cream font-semibold">12. Payment Submitted</li>
+          <li class="bg-tx-emerald/20 border border-tx-emerald p-2 rounded-sm text-tx-cream font-semibold">13. Onboarded</li>
+        </ul>
+      </div>
+
+      <!-- Column 6: WORKFLOWS -->
+      <div class="bg-tx-card p-6">
+        <div class="bg-tx-emerald text-tx-bg display text-xl text-center py-2 mb-4 rounded-sm">06 · WORKFLOWS</div>
+        <p class="text-xs text-tx-cream/60 mb-4 italic">What fires automatically</p>
+        <ul class="space-y-2 text-xs text-tx-cream/85">
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Lead nurture sequence drives them to schedule the call</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Sales team alerted; AI booking bot offered; investment expectations set</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Appointment reminders: how long, where, prep, pre-call material</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ No-show recovery sequence + reschedule prompts</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Cancel handling: reason capture, win-back attempt, soft re-engage</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Itinerary delivery: dates, pricing, expectations</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Long-term nurture for "not ready yet" — tagged for re-touch</li>
+          <li class="bg-tx-card2 p-2 rounded-sm leading-snug">→ Onboarding sequence: welcome, kickoff, first deliverables</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW: Calendars / Forms / Funnels -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-tx-card p-6 border-l-2 border-tx-amber">
+        <div class="text-tx-amber uppercase tracking-widest text-xs font-bold mb-3">Calendars</div>
+        <ul class="text-sm text-tx-cream/80 space-y-1">
+          <li>· Initial Call calendar</li>
+          <li>· Second Call · Specific to Individual</li>
+          <li>· Coaching Calendar</li>
+          <li>· Strategy Session</li>
+        </ul>
+      </div>
+      <div class="bg-tx-card p-6 border-l-2 border-tx-amber">
+        <div class="text-tx-amber uppercase tracking-widest text-xs font-bold mb-3">Forms / Surveys</div>
+        <ul class="text-sm text-tx-cream/80 space-y-1">
+          <li>· Sales Page Opt-In Form</li>
+          <li>· Contest / Giveaway Form</li>
+          <li>· VSL Engagement Form</li>
+          <li>· Referral Form</li>
+          <li>· Net Promoter Score</li>
+        </ul>
+      </div>
+      <div class="bg-tx-card p-6 border-l-2 border-tx-amber">
+        <div class="text-tx-amber uppercase tracking-widest text-xs font-bold mb-3">Funnels</div>
+        <ul class="text-sm text-tx-cream/80 space-y-1">
+          <li>· Main Website (converting landing pages, not generic)</li>
+          <li>· Contest / Giveaway Funnel</li>
+          <li>· Video Sales Letter Funnel</li>
+          <li>· Referral Funnel</li>
+          <li>· NPS Follow-Up</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="machine-bg px-8 md:px-16 lg:px-24 py-24 relative">
+  <div class="max-w-6xl mx-auto relative z-10">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">When you get what</span>
+    </div>
+    <h2 class="display text-5xl md:text-7xl text-tx-cream mb-12 leading-none">By the end of week 4,<br/><span class="text-tx-amber">your machine is running.</span></h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-px bg-tx-rule">
+      <div class="bg-tx-bg/80 backdrop-blur p-6">
+        <div class="display text-2xl text-tx-amber mb-2">DAY 1–3</div>
+        <div class="text-xs text-tx-cream/60 uppercase tracking-wider mb-4">Foundation</div>
+        <p class="text-sm text-tx-cream/85 leading-relaxed">Sub-account live. Domain pointed. Business profile complete. You log in and it feels like yours.</p>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur p-6">
+        <div class="display text-2xl text-tx-amber mb-2">WEEK 1</div>
+        <div class="text-xs text-tx-cream/60 uppercase tracking-wider mb-4">Communication</div>
+        <p class="text-sm text-tx-cream/85 leading-relaxed">Email + SMS sending. Missed-call text-back active. Welcome sequence triggered on form submission. Phone answers itself.</p>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur p-6">
+        <div class="display text-2xl text-tx-amber mb-2">WEEK 2</div>
+        <div class="text-xs text-tx-cream/60 uppercase tracking-wider mb-4">Pipeline + Automation</div>
+        <p class="text-sm text-tx-cream/85 leading-relaxed">Sales pipeline live with your stages. Automations firing. Calendars synced. Mobile app ready.</p>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur p-6">
+        <div class="display text-2xl text-tx-amber mb-2">WEEK 3</div>
+        <div class="text-xs text-tx-cream/60 uppercase tracking-wider mb-4">First Campaign</div>
+        <p class="text-sm text-tx-cream/85 leading-relaxed">First email/SMS campaign sent. First KPI report. Dashboards customized to your business.</p>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur p-6 border-l-2 border-tx-amber">
+        <div class="display text-2xl text-tx-amber mb-2">ONGOING</div>
+        <div class="text-xs text-tx-cream/60 uppercase tracking-wider mb-4">We hold the line</div>
+        <p class="text-sm text-tx-cream/85 leading-relaxed">Friday progress report. Monthly review call. Continuous tuning. You're not alone with the system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE WEBSITE PIECE -->
+<section class="bg-tx-card px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">Your front door</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-tx-cream mb-6 leading-none">
+      Your website isn't generic.<br/>
+      <span class="text-tx-amber">It's a converting landing page.</span>
+    </h2>
+    <p class="text-tx-cream/75 mb-10 max-w-3xl text-lg leading-relaxed">
+      Every Quantum Marketing client gets a website built specifically to convert the traffic the system drives. No "About Us / Services / Contact" template. Direct response. Branded for your business. Engineered to turn visits into bookings.
+    </p>
+    <a href="forge-coatings.html" class="inline-flex items-center gap-3 bg-tx-amber text-tx-bg px-6 py-4 rounded-sm uppercase tracking-wider text-sm font-bold hover:bg-tx-amber-bright transition">
+      See an example we built →
+    </a>
+    <p class="text-xs text-tx-cream/40 mt-4 italic">Forge Coatings is a fictional concrete-coatings demo showing the exact site quality every client receives, customized to their brand.</p>
+  </div>
+</section>
+
+<!-- TOOLS WE PLUG IN -->
+<section class="px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">The stack</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-tx-cream mb-12 leading-none">Best-in-class tools.<br/><span class="text-tx-amber">All wired together for you.</span></h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-tx-card p-8 border-t-2 border-tx-amber">
+        <div class="display text-3xl text-tx-cream mb-2">GoHighLevel</div>
+        <p class="text-sm text-tx-cream/60 uppercase tracking-wider mb-4">CRM Engine</p>
+        <p class="text-sm text-tx-cream/80 leading-relaxed">The CRM platform we deploy for every client. Pipelines, calendars, automations, two-way email + SMS — all in one. We are an agency partner; we manage your sub-account.</p>
+      </div>
+      <div class="bg-tx-card p-8 border-t-2 border-tx-amber">
+        <div class="display text-3xl text-tx-cream mb-2">MAT</div>
+        <p class="text-sm text-tx-cream/60 uppercase tracking-wider mb-4">Daily Action Tracker</p>
+        <p class="text-sm text-tx-cream/80 leading-relaxed">TrueXpanse's own platform. Tracks your daily revenue actions, hot leads, pipeline movement, weekly KPIs. Built for service-business owners who want one screen, no spreadsheet jockeying.</p>
+      </div>
+      <div class="bg-tx-card p-8 border-t-2 border-tx-amber">
+        <div class="display text-3xl text-tx-cream mb-2">Higgsfield AI</div>
+        <p class="text-sm text-tx-cream/60 uppercase tracking-wider mb-4">Premium Imagery</p>
+        <p class="text-sm text-tx-cream/80 leading-relaxed">AI-generated brand imagery — hero shots, ad creatives, social posts — at a quality that beats stock photography and most agency creative. Unique to your brand, not cookie-cutter.</p>
+      </div>
+      <div class="bg-tx-card p-8 border-t-2 border-tx-amber">
+        <div class="display text-3xl text-tx-cream mb-2">Resend</div>
+        <p class="text-sm text-tx-cream/60 uppercase tracking-wider mb-4">Email Infrastructure</p>
+        <p class="text-sm text-tx-cream/80 leading-relaxed">The deliverability layer underneath your campaigns. Authenticated sending domain, transactional + broadcast email, full reporting. Your emails actually land in the inbox.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE HANDOFF -->
+<section class="handoff-bg px-8 md:px-16 lg:px-24 py-24 relative">
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">How it actually happens</span>
+    </div>
+    <h2 class="display text-5xl md:text-6xl text-tx-cream mb-12 leading-none">You sign up.<br/><span class="text-tx-amber">We execute.</span></h2>
+
+    <div class="space-y-6">
+      <div class="bg-tx-bg/80 backdrop-blur border-l-2 border-tx-amber p-6 flex items-start gap-6">
+        <div class="display text-4xl text-tx-amber leading-none">01</div>
+        <div>
+          <h3 class="display text-2xl text-tx-cream mb-2">Strategy Call</h3>
+          <p class="text-tx-cream/80 text-sm leading-relaxed">20-minute call with Don. We assess where you are, what you're trying to build, and whether we're a fit. You leave with a 1-page diagnostic. No pitch. If we're not a fit, we tell you.</p>
+        </div>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur border-l-2 border-tx-amber p-6 flex items-start gap-6">
+        <div class="display text-4xl text-tx-amber leading-none">02</div>
+        <div>
+          <h3 class="display text-2xl text-tx-cream mb-2">Sign Up + Onboarding Form</h3>
+          <p class="text-tx-cream/80 text-sm leading-relaxed">You complete a single onboarding form: business profile, service offering, brand assets. We capture everything we need in one pass.</p>
+        </div>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur border-l-2 border-tx-amber p-6 flex items-start gap-6">
+        <div class="display text-4xl text-tx-amber leading-none">03</div>
+        <div>
+          <h3 class="display text-2xl text-tx-cream mb-2">Build (Days 1–14)</h3>
+          <p class="text-tx-cream/80 text-sm leading-relaxed">We build everything in the chart above. You don't navigate menus. You don't add DNS records (well — you add 3, once). You don't write copy. We do.</p>
+        </div>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur border-l-2 border-tx-amber p-6 flex items-start gap-6">
+        <div class="display text-4xl text-tx-amber leading-none">04</div>
+        <div>
+          <h3 class="display text-2xl text-tx-cream mb-2">Launch + Friday Reports</h3>
+          <p class="text-tx-cream/80 text-sm leading-relaxed">Week 3 we launch your first campaign. Week 4 we send your first KPI report. Every Friday after that, you know exactly what we did, what worked, and what's next.</p>
+        </div>
+      </div>
+      <div class="bg-tx-bg/80 backdrop-blur border-l-2 border-tx-amber p-6 flex items-start gap-6">
+        <div class="display text-4xl text-tx-amber leading-none">05</div>
+        <div>
+          <h3 class="display text-2xl text-tx-cream mb-2">Ongoing Partnership</h3>
+          <p class="text-tx-cream/80 text-sm leading-relaxed">Monthly review call. Quarterly strategic touch-up. Continuous tuning of the campaigns + funnels + automations. We don't disappear after launch. We're the partner that keeps the machine running.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="bg-tx-card px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">A real client</span>
+    </div>
+    <h2 class="display text-4xl md:text-5xl text-tx-cream mb-12 leading-none">Anonymous Bronze Quantum Marketing client.<br/><span class="text-tx-amber">90-day result.</span></h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <p class="text-tx-amber uppercase tracking-widest text-xs font-bold mb-3">Day 0</p>
+        <ul class="space-y-2 text-tx-cream/80 text-sm">
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Inbound leads</span><strong class="text-tx-cream">4 / month</strong></li>
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Ad spend</span><strong class="text-tx-cream">$0 / month</strong></li>
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Email subscribers</span><strong class="text-tx-cream">0</strong></li>
+          <li class="flex justify-between"><span>Tracked conversion rate</span><strong class="text-tx-cream/50 italic">Unknown</strong></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-tx-emerald uppercase tracking-widest text-xs font-bold mb-3">Day 90</p>
+        <ul class="space-y-2 text-tx-cream/80 text-sm">
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Inbound leads</span><strong class="text-tx-emerald">19 / month</strong></li>
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Ad spend</span><strong class="text-tx-cream">$750 / month</strong></li>
+          <li class="flex justify-between border-b border-tx-rule pb-2"><span>Email subscribers</span><strong class="text-tx-emerald">142</strong></li>
+          <li class="flex justify-between"><span>Tracked conversion rate</span><strong class="text-tx-emerald">6.4%</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 bg-tx-bg p-8 border-l-2 border-tx-amber">
+      <p class="text-tx-cream/85 text-lg leading-relaxed">
+        Spend over 3 months: <strong class="text-tx-cream">$2,250</strong>. Revenue attributed to the system: <strong class="text-tx-emerald">$24,300</strong>. <span class="text-tx-amber font-semibold">~10.8x ROAS in 90 days.</span>
+      </p>
+      <p class="text-xs text-tx-cream/40 mt-3 italic">Verified from the client's GHL pipeline. Identity withheld at client's request. Past results don't guarantee future ones — your number depends on your offer, your market, and your willingness to follow the system.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="inline-flex items-center gap-3 mb-6">
+      <div class="w-12 h-px bg-tx-amber"></div>
+      <span class="text-tx-amber uppercase tracking-widest text-xs font-semibold">Risk reversal</span>
+      <div class="w-12 h-px bg-tx-amber"></div>
+    </div>
+    <h2 class="display text-5xl md:text-7xl text-tx-cream mb-8 leading-none">If we miss a milestone.<br/><span class="text-tx-amber">We work for free until we hit it.</span></h2>
+    <p class="text-tx-cream/70 max-w-2xl mx-auto text-lg leading-relaxed">
+      Each phase has a defined deliverable on a defined timeline. If we miss it for any reason that's our fault, we keep working at no additional cost until it's delivered. We put our name on every install — and we don't ship work we wouldn't want our name on.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="bg-tx-amber text-tx-bg px-8 md:px-16 lg:px-24 py-24">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="uppercase tracking-widest text-xs font-bold mb-4">Schedule a strategy call</p>
+    <h2 class="display text-5xl md:text-7xl mb-6 leading-none">20 minutes.<br/>No pitch.<br/>1-page diagnostic.</h2>
+    <p class="text-tx-bg/70 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">If you're ready to install the revenue machine — or just want to know what's broken in your current setup — book the call. We'll spend 20 minutes on your numbers and you'll leave with a 1-page diagnostic of your highest-leverage fix. Yours to keep either way.</p>
+    <a href="https://truexpanse.com" class="inline-block bg-tx-bg text-tx-amber px-10 py-5 rounded-sm uppercase tracking-wider text-sm font-bold hover:bg-tx-cream hover:text-tx-bg transition">
+      Book Your Strategy Call →
+    </a>
+    <div class="mt-8 text-xs text-tx-bg/60 uppercase tracking-widest">
+      (805) 210-1999 · don@truexpanse.com
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-tx-bg py-12 px-8 md:px-16 lg:px-24 border-t border-tx-rule">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-tx-cream/40">
+    <div>© TrueXpanse · Quantum Marketing Operations · don@truexpanse.com</div>
+    <div>Your Revenue System · The architectural plan for every QM client</div>
+  </div>
+</footer>
+
+</body>
+</html>
