@@ -1,0 +1,32 @@
+# TrueXpanse
+
+> Business coaching, marketing systems, and software for contractors and entrepreneurs scaling from $500K to $1M+. Founded and led by Don Smith — 35+ years in business, San Luis Obispo County, CA. Three integrated parts: 1-on-1 coaching using a proven business framework, the Massive Action Tracker (MAT) sales platform with Asa AI coach, and GoHighLevel CRM + conversion-focused web design.
+
+## Core pages
+
+- [TrueXpanse Home](https://www.truexpanse.com/): Business coaching for entrepreneurs. Overview of TrueXpanse's three-part system (coaching, MAT platform, CRM + web), audience targeting (painting contractors, business owners, sales teams), and free Revenue Audit booking.
+- [About TrueXpanse and Don Smith](https://www.truexpanse.com/pages/about.html): Don Smith's 35+ year business background, founder story, and the TrueXpanse coaching philosophy.
+- [Contact](https://www.truexpanse.com/pages/contact.html): Phone (805) 909-3420, email don@truexpanse.com, San Luis Obispo County CA service area.
+
+## Services
+
+- [90-Day Contractor Accelerator](https://www.truexpanse.com/pages/contractor-accelerator.html): Coaching program built specifically for painting contractors doing $500K–$2M and scaling to $1M+. Includes weekly 1-on-1 coaching, full MAT platform setup, pipeline/proposal/close-rate system, and 30-day performance guarantee ("close 1 job or month 2 is free").
+- [Business Coaching](https://www.truexpanse.com/pages/coaching.html): 1-on-1 business coaching using a proven framework. Weekly calls, goal-setting, sales systems, accountability for contractors and entrepreneurs ready to scale.
+- [Quantum Marketing](https://www.truexpanse.com/pages/quantum-marketing.html): Marketing service tiers (Bronze, Silver, Gold) for businesses needing done-for-you marketing systems, content, and lead generation.
+- [GoHighLevel CRM Setup](https://www.truexpanse.com/pages/crm.html): Full GoHighLevel CRM configuration with automated follow-up sequences. Done-for-you setup trained by Don.
+- [Web Design](https://www.truexpanse.com/pages/web-design.html): Conversion-focused websites that route every lead directly into the client's pipeline.
+- [Life Coaching with Ruthie](https://www.truexpanse.com/pages/life-coaching.html): Personal life coaching service.
+- [Workshops & Courses](https://www.truexpanse.com/pages/courses.html): Training workshops and courses for business owners and sales teams.
+
+## Software
+
+- [MAT — Massive Action Tracker](https://www.truexpanse.com/pages/mat.html): $97/mo sales platform built for contractors and business owners. Tracks pipeline, daily activity targets, proposals, revenue forecasting, and includes Asa AI sales coach. Built by Don when no existing tool tracked what contractors actually needed.
+
+## Free tools
+
+- [ROI Calculator](https://www.truexpanse.com/pages/roi-calculator.html): Calculate the ROI of TrueXpanse coaching and MAT platform investment.
+- [Procrastination Tax Calculator](https://www.truexpanse.com/pages/procrastination-tax.html): Calculate the monthly revenue cost of procrastination in your business in 60 seconds.
+
+## Legal
+
+- [Privacy Policy](https://www.truexpanse.com/pages/privacy.html)
