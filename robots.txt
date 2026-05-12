@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
 
+# Explicitly welcome AI search crawlers
+# Each user-agent block declares its own rules so GEO/AI-visibility audits
+# count them as "explicitly allowed" (wildcard * does not satisfy that check).
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://www.truexpanse.com/sitemap.xml
