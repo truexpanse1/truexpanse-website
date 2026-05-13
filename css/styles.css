@@ -90,8 +90,14 @@ nav {
 .nav-links a:hover { color: var(--slate); background: var(--light); }
 .nav-links a.active { color: var(--red); }
 .nav-cta { display: flex; align-items: center; gap: 10px; }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+.hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; margin-left: auto; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--slate); border-radius: 2px; }
+
+/* Hamburger-only mode — single consistent nav across every page (per Don 2026-05-13).
+   Hides desktop nav-links + nav-cta; click reveals all pages in dropdown via toggleMenu(). */
+.nav-links { display: none !important; }
+.nav-cta   { display: none !important; }
+.nav-links.mobile-open { display: flex !important; }
 
 /* ── Nav Dropdown ── */
 .has-dropdown { position: relative; }
