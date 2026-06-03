@@ -1,0 +1,143 @@
+{
+  "industries": [
+    {
+      "id": "electricians",
+      "name": "Electricians",
+      "emoji": "⚡",
+      "tagline": "Licensed electrical contractors — residential, commercial, EV, generators",
+      "mockups": [
+        {
+          "id": "e1",
+          "name": "AF Electric",
+          "subtitle": "Andres Flores · Monterey · 24/7 service",
+          "url": "https://electrician-pitch.netlify.app/#e1",
+          "color": "#0066ff"
+        },
+        {
+          "id": "e2",
+          "name": "Point Break Electric",
+          "subtitle": "Monterey · CA Lic. #1092452 · EV + generators",
+          "url": "https://electrician-pitch.netlify.app/#e2",
+          "color": "#0095d9"
+        },
+        {
+          "id": "e3",
+          "name": "Aragon Electrical",
+          "subtitle": "Nolan Aragon · Marina · CA Lic. #1116511",
+          "url": "https://electrician-pitch.netlify.app/#e3",
+          "color": "#003d7a"
+        },
+        {
+          "id": "e4",
+          "name": "Oscar's Electric Services",
+          "subtitle": "Oscar + Steve · Seaside · 25+ years · C-10",
+          "url": "https://electrician-pitch.netlify.app/#e4",
+          "color": "#e60000"
+        }
+      ]
+    },
+    {
+      "id": "painters",
+      "name": "Painters",
+      "emoji": "🎨",
+      "tagline": "Interior, exterior, cabinet refinishing, commercial",
+      "mockups": [
+        {
+          "id": "p1",
+          "name": "R. Courtney Painting",
+          "subtitle": "Ryan Courtney · San Mateo · live production site",
+          "url": "https://rpcourtneypainting.com",
+          "color": "#1f1e26"
+        }
+      ]
+    },
+    {
+      "id": "roofers",
+      "name": "Roofers",
+      "emoji": "🛠",
+      "tagline": "Residential roofing, repairs, full replacements",
+      "mockups": []
+    },
+    {
+      "id": "landscapers",
+      "name": "Landscapers",
+      "emoji": "🌳",
+      "tagline": "Design, install, maintenance, hardscape",
+      "mockups": []
+    },
+    {
+      "id": "general-contractors",
+      "name": "General Contractors",
+      "emoji": "🏗",
+      "tagline": "Custom builds, additions, full remodels",
+      "mockups": []
+    },
+    {
+      "id": "concrete",
+      "name": "Concrete & Coatings",
+      "emoji": "🧱",
+      "tagline": "Garage floors, polyurea, decorative epoxy",
+      "mockups": [
+        {
+          "id": "c1",
+          "name": "ACDC Garage Floors",
+          "subtitle": "Chris Goatcher · Arroyo Grande · Penntek system",
+          "url": "https://acdc-garage-floor-demo.netlify.app",
+          "color": "#0a0a0a"
+        }
+      ]
+    },
+    {
+      "id": "service-business",
+      "name": "Service Businesses",
+      "emoji": "🔧",
+      "tagline": "Plumbing, HVAC, cleaning, pest control",
+      "mockups": [
+        {
+          "id": "s1",
+          "name": "Watkins Plumbing",
+          "subtitle": "Jerrod Loewen · Chico · 30 years legacy",
+          "url": "https://watkinsplumbing.com",
+          "color": "#1c4174"
+        }
+      ]
+    }
+  ],
+  "shared": [
+    {
+      "id": "crm",
+      "icon": "📞",
+      "name": "CRM Pitch — GoHighLevel",
+      "subtitle": "Catches leads, automates follow-up, books the job",
+      "url": "https://electrician-pitch.netlify.app/#ghl"
+    },
+    {
+      "id": "mat",
+      "icon": "📊",
+      "name": "MAT Pitch — Massive Action Tracker",
+      "subtitle": "Daily activity engine, AI content, SEO intel",
+      "url": "https://electrician-pitch.netlify.app/#mat"
+    },
+    {
+      "id": "coaching",
+      "icon": "🎯",
+      "name": "Coaching Pitch — TrueXpanse",
+      "subtitle": "Weekly 1:1 with Don. Discipline + accountability",
+      "url": "https://electrician-pitch.netlify.app/#truexpanse"
+    },
+    {
+      "id": "qac",
+      "icon": "🤖",
+      "name": "Quantum AI Command",
+      "subtitle": "Managed Claude Code AI back-office (optional add-on)",
+      "url": "https://electrician-pitch.netlify.app/#qac"
+    },
+    {
+      "id": "summary",
+      "icon": "⭐",
+      "name": "Full Stack Summary + Packages",
+      "subtitle": "The closer — all 4 layers + book-a-call CTA",
+      "url": "https://electrician-pitch.netlify.app/#summary"
+    }
+  ]
+}

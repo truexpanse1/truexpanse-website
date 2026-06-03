@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TrueXpanse Pitch Hub — Internal Use</title>
+<meta name="description" content="Internal navigation hub for prospect pitches. Hidden from search engines." />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<link rel="canonical" href="https://truexpanse.com/pitch/" />
+<link rel="stylesheet" href="./css/pitch.css" />
+</head>
+<body>
+
+<!-- Internal banner — visible across the whole hub -->
+<div class="internal-banner">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  <span>Internal — TrueXpanse Pitch Hub · Not for prospect distribution</span>
+</div>
+
+<!-- Right-side slide-out nav toggle (MGP-style fixed top-right) -->
+<button id="nav-toggle" type="button" aria-label="Open pitch navigation">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<!-- Backdrop -->
+<div id="nav-backdrop" class="nav-backdrop"></div>
+
+<!-- Slide-out nav panel -->
+<aside id="nav-panel" class="nav-panel" aria-label="Pitch navigation">
+  <div class="nav-panel-header">
+    <div class="title">Pitch Navigation</div>
+    <button id="nav-close" type="button" aria-label="Close navigation">&times;</button>
+  </div>
+  <div id="nav-panel-body"><!-- populated by pitch.js --></div>
+</aside>
+
+<!-- ── HEADER ────────────────────────────────────────────────────────── -->
+<header class="hub-header">
+  <div class="wordmark">TRUE<span class="x">X</span>PANSE</div>
+  <h1>Pitch Hub — pick the industry, hit the right deck.</h1>
+  <p class="sub">Don's internal navigation for prospect pitches. Each industry holds its mockup library; the shared CRM / MAT / Coaching / Summary pages stay consistent across every pitch. Click any card to open the slide-out nav for direct links — or hit the menu button (top-right) anytime.</p>
+</header>
+
+<!-- ── MAIN CONTENT ──────────────────────────────────────────────────── -->
+<main class="industries">
+
+  <div class="section-eyebrow">By Industry</div>
+  <div id="industry-grid" class="industry-grid">
+    <!-- populated by pitch.js from /pitch/data/industries.json -->
+  </div>
+
+  <div class="section-eyebrow">Shared Pitch Pages — Same Across Every Prospect</div>
+  <div id="shared-grid" class="shared-grid">
+    <!-- populated by pitch.js -->
+  </div>
+
+</main>
+
+<script src="./js/pitch.js"></script>
+</body>
+</html>

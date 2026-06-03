@@ -7,7 +7,7 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "/Users/donsmith/Documents/claude and Don/site"
+publish = "/Users/donsmith/Documents/Claude-Sessions/claude and Don/site"
 publishOrigin = "default"
 
 [build.environment]
