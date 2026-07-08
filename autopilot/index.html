@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Done-For-You Social Media on Autopilot — TrueXpanse</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/png" href="/favicon-64.png">
+<link rel="apple-touch-icon" href="/favicon-64.png">
 <meta name="description" content="We build your high-converting landing page, then run your social media on autopilot — content, scheduling, and weekly performance reports.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Done-For-You Marketing on Autopilot for Local Businesses">
@@ -29,8 +32,8 @@
   /* hero */
   .hero{background:#0e0f13;background-size:cover;background-position:center;color:#fff;padding:84px 0 90px;text-align:center;transition:background-image .25s ease}
   .eyebrow{display:inline-block;background:rgba(229,52,42,.15);color:#ff7a6e;font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
-  .hero h1{font-size:clamp(30px,5vw,52px);line-height:1.08;font-weight:900;letter-spacing:-.5px;max-width:18ch;margin:0 auto 18px;text-shadow:0 2px 22px rgba(0,0,0,.65)}
-  .hero p.sub{font-size:clamp(16px,2.2vw,20px);color:#dde1e7;max-width:60ch;margin:0 auto 28px;text-shadow:0 1px 14px rgba(0,0,0,.6)}
+  .hero h1{font-size:clamp(30px,5vw,52px);line-height:1.08;font-weight:900;letter-spacing:-.5px;max-width:18ch;margin:0 auto 18px;text-shadow:0 3px 30px rgba(0,0,0,.85)}
+  .hero p.sub{font-size:clamp(16px,2.2vw,20px);color:#dde1e7;max-width:60ch;margin:0 auto 28px;text-shadow:0 2px 16px rgba(0,0,0,.72)}
   .hero .micro{font-size:13px;color:#8b93a0;margin-top:14px}
   .accent-rule{width:64px;height:4px;background:var(--accent);margin:0 auto 22px;border-radius:2px}
   /* sections */
@@ -64,8 +67,11 @@
   .offer li:before{content:"✓";color:#39c07a;font-weight:900}
   /* portfolio */
   .port{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
-  .pcard{border:1px solid var(--line);border-radius:13px;padding:18px;background:#fff}
-  .pcard b{font-size:15px}.pcard span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+  .pcard{display:block;border:1px solid var(--line);border-radius:13px;background:#fff;text-decoration:none;color:inherit;overflow:hidden;transition:.15s;box-shadow:0 2px 8px rgba(20,24,40,.05)}
+  .pcard:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,24,40,.13)}
+  .pcard img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+  .pcard .pmeta{padding:12px 15px}
+  .pcard b{font-size:15px;display:block}.pcard span{display:block;color:var(--muted);font-size:13px;margin-top:2px}
   .note{font-size:12px;color:var(--muted);margin-top:10px;font-style:italic}
   /* faq */
   .faq details{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;background:#fff}
@@ -119,7 +125,7 @@
     <h1 id="hero-h"></h1>
     <p class="sub" id="hero-sub"></p>
     <a href="#apply" class="btn lg">Claim Your Spot →</a>
-    <p class="micro">Free landing page + done-for-you content on autopilot. Plans from <b>$197/mo</b> · 6-month foundation. Limited spots per area.</p>
+    <p class="micro">Done-for-you social on autopilot — plus a free landing page on our most popular plan. From <b>$197/mo</b> · 6-month foundation. Limited spots per area.</p>
   </div>
 </div>
 
@@ -144,7 +150,7 @@
   </div>
   <div class="wrap">
     <div class="stack">
-      <div class="item"><span class="ck">✓</span><div><b>A free, high-converting landing page</b><p>We build and host it. One irresistible offer, built to turn clicks into booked jobs — not just a brochure.</p></div></div>
+      <div class="item"><span class="ck">✓</span><div><b>A high-converting landing page (Growth &amp; up)</b><p>On our most popular plan we build and host your landing page — one irresistible offer, built to turn clicks into booked jobs.</p></div></div>
       <div class="item"><span class="ck">✓</span><div><b>Done-for-you social content</b><p>Bright, on-brand posts written in your voice with your real offers — created for you every week.</p></div></div>
       <div class="item"><span class="ck">✓</span><div><b>Auto-scheduled to Facebook &amp; Instagram</b><p>Posted consistently on a schedule, so your business looks alive and busy even when you're on a ladder.</p></div></div>
       <div class="item"><span class="ck">✓</span><div><b>A weekly performance report</b><p>Every week you see which posts won — real likes, comments, and reach — so the content keeps getting better.</p></div></div>
@@ -171,7 +177,7 @@
 <section id="plans">
   <div class="wrap center">
     <h2>Pick your level of growth</h2>
-    <p class="lead">Every plan includes a free landing page for one offer. Upgrade anytime as you grow.</p>
+    <p class="lead">Every plan runs your social on autopilot. Step up to Growth and the landing page is on us.</p>
   </div>
   <div class="wrap">
     <div class="tiers">
@@ -181,9 +187,10 @@
         <div class="tprice">$197<small>/mo</small></div>
         <div class="ttag">Get found and stay visible.</div>
         <ul>
-          <li>Free landing page (1 offer)</li>
           <li>3 social posts per week</li>
           <li>Facebook <em>or</em> Instagram</li>
+          <li>Your content dashboard (MAT access)</li>
+          <li>Free profile makeover — bio, cover, pinned post</li>
           <li>Monthly performance report</li>
         </ul>
         <a href="#apply" class="btn ghostbtn">Start with Starter</a>
@@ -195,9 +202,10 @@
         <div class="tprice">$397<small>/mo</small></div>
         <div class="ttag">Look busy and booked — every day.</div>
         <ul>
-          <li>Free landing page (1 offer)</li>
+          <li><b>Free landing page</b> that books jobs</li>
           <li><b>A new post every day</b></li>
           <li>Facebook <b>and</b> Instagram</li>
+          <li>Your content dashboard (MAT access)</li>
           <li>Weekly performance report</li>
           <li>We boost your proven winners as ads</li>
         </ul>
@@ -228,11 +236,13 @@
     <h2>Real websites, real local businesses</h2>
     <p class="lead">We don't just talk marketing — we build and run it for contractors like you.</p>
     <div class="port">
-      <div class="pcard"><b>[Add client screenshot]</b><span>Replace with a live site you've built</span></div>
-      <div class="pcard"><b>[Add client screenshot]</b><span>Replace with a live site you've built</span></div>
-      <div class="pcard"><b>[Add client screenshot]</b><span>Replace with a live site you've built</span></div>
+      <a class="pcard" href="https://magelectric.net" target="_blank" rel="noopener"><img src="/portfolio/mag.jpg" alt="MAG Electric website" loading="lazy"><div class="pmeta"><b>MAG Electric</b><span>Santa Maria, CA · Electrician</span></div></a>
+      <a class="pcard" href="https://watkinsplumbing.net/water-heater-quote" target="_blank" rel="noopener"><img src="/portfolio/watkins.jpg" alt="Watkins Plumbing landing page" loading="lazy"><div class="pmeta"><b>Watkins Plumbing</b><span>Chico, CA · Plumbing</span></div></a>
+      <a class="pcard" href="https://mgpcoatings.solutions/" target="_blank" rel="noopener"><img src="/portfolio/mgp.jpg" alt="MGP Coatings website" loading="lazy"><div class="pmeta"><b>MGP Coatings</b><span>SLO County · Concrete Coatings</span></div></a>
+      <a class="pcard" href="https://www.pasotech.com/" target="_blank" rel="noopener"><img src="/portfolio/pasotech.jpg" alt="Paso Robles Tech website" loading="lazy"><div class="pmeta"><b>Paso Robles Tech</b><span>Paso Robles, CA · IT &amp; Cybersecurity</span></div></a>
+      <a class="pcard" href="https://www.stonetech2000.com/" target="_blank" rel="noopener"><img src="/portfolio/stonetech.jpg" alt="StoneTech website" loading="lazy"><div class="pmeta"><b>StoneTech</b><span>Central Coast · Decorative Concrete</span></div></a>
+      <a class="pcard" href="https://www.thengineers.com/" target="_blank" rel="noopener"><img src="/portfolio/hume.jpg" alt="Hume Engineers website" loading="lazy"><div class="pmeta"><b>Hume Engineers</b><span>Residential &amp; Commercial Engineering</span></div></a>
     </div>
-    <p class="note">Add your real portfolio (e.g. your live MGP Coatings, Ryan Courtney Painting, MAG Electric builds) and any real, verifiable results or testimonials here. Never use numbers or quotes you can't back up.</p>
   </div>
 </section>
 
@@ -256,9 +266,7 @@
     <div class="formwrap">
       <h3>Claim your spot</h3>
       <p class="fp">Tell us about your business and we'll reach out to get you set up. Limited spots per area.</p>
-      <form name="autopilot-offer" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="autopilot-offer">
-        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <form id="leadform" onsubmit="return submitLead(event)">
         <div class="field"><label>Your name</label><input name="name" required></div>
         <div class="field"><label>Business name</label><input name="business" required></div>
         <div class="field"><label>Your trade</label>
@@ -268,6 +276,11 @@
         <div class="field"><label>Email</label><input name="email" type="email" required></div>
         <button class="btn lg" type="submit" style="width:100%">Book My Free Strategy Call →</button>
       </form>
+      <div id="leadthanks" style="display:none;text-align:center;padding:12px 0">
+        <div style="font-size:44px">✅</div>
+        <h3 style="margin:6px 0">You're in!</h3>
+        <p class="fp">Thanks — we'll reach out shortly to get you set up. Keep an eye on your phone.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -305,8 +318,24 @@ function setTrade(k){
   document.getElementById('trade').value = k;
   document.getElementById('form-trade').value = k;
   const hero = document.querySelector('.hero');
-  if (hero) hero.style.backgroundImage = `linear-gradient(rgba(12,13,17,.58), rgba(12,13,17,.80)), url('hero-images/${k}.jpg')`;
+  if (hero) hero.style.backgroundImage = `linear-gradient(rgba(12,13,17,.48), rgba(12,13,17,.68)), url('hero-images/${k}.jpg')`;
   try { history.replaceState(null,'',`?trade=${k}`); } catch(e){}
+}
+async function submitLead(e){
+  e.preventDefault();
+  const f = e.target;
+  const btn = f.querySelector('button');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  const g = n => ((f.elements[n] && f.elements[n].value) || '').trim();
+  const data = { name:g('name'), business:g('business'), trade:g('trade'), phone:g('phone'), email:g('email') };
+  try {
+    await fetch('https://truexpansemat.com/api/autopilot-lead', {
+      method:'POST', headers:{'Content-Type':'text/plain'}, body:JSON.stringify(data)
+    });
+  } catch(err){ /* still thank the user */ }
+  document.getElementById('leadform').style.display='none';
+  document.getElementById('leadthanks').style.display='block';
+  return false;
 }
 fillSelect(document.getElementById('trade'));
 fillSelect(document.getElementById('form-trade'));
