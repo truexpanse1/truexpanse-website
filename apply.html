@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>See If TrueXpanse Coaching Is a Fit | Apply</title>
+  <meta name="description" content="A few quick questions to see if TrueXpanse coaching is a fit. If you qualify, Don personally reaches out." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260622" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <style>
+    .display { font-family:'Anton','Inter',sans-serif; font-weight:400; text-transform:uppercase; line-height:0.98; letter-spacing:0.005em; }
+    .hl { color: var(--red); }
+    .applywrap { max-width:680px; margin:0 auto; }
+    .field { margin-bottom:18px; }
+    .field label { display:block; font-size:0.82rem; font-weight:800; color:var(--slate); margin-bottom:7px; letter-spacing:0.01em; }
+    .field .req { color:var(--red); }
+    .field input, .field select, .field textarea {
+      width:100%; padding:13px 15px; border:1.5px solid var(--border); border-radius:10px;
+      font-family:inherit; font-size:0.95rem; color:var(--slate); background:#fff; transition:border-color .15s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--red); }
+    .field textarea { resize:vertical; min-height:90px; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .note { font-size:0.78rem; color:var(--text2); margin-top:6px; }
+    .result { display:none; border-radius:16px; padding:34px; text-align:center; }
+    .result.fit { background:var(--navy); color:#fff; }
+    .result.fit h2 { color:#fff; }
+    .result.grow { background:var(--light); border:1.5px solid var(--border); }
+    @media (max-width:640px){ .grid2 { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="anbar">🎟️ FREE Sales Engine Workshop — Saturday, July 18 · 3 hours, live · <a href="/outcome-engine/">Save your seat →</a></div>
+
+<nav style="position:sticky;">
+  <div class="container nav-inner">
+    <a href="index-v2.html" class="nav-logo"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" /></a>
+    <div class="nav-cta"><a href="index-v2.html" class="btn btn-outline" style="padding:9px 16px;font-size:0.8rem;">← Back</a></div>
+  </div>
+</nav>
+
+<section class="section" style="background:var(--navy);">
+  <div class="container applywrap" style="text-align:center;">
+    <span style="font-size:0.72rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:#ff8a96;">Coaching · By Application</span>
+    <h1 class="display" style="color:#fff;font-size:clamp(2.2rem,5vw,3.4rem);margin:1rem 0 1rem;">See If We're a <span class="hl">Fit.</span></h1>
+    <p style="color:#d7deea;font-size:1.08rem;max-width:540px;margin:0 auto;line-height:1.7;">Don works with a small number of owners at a time, so the first conversation is by application. A few quick questions — if you're a fit, Don personally does your free strategy session. No pitch.</p>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container applywrap">
+
+    <!-- The form -->
+    <form id="applyForm" name="coaching-application" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="coaching-application" />
+      <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+      <div class="grid2">
+        <div class="field"><label>Your name <span class="req">*</span></label><input type="text" name="name" required /></div>
+        <div class="field"><label>Business name <span class="req">*</span></label><input type="text" name="business" required /></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required /></div>
+        <div class="field"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required /></div>
+      </div>
+      <div class="field"><label>What kind of business? <span class="req">*</span></label><input type="text" name="industry" placeholder="e.g. painting contractor, roofing, HVAC, real estate…" required /></div>
+
+      <div class="field">
+        <label>Your annual revenue right now <span class="req">*</span></label>
+        <select name="revenue" id="revenue" required>
+          <option value="" disabled selected>Choose one…</option>
+          <option value="Under $500K">Under $500K / year</option>
+          <option value="$500K–$1M">$500K – $1M / year</option>
+          <option value="$1M–$3M">$1M – $3M / year</option>
+          <option value="$3M–$10M">$3M – $10M / year</option>
+          <option value="$10M+">$10M+ / year</option>
+        </select>
+        <div class="note">Straight answer keeps it honest — it tells Don exactly where to start.</div>
+      </div>
+
+      <div class="field"><label>Where do you want to be in 12 months? <span class="req">*</span></label><input type="text" name="goal" placeholder="e.g. scale from $1.2M to $5M, build a team that runs without me…" required /></div>
+      <div class="field"><label>What's the single biggest thing in the way? <span class="req">*</span></label><textarea name="obstacle" required></textarea></div>
+
+      <div class="field">
+        <label>How ready are you to do the work? <span class="req">*</span></label>
+        <select name="commitment" required>
+          <option value="" disabled selected>Choose one…</option>
+          <option value="All in">All in — I'll do whatever it takes</option>
+          <option value="Ready, need a plan">Ready, I just need the plan and accountability</option>
+          <option value="Exploring">Still exploring my options</option>
+        </select>
+        <div class="note">Don's guarantee only works one way — you do the work, he keeps coaching until you get there.</div>
+      </div>
+
+      <button type="submit" class="btn btn-red btn-lg" style="width:100%;justify-content:center;margin-top:8px;">Submit My Application →</button>
+      <p class="note" style="text-align:center;margin-top:12px;">Takes 90 seconds. Your info stays private.</p>
+    </form>
+
+    <!-- Result: qualifies -->
+    <div id="resultFit" class="result fit">
+      <div style="font-size:2.4rem;margin-bottom:10px;">✅</div>
+      <h2 class="display" style="font-size:2rem;margin-bottom:1rem;">You're a Fit.</h2>
+      <p style="color:#d7deea;font-size:1.05rem;line-height:1.7;margin-bottom:1.8rem;">Don personally reviews every application and will reach out within one business day. Prefer to reach out sooner? Email him directly.</p>
+      <a href="mailto:don@truexpanse.com?subject=Strategy%20Session%20Request" class="btn btn-red btn-lg">✉️ Email Don — don@truexpanse.com</a>
+    </div>
+
+    <!-- Result: not yet (under $500K) -->
+    <div id="resultGrow" class="result grow">
+      <div style="font-size:2.4rem;margin-bottom:10px;">🚀</div>
+      <h2 class="display" style="font-size:2rem;margin-bottom:1rem;">Start Here First.</h2>
+      <p style="font-size:1.05rem;line-height:1.7;margin-bottom:1.4rem;color:var(--text);">Thanks for being straight about where you are. Don's 1-on-1 coaching is built for businesses already past <b>$500K/year</b> — but the exact discipline and systems that get you there start with the <b>Massive Action Tracker</b>. Build the engine now, and when you cross $500K, you'll be first in line.</p>
+      <a href="https://massiveactiontracker.com/" class="btn btn-red btn-lg">Start With the MAT App — $97/mo →</a>
+      <p class="note" style="margin-top:12px;">Cancel anytime. We saved your info — Don's team may still reach out.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer style="background:var(--navy);color:rgba(255,255,255,0.6);padding:2rem 0;text-align:center;font-size:0.8rem;">
+  <div class="container"><div style="font-weight:900;color:#fff;margin-bottom:0.3rem;">TrueXpanse</div><p style="color:rgba(255,255,255,0.4);font-size:0.74rem;">Business Coaching · San Luis Obispo County, CA</p></div>
+</footer>
+
+<script>
+  var form = document.getElementById('applyForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var data = new URLSearchParams(new FormData(form)).toString();
+    // capture the lead in Netlify (non-blocking — show result regardless)
+    fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data }).catch(function(){});
+    var rev = document.getElementById('revenue').value;
+    var qualifies = rev && rev !== 'Under $500K';
+    form.style.display = 'none';
+    document.getElementById(qualifies ? 'resultFit' : 'resultGrow').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
