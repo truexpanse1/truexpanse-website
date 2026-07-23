@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every Elevator Has a Brake. Does Your Business? | TrueXpanse</title>
+  <meta name="description" content="You don't grow by being careful — you grow because something catches you when a month goes sideways. TrueXpanse + the Massive Action Tracker is the braking system for your business. Book a free strategy session." />
+  <link rel="canonical" href="https://truexpanse.com/pages/the-brake.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Every Elevator Has a Brake. Does Your Business?" />
+  <meta property="og:description" content="The braking system for your business — so you can scale hard without fear of crashing. TrueXpanse + MAT." />
+  <meta property="og:image" content="https://truexpanse.com/images/don_primary.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <style>
+    :root{ --slate:#0f172a; --text:#475569; --text2:#64748b; --red:#C8102E; --red2:#a30d24; --light:#f8fafc; --border:#e2e8f0; --navy:#0D1B2A; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{ font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#fff; color:var(--text); line-height:1.65; -webkit-font-smoothing:antialiased; }
+    .display{ font-family:'Anton','Inter',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:.01em; line-height:1.0; }
+    .hl{ color:var(--red); }
+    .wrap{ max-width:920px; margin:0 auto; padding:0 24px; }
+    a.btn,a.btn-ghost{ display:inline-flex; align-items:center; gap:9px; font-weight:800; font-size:1rem; padding:16px 30px; border-radius:11px; text-decoration:none; transition:transform .15s,background .2s; }
+    a.btn{ background:var(--red); color:#fff; } a.btn:hover{ background:var(--red2); transform:translateY(-2px); }
+    a.btn-ghost{ background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,.35); } a.btn-ghost:hover{ border-color:#fff; }
+
+    .anbar{ background:var(--red); color:#fff; text-align:center; font-size:.82rem; font-weight:700; padding:9px 16px; }
+    .anbar a{ color:#fff; text-decoration:underline; font-weight:900; }
+    .topbar{ background:#fff; border-bottom:1px solid var(--border); }
+    .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+    .wordmark{ font-weight:900; font-size:1.2rem; letter-spacing:.01em; color:var(--slate); text-decoration:none; }
+    .wordmark .hl{ color:var(--red); }
+    .topbar .cta-sm{ font-size:.82rem; font-weight:800; background:var(--red); color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; }
+
+    /* hero */
+    .hero{ background:var(--navy); color:#fff; padding:74px 0 80px; text-align:center; }
+    .hero .eyebrow{ font-size:.74rem; font-weight:800; letter-spacing:.22em; text-transform:uppercase; color:#ff8a96; margin-bottom:18px; }
+    .hero h1{ color:#fff; font-size:clamp(2.4rem,6vw,4.2rem); margin-bottom:22px; }
+    .hero p.sub{ color:#cbd5e1; font-size:clamp(1.05rem,2.2vw,1.3rem); max-width:680px; margin:0 auto 32px; line-height:1.6; }
+    .hero .btns{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    /* story */
+    .story{ padding:64px 0; }
+    .story .lead{ font-size:1.35rem; font-weight:800; color:var(--slate); line-height:1.4; max-width:760px; margin:0 auto 26px; text-align:center; }
+    .story p{ font-size:1.08rem; color:var(--text); line-height:1.8; max-width:680px; margin:0 auto 18px; }
+    .story p b{ color:var(--slate); }
+    .story .allsafe{ text-align:center; font-family:'Anton'; text-transform:uppercase; color:var(--red); font-size:clamp(1.4rem,3.5vw,2rem); margin:30px auto; letter-spacing:.02em; }
+
+    /* reframe band */
+    .reframe{ background:var(--light); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:62px 0; text-align:center; }
+    .reframe h2{ font-size:clamp(1.8rem,4vw,2.6rem); color:var(--slate); margin-bottom:16px; line-height:1.1; }
+    .reframe p{ font-size:1.12rem; color:var(--text); max-width:680px; margin:0 auto; line-height:1.75; }
+
+    /* brake grid */
+    .brake{ padding:64px 0; }
+    .brake h2{ text-align:center; font-size:clamp(1.7rem,3.6vw,2.3rem); color:var(--slate); margin-bottom:10px; }
+    .brake .kick{ text-align:center; color:var(--text2); font-size:1.02rem; max-width:620px; margin:0 auto 38px; }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+    .card{ background:#fff; border:1px solid var(--border); border-radius:14px; padding:24px; }
+    .card .n{ font-family:'Anton'; color:var(--red); font-size:1.6rem; line-height:1; margin-bottom:10px; }
+    .card h3{ font-size:1.08rem; font-weight:900; color:var(--slate); margin-bottom:7px; }
+    .card p{ font-size:.95rem; color:var(--text); line-height:1.6; }
+
+    /* skin in the game */
+    .skin{ background:var(--navy); color:#fff; padding:60px 0; text-align:center; }
+    .skin h2{ color:#fff; font-size:clamp(1.7rem,3.6vw,2.3rem); margin-bottom:14px; }
+    .skin p{ color:#cbd5e1; font-size:1.1rem; max-width:640px; margin:0 auto 30px; line-height:1.7; }
+    .skin .btns{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    footer{ padding:34px 0; text-align:center; color:var(--text2); font-size:.82rem; border-top:1px solid var(--border); }
+    footer a{ color:var(--red); font-weight:700; }
+
+    @media (max-width:600px){ .hero{ padding:52px 0 56px; } .story,.brake{ padding:46px 0; } }
+  </style>
+</head>
+<body>
+
+<div class="anbar">Free 30-minute strategy session with Don — no pitch, no pressure. <a href="/apply">Apply today →</a></div>
+
+<div class="topbar"><div class="wrap">
+  <a href="/" class="wordmark">TRUE<span class="hl">X</span>PANSE</a>
+  <a href="/apply.html" class="cta-sm">Free Strategy Session</a>
+</div></div>
+
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">The TrueXpanse Difference</div>
+  <h1 class="display">Every elevator has a brake.<br/><span class="hl">Does your business?</span></h1>
+  <p class="sub">You don't grow by being careful. You grow because something catches you when a month goes sideways. That's what we build.</p>
+  <div class="btns">
+    <a href="/apply.html" class="btn">Book a Free Strategy Session →</a>
+    <a href="/pages/mat.html" class="btn-ghost">See the system →</a>
+  </div>
+</div></section>
+
+<section class="story"><div class="wrap">
+  <p class="lead">Before 1854, buildings stopped at about five stories. Not because we couldn't build higher — because nobody would go up.</p>
+  <p>One snapped cable and you fell. So the height of every building on earth was capped by fear, not by engineering.</p>
+  <p>Then a man named Elisha Otis changed it. He didn't invent the elevator — <b>he invented the brake.</b> And he proved it the only way that actually convinces anyone: he stood on the platform himself, in front of a crowd, and had his man cut the cable with an axe. The platform dropped two feet… and stopped.</p>
+  <div class="allsafe">"All safe, gentlemen. All safe."</div>
+  <p>That brake is the only reason skyscrapers exist. We didn't build tall because we got braver or smarter. <b>We built tall because something finally caught us if we fell.</b></p>
+</div></section>
+
+<section class="reframe"><div class="wrap">
+  <h2>Your business works exactly the same way.</h2>
+  <p>You're not stuck because you can't do the work — you do it better than anyone. You're stuck because there's <b>no brake.</b> One slow month, a few leads you never called back, one stretch where you're buried in the work — and it all slides. So you play it safe. You stay five stories.</p>
+</div></section>
+
+<section class="brake"><div class="wrap">
+  <h2>TrueXpanse + MAT is the brake.</h2>
+  <p class="kick">Push hard. Build tall. When something snaps, the system catches it — so a bad week never becomes a bad year.</p>
+  <div class="grid">
+    <div class="card"><div class="n">1</div><h3>It sees the fall coming</h3><p>Asa, your AI coach, watches your pipeline overnight and tells you each morning exactly who's about to go cold and who to call first.</p></div>
+    <div class="card"><div class="n">2</div><h3>It catches the miss</h3><p>Fall short of your number and the system flags it and recalculates the week — before the month is lost, not after.</p></div>
+    <div class="card"><div class="n">3</div><h3>No lead hits the ground</h3><p>Every lead and follow-up is tracked and rolled forward automatically. The deals that used to slip stay in front of you until they close.</p></div>
+    <div class="card"><div class="n">4</div><h3>The discipline holds</h3><p>Clear daily targets and a mentor in your corner keep the line steady when motivation runs out — because consistency is the real work.</p></div>
+  </div>
+</div></section>
+
+<section class="skin"><div class="wrap">
+  <h2>I'll ride the elevator with you.</h2>
+  <p>Otis didn't put a dummy on that platform — he stood on it himself while they swung the axe. So here's mine: try it for 30 days. If your follow-up isn't tighter and your pipeline isn't fuller, you owe nothing. Don't trust the brake — cut the cord and watch it hold.</p>
+  <div class="btns">
+    <a href="/apply.html" class="btn">Book Your Free Strategy Session →</a>
+    <a href="/pages/mat.html" class="btn-ghost">See MAT →</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  TrueXpanse — Business &amp; Marketing Coaching for Entrepreneurs &amp; Growing Businesses · San Luis Obispo County, CA<br/>
+  <a href="https://truexpanse.com">truexpanse.com</a>
+</div></footer>
+
+</body>
+</html>
