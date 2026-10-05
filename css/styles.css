@@ -32,6 +32,8 @@ h1,h2,h3,h4,h5 { font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; co
 h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
 h2 { font-size: clamp(1.7rem, 3.5vw, 2.6rem); }
 h3 { font-size: clamp(1.05rem, 2vw, 1.3rem); }
+/* Display headline font — consistent across every page */
+.display, h1, h2 { font-family: 'Anton', 'Inter', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.02; }
 p  { color: var(--text); line-height: 1.78; }
 a  { text-decoration: none; color: inherit; }
 
@@ -65,8 +67,11 @@ a  { text-decoration: none; color: inherit; }
 .btn-lg { padding: 18px 34px; font-size: 0.98rem; border-radius: 10px; }
 
 /* ── Nav ── */
+.site-header { position: sticky; top: 0; z-index: 1000; }
+.anbar { background: var(--red); color: #fff; text-align: center; font-size: 0.82rem; font-weight: 700; padding: 9px 16px; line-height: 1.25; }
+.anbar a { color: #fff; text-decoration: underline; text-underline-offset: 2px; font-weight: 900; }
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  position: relative; z-index: 1000;
   background: rgba(255,255,255,0.97);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);

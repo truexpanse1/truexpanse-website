@@ -1,0 +1,3 @@
+/grow    /autopilot    301
+/grow/*  /autopilot/:splat  301
+/guides/revenue-leak-checklist.html  /guides/business-growth-checklist.html  301

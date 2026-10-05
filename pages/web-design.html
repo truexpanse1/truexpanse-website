@@ -543,5 +543,8 @@
 <script src="../js/nav.js"></script>
 
 <script>function toggleMenu(){var l=document.querySelector('.nav-links');if(!l)return;var o=l.style.display==='flex';l.style.display=o?'none':'flex';l.style.flexDirection='column';}</script>
+  <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
+       Counts every visit, not just Google-search estimates. No cookies. -->
+  <script>(function(){try{if(navigator.sendBeacon)navigator.sendBeacon('https://truexpansemat.com/api/site-visit',JSON.stringify({t:'a8ab882a77384721',p:location.pathname,s:location.search,r:document.referrer}))}catch(e){}})();</script>
 </body>
 </html>

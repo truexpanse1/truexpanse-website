@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sales Engine — Live 3-Hour Saturday Intensive | TrueXpanse</title>
+<meta name="description" content="A live 3-hour virtual intensive on Saturday, July 18, 2026. Get the Sales Engine framework and walk away with your own 90-day roadmap — in one morning. Recorded. Seats limited.">
+<meta property="og:title" content="The Sales Engine — Live 3-Hour Saturday Intensive">
+<meta property="og:description" content="Preparation is a choice. In one Saturday morning, get the framework and your 90-day roadmap. Live July 18, 2026 — recorded, seats limited.">
+<meta property="og:image" content="https://truexpanse.com/outcome-engine/sales-engine-hero.jpg">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --green:#0b3d2e; --green-d:#072c20; --green-dd:#04211a; --green-l:#10644a;
+    --gold:#d4a437; --gold-l:#e9c66a; --gold-d:#a9801f;
+    --ink:#13201b; --muted:#5d6b63; --line:#e3e8e4; --soft:#f4f8f5; --cream:#fbfaf5;
+    --red:#E5342A; --good:#1f8a52;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;background:#fff}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:var(--green-l)}
+  .btn{display:inline-block;background:var(--gold);color:#3a2b07;font-weight:800;font-size:16px;padding:15px 30px;border-radius:11px;text-decoration:none;border:none;cursor:pointer;transition:.15s;box-shadow:0 6px 18px rgba(168,128,31,.32)}
+  .btn:hover{transform:translateY(-2px);background:var(--gold-l)}
+  .btn.lg{font-size:18px;padding:17px 38px}
+  .btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);box-shadow:none}
+  /* header */
+  header{position:sticky;top:0;background:rgba(7,44,32,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,164,55,.25);z-index:30}
+  .hbar{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+  .wm{font-weight:900;letter-spacing:.06em;color:#fff;font-size:19px}
+  .wm .x{color:var(--red)}
+  .hbar .btn{padding:10px 20px;font-size:14px}
+  /* hero */
+  .hero{background:linear-gradient(180deg,rgba(7,44,32,0.60) 0%,rgba(4,33,26,0.80) 64%,rgba(4,33,26,0.93) 100%),url('sales-engine-hero.jpg') center/cover no-repeat;color:#fff;text-align:center;padding:0}
+  .hero .hwrap{padding:74px 22px 56px}
+  .hero .crown{font-size:22px;color:var(--gold);margin:2px 0 10px;letter-spacing:.5em}
+  /* showcase image lower on the page — contained + responsive, never a hero bg */
+  .showcase{padding:0 0 64px;background:var(--green-dd);text-align:center}
+  .showcase img{width:100%;max-width:980px;height:auto;border-radius:16px;border:1px solid rgba(212,164,55,.3);box-shadow:0 26px 60px rgba(0,0,0,.4);display:block;margin:0 auto}
+  .showcase .cap{color:#aecabb;font-size:14px;max-width:60ch;margin:18px auto 0}
+  .kicker{display:inline-block;background:rgba(212,164,55,.16);color:var(--gold-l);border:1px solid rgba(212,164,55,.4);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:50px;margin-bottom:16px}
+  .hero h1{font-size:clamp(28px,5vw,46px);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+  .hero h1 .g{color:var(--gold-l)}
+  .hero p.sub{color:#cfe0d7;font-size:clamp(16px,2.4vw,20px);max-width:62ch;margin:0 auto 24px}
+  .hero .startline{margin-top:18px;color:#aecabb;font-size:14px}
+  .hero .startline b{color:#fff}
+  .ctapair{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  /* chips row */
+  .chips{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;padding:22px;background:var(--green-dd);color:#dfeae3;border-top:1px solid rgba(212,164,55,.18);font-size:14px;font-weight:600}
+  .chips span{display:inline-flex;align-items:center;gap:8px}
+  .chips .g{color:var(--gold-l);font-weight:900}
+  /* sections */
+  section{padding:64px 0}
+  .soft{background:var(--soft)}
+  .cream{background:var(--cream)}
+  .green{background:linear-gradient(160deg,var(--green-d),var(--green-dd));color:#fff}
+  .center{text-align:center}
+  h2{font-size:clamp(24px,3.6vw,34px);font-weight:900;letter-spacing:-.02em;line-height:1.15;margin-bottom:14px}
+  .green h2{color:#fff}
+  .lead{color:var(--muted);font-size:18px;max-width:64ch}
+  .center .lead{margin:0 auto}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin-bottom:12px}
+  .green .eyebrow{color:var(--gold-l)}
+  /* phases */
+  .phase{display:flex;gap:18px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:0 14px 14px 0;padding:22px 24px;margin-bottom:14px}
+  .phase .wk{flex-shrink:0;min-width:96px;font-weight:900;color:var(--green-l);font-size:14px;text-transform:uppercase;letter-spacing:.04em;padding-top:2px}
+  .phase h3{font-size:19px;font-weight:800;margin-bottom:5px}
+  .phase p{color:var(--muted);font-size:15px}
+  /* grid cards */
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card .ic{font-size:26px;margin-bottom:10px}
+  .card b{display:block;font-size:17px;margin-bottom:5px}
+  .card p{color:var(--muted);font-size:14px}
+  .green .card{background:rgba(255,255,255,.05);border-color:rgba(212,164,55,.22)}
+  .green .card b{color:#fff}.green .card p{color:#c9d8d0}
+  /* schedule */
+  .ses{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:22px}
+  .ses .s{background:rgba(255,255,255,.06);border:1px solid rgba(212,164,55,.3);border-radius:14px;padding:24px;text-align:center}
+  .ses .s .t{font-size:30px;font-weight:900;color:var(--gold-l)}
+  .ses .s .l{font-size:14px;color:#c9d8d0;margin-top:4px}
+  .ses .s .z{font-size:13px;color:#9fb8a9;margin-top:8px}
+  /* pricing */
+  .tiers{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:stretch;margin-top:14px}
+  .tier{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;box-shadow:0 6px 20px rgba(20,32,27,.05)}
+  .tier.feat{border:2px solid var(--gold);box-shadow:0 18px 50px rgba(168,128,31,.22);position:relative}
+  .tier .pop{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#3a2b07;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:5px 16px;border-radius:50px}
+  .tier .tn{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--green-l)}
+  .tier .pr{font-size:40px;font-weight:900;margin:8px 0 2px}
+  .tier .pr small{font-size:15px;color:var(--muted);font-weight:600}
+  .tier .pd{color:var(--muted);font-size:14px;margin-bottom:16px}
+  .tier ul{list-style:none;margin:0 0 22px;flex:1}
+  .tier li{display:flex;gap:9px;font-size:14px;padding:6px 0;color:#2e3b34}
+  .tier li::before{content:"✓";color:var(--good);font-weight:900;flex-shrink:0}
+  .tier .btn{width:100%;text-align:center}
+  .bump{background:#fff7e6;border:1px dashed var(--gold-d);border-radius:14px;padding:18px 22px;margin-top:22px;display:flex;gap:14px;align-items:flex-start}
+  .bump .b19{font-size:30px;font-weight:900;color:var(--gold-d);flex-shrink:0}
+  .guarantee{background:var(--green-dd);border:1px solid rgba(212,164,55,.35);border-radius:18px;padding:30px;text-align:center;max-width:760px;margin:30px auto 0;color:#fff}
+  .guarantee .seal{font-size:42px}
+  .guarantee h3{font-size:22px;margin:8px 0;color:var(--gold-l)}
+  .guarantee p{color:#cfe0d7;font-size:15px;max-width:60ch;margin:0 auto}
+  /* form */
+  .formwrap{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;max-width:640px;margin:0 auto;box-shadow:0 18px 50px rgba(20,32,27,.1)}
+  .formwrap h3{font-size:24px;margin-bottom:4px}
+  .formwrap .fp{color:var(--muted);font-size:14px;margin-bottom:20px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:#2e3b34}
+  .field input,.field textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fcfdfc}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,164,55,.18)}
+  .opts{display:grid;gap:8px}
+  .opt{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:11px;padding:12px 14px;cursor:pointer;transition:.12s}
+  .opt:hover{border-color:var(--gold)}
+  .opt input{margin-top:3px;flex-shrink:0}
+  .opt b{font-size:14px}.opt span{display:block;color:var(--muted);font-size:13px}
+  .opt.has-check input:checked ~ div b{color:var(--green-l)}
+  .hp{position:absolute;left:-5000px}
+  footer{background:var(--green-dd);color:#aecabb;text-align:center;padding:36px 22px;font-size:13px}
+  footer .wm{font-size:17px;margin-bottom:8px}
+  footer a{color:var(--gold-l)}
+  .faq details{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;background:#fff}
+  .faq summary{font-weight:700;cursor:pointer;font-size:15px}
+  .faq p{color:var(--muted);font-size:14px;margin-top:10px}
+  @media(max-width:560px){ .phase{flex-direction:column;gap:6px} .phase .wk{min-width:0} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <div class="wm">TRUE<span class="x">X</span>PANSE</div>
+    <a href="#enroll" class="btn">Save My Seat →</a>
+  </div>
+</header>
+
+<!-- HERO (text-first, fully responsive) -->
+<section class="hero">
+  <div class="wrap hwrap">
+    <div class="kicker">Live Virtual Intensive · One Saturday</div>
+    <div class="crown">♔</div>
+    <h1>Preparation is a choice.<br><span class="g">What are you choosing today?</span></h1>
+    <p class="sub">The Sales Engine is a live 3-hour intensive that hands you a complete system — and your own 90-day roadmap — in a single Saturday morning. No 12-week slog. Just the framework, the plan, and the momentum to start Monday.</p>
+    <div class="ctapair">
+      <a href="#enroll" class="btn lg">Save My Seat →</a>
+      <a href="#curriculum" class="btn lg ghost">See the Agenda</a>
+    </div>
+    <p class="startline">Live <b>Saturday, July 18, 2026</b> · 9:00 AM–12:00 PM PT (12–3 PM ET) · Recorded · Seats limited</p>
+  </div>
+  <div class="chips">
+    <span><span class="g">●</span> Proven framework</span>
+    <span><span class="g">●</span> 3 hours, one Saturday</span>
+    <span><span class="g">●</span> Leave with your roadmap</span>
+    <span><span class="g">●</span> Recorded replay included</span>
+    <span><span class="g">●</span> You don't do it alone</span>
+  </div>
+</section>
+
+<!-- THE PROMISE -->
+<section class="cream center">
+  <div class="wrap">
+    <div class="eyebrow">Why this exists</div>
+    <h2>Most people don't have a results problem.<br>They have a <em>system</em> problem.</h2>
+    <p class="lead">You already work hard. But effort without a system is just motion. In one focused Saturday morning, the Sales Engine hands you the structure, the daily system, and a clear 90-day roadmap — so you walk away knowing exactly what to do Monday, not just feeling inspired.</p>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section>
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Who it's for</div><h2>Built for the doer who's ready to commit.</h2></div>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card"><div class="ic">🎯</div><b>Founders &amp; owners</b><p>You're carrying the business and you want a system that compounds — not another shelf course.</p></div>
+      <div class="card"><div class="ic">📈</div><b>Sales pros &amp; closers</b><p>You want a disciplined activity engine that turns daily effort into booked revenue.</p></div>
+      <div class="card"><div class="ic">🚀</div><b>Operators ready to level up</b><p>You're done "winging it." You want a clear plan and a scoreboard for the next 90 days — in one focused morning.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="soft">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">The 3-hour agenda</div><h2>What we'll cover — hour by hour.</h2>
+      <p class="lead">Three focused hours. One outcome: you leave with a complete system and a 90-day roadmap you can run Monday morning.</p></div>
+    <div style="margin-top:30px">
+      <div class="phase"><div class="wk">Hour 1</div><div><h3>Get radically clear</h3><p>Diagnose exactly where your business is leaking time and money, and lock in your one 90-day number — the single result everything else points to. No more vague goals.</p></div></div>
+      <div class="phase"><div class="wk">Hour 2</div><div><h3>Build the engine</h3><p>Install the daily massive-action system that replaces motivation with a routine you actually run — and set it up inside the Massive Action Tracker so your progress is impossible to fake.</p></div></div>
+      <div class="phase"><div class="wk">Hour 3</div><div><h3>Execute &amp; map your 90 days</h3><p>The sales, marketing, and content moves that turn activity into revenue — then you build your personal 90-day roadmap live, with feedback, before you log off.</p></div></div>
+      <div class="phase" style="border-left-color:var(--green-l)"><div class="wk" style="color:var(--gold-d)">Plus</div><div><h3>Live Q&amp;A + your printable workbook</h3><p>Get your real questions answered live, and capture everything in the printable Sales Engine workbook — yours to keep and print before the session.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS / SCHEDULE -->
+<section class="green">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">How it works</div><h2>One Saturday morning. One clear plan.</h2>
+      <p class="lead" style="color:#cfe0d7">Three hours, live on Zoom — timed so both coasts can show up. Bring your real business and a notebook (or your printed workbook). Can't make it live? Every seat includes the full recording.</p></div>
+    <div class="ses">
+      <div class="s"><div class="t">9:00 AM–12:00 PM PT</div><div class="l">Saturday, July 18, 2026</div><div class="z">Live on Zoom · 3 hours with breaks</div></div>
+      <div class="s"><div class="t">12:00–3:00 PM ET</div><div class="l">Same session, East-coast time</div><div class="z">One live session for everyone</div></div>
+    </div>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card"><div class="ic">🗓️</div><b>One Saturday</b><p>Saturday, July 18, 2026 — three focused hours, then you're free to go execute.</p></div>
+      <div class="card"><div class="ic">🎥</div><b>Recording included</b><p>Can't make it live, or want to rewatch? The full replay is yours to keep.</p></div>
+      <div class="card"><div class="ic">👥</div><b>Live Q&amp;A</b><p>Real coaching in real time — bring your business and get your questions answered.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="cream">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Your seat</div><h2>Reserve your spot.</h2>
+      <p class="lead">A 3-hour intensive for the price of a nice dinner — and you leave with a plan worth far more. Early-bird pricing ends Saturday, July 11.</p></div>
+
+    <div class="tiers" style="grid-template-columns:1fr;max-width:540px;margin:14px auto 0">
+      <div class="tier feat">
+        <div class="pop">Early-Bird</div>
+        <div class="tn">The Sales Engine — Live Intensive</div>
+        <div class="pr">$47 <small>through July 11 · then $97</small></div>
+        <div class="pd">One Saturday morning. Everything you need to start.</div>
+        <ul>
+          <li>The full live 3-hour intensive (Sat, July 18)</li>
+          <li>Lifetime access to the recording</li>
+          <li>Live Q&amp;A — real coaching in real time</li>
+          <li>The printable Sales Engine workbook</li>
+          <li>An attendee-only offer on the Massive Action Tracker</li>
+        </ul>
+        <a href="#enroll" class="btn">Save My Seat →</a>
+      </div>
+    </div>
+
+    <div class="bump">
+      <div class="b19">🎁</div>
+      <div><b>Every seat includes the printable workbook.</b> Print it before Saturday and capture your whole plan as we build it together — yours to keep.</div>
+    </div>
+
+    <div class="guarantee">
+      <div class="seal">🛡️</div>
+      <h3>Leave with your roadmap — or your money back.</h3>
+      <p>Show up and do the work. If you walk away without a clear 90-day roadmap you're genuinely excited to run, just ask and we'll refund you. The risk is ours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ENROLL FORM -->
+<section id="enroll" class="soft">
+  <div class="wrap">
+    <div class="formwrap">
+      <h3>Save your seat</h3>
+      <p class="fp">Live Saturday, July 18 · 9 AM–12 PM PT (12–3 PM ET). Early-bird $47 ends July 11. Reserve your spot and we'll send your Zoom link and workbook right away.</p>
+
+      <form id="oeform" name="outcome-engine-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return submitOE(event)">
+        <input type="hidden" name="form-name" value="outcome-engine-signup">
+        <input type="hidden" name="event" value="Sales Engine Live Intensive — Sat July 18, 2026">
+        <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <div class="field"><label>Your name</label><input name="name" required></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required></div>
+        <div class="field"><label>Phone</label><input name="phone" type="tel" required></div>
+
+        <div class="field"><label>Your biggest business challenge right now <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+          <textarea name="challenge" rows="2" placeholder="So we can make the session hit home for you."></textarea></div>
+
+        <div class="field">
+          <div class="opt" style="border-color:var(--gold-d);background:#fff7e6;cursor:default"><div>🎁</div><div><b>Every seat includes the printable workbook</b><span>Sent with your Zoom link so you can print it before Saturday.</span></div></div>
+        </div>
+
+        <button class="btn lg" type="submit" style="width:100%">Save My Seat →</button>
+        <p class="fp" style="margin-top:12px;text-align:center">You'll get a confirmation with your Zoom link, the workbook, and a secure checkout for your seat.</p>
+      </form>
+
+      <div id="oethanks" style="display:none;text-align:center;padding:12px 0">
+        <div style="font-size:46px">🎉</div>
+        <h3 style="margin:6px 0">Your seat is reserved!</h3>
+        <p class="fp">Thanks for committing. We'll reach out right away with your Zoom link, your printable workbook, and checkout to lock in the early-bird price. Watch your email and phone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap" style="max-width:760px">
+    <div class="center"><div class="eyebrow">Good questions</div><h2>Before you decide</h2></div>
+    <div class="faq" style="margin-top:24px">
+      <details><summary>What if I can't make it live on Saturday?</summary><p>No problem — every seat includes the full recording. Register anyway, watch on your schedule, and you'll still get the workbook and the attendee offer.</p></details>
+      <details><summary>How long is it, exactly?</summary><p>Three hours, live on Zoom, Saturday July 18 from 9 AM–12 PM PT (12–3 PM ET) — with short breaks and live Q&amp;A built in.</p></details>
+      <details><summary>What will I walk away with?</summary><p>A complete system and your own 90-day roadmap — built live, with feedback — plus the printable workbook and the recording. You'll know exactly what to do Monday.</p></details>
+      <details><summary>Do I need the Massive Action Tracker to attend?</summary><p>No. The intensive stands on its own. Attendees get a special offer on the MAT so the plan you build actually gets run every day — but it's optional.</p></details>
+      <details><summary>How does the guarantee work?</summary><p>Show up and do the work. If you finish without a clear 90-day roadmap you're excited to run, just ask and we'll refund your seat. The risk is ours.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wm">TRUE<span class="x">X</span>PANSE</div>
+  Discipline beats motivation. We build the systems that make it stick.<br>
+  © <span id="yr"></span> TrueXpanse · <a href="https://truexpanse.com">truexpanse.com</a>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = '2026';
+  function enc(d){ return Object.keys(d).map(k=>encodeURIComponent(k)+'='+encodeURIComponent(d[k])).join('&'); }
+  function submitOE(e){
+    e.preventDefault();
+    var f=e.target, btn=f.querySelector('button[type=submit]');
+    btn.disabled=true; btn.textContent='Saving…';
+    var data={'form-name':'outcome-engine-signup'};
+    new FormData(f).forEach(function(v,k){ data[k]=v; });
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:enc(data)})
+      .catch(function(){})
+      .finally(function(){
+        document.getElementById('oeform').style.display='none';
+        document.getElementById('oethanks').style.display='block';
+        document.getElementById('oethanks').scrollIntoView({behavior:'smooth',block:'center'});
+      });
+    return false;
+  }
+</script>
+  <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
+       Counts every visit, not just Google-search estimates. No cookies. -->
+  <script>(function(){try{if(navigator.sendBeacon)navigator.sendBeacon('https://truexpansemat.com/api/site-visit',JSON.stringify({t:'a8ab882a77384721',p:location.pathname,s:location.search,r:document.referrer}))}catch(e){}})();</script>
+</body>
+</html>
