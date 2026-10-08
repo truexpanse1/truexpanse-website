@@ -1,3 +1,6 @@
 /grow    /autopilot    301
 /grow/*  /autopilot/:splat  301
 /guides/revenue-leak-checklist.html  /guides/business-growth-checklist.html  301
+# Sales Engine intensive ran 2026-07-18 and is over — send its traffic to the strategy-session application (2026-10-07)
+/outcome-engine     /apply  301!
+/outcome-engine/*   /apply  301!
