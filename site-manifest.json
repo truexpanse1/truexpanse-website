@@ -1,0 +1,1025 @@
+{
+  "site": {
+    "name": "TrueXpanse",
+    "origin": "https://truexpanse.com",
+    "generated": "2026-11-11T06:30:37+00:00"
+  },
+  "pages": [
+    {
+      "url": "/",
+      "type": "home",
+      "title": "Business Coach for Owners & Entrepreneurs in California | TrueXpanse",
+      "description": "California business coach Don Smith helps contractors and owners find the leak costing them jobs and cash — then builds the system that fixes it. Book a free strategy session.",
+      "headline": "Make Your Sales Predictable",
+      "cta": {
+        "label": "Apply now",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/home/redX.png",
+          "alt": "TrueXpanse"
+        },
+        {
+          "src": "/images/leadership_room.jpg",
+          "alt": "Don Smith coaching a leadership team"
+        },
+        {
+          "src": "/images/home/redX.png",
+          "alt": "TrueXpanse"
+        }
+      ],
+      "keywords": [],
+      "source": "index.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/apply.html",
+      "type": "offer",
+      "title": "See If TrueXpanse Coaching Is a Fit | Apply",
+      "description": "A few quick questions to see if TrueXpanse coaching is a fit. If you qualify, Don personally reaches out.",
+      "headline": "See If We're a Fit.",
+      "cta": null,
+      "images": [],
+      "keywords": [],
+      "source": "apply.html",
+      "review": null,
+      "noindex": true
+    },
+    {
+      "url": "/autopilot/",
+      "type": "service",
+      "title": "Done-For-You Social Media on Autopilot — TrueXpanse",
+      "description": "We build your high-converting landing page, then run your social media on autopilot — content, scheduling, and weekly performance reports.",
+      "headline": "",
+      "cta": null,
+      "images": [],
+      "keywords": [],
+      "source": "autopilot/index.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/get-found/",
+      "type": "service",
+      "title": "Get Found Where Your Customers Are Already Looking | Quantum Marketing Bronze | TrueXpanse",
+      "description": "A complete done-for-you marketing system for small service businesses. Social, email, GBP, SEO, reputation monitoring, your own CRM, KPI dashboard — all of it, coordinated, for $750/month. 30-day guarantee.",
+      "headline": "Get Found Where Your Customers Are Already Looking.",
+      "cta": {
+        "label": "Book a 20-Minute Discovery Call →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "get-found/index.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/guides/business-growth-checklist.html",
+      "type": "offer",
+      "title": "The Business Growth Checklist | TrueXpanse",
+      "description": "7 levers growing entrepreneurs and small businesses use to win more customers, raise profit, and scale — without working more hours. A free checklist from Don Smith at TrueXpanse.",
+      "headline": "7 Levers That Grow Your Business",
+      "cta": null,
+      "images": [],
+      "keywords": [],
+      "source": "guides/business-growth-checklist.html",
+      "review": null,
+      "noindex": true
+    },
+    {
+      "url": "/pages/coaching.html",
+      "type": "service",
+      "title": "San Luis Obispo Business Coach for Contractors & Owners | TrueXpanse",
+      "description": "Don Smith is a certified Business Coach helping contractors and entrepreneurs build real sales systems, set massive goals, and scale past $1M. Based in San Luis Obispo County, CA.",
+      "headline": "Coaching That Gets You to $1M and Beyond.",
+      "cta": {
+        "label": "🎯 Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/don.png",
+          "alt": "Don Smith - Business Coach"
+        }
+      ],
+      "keywords": [],
+      "source": "pages/coaching.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/contractor-accelerator.html",
+      "type": "service",
+      "title": "90-Day Contractor Growth Accelerator | TrueXpanse",
+      "description": "The only coaching program built for painting contractors doing $500K–$2M. Build your system, know your numbers, and scale past $1M in 90 days. 30-day money-back guarantee.",
+      "headline": "Break Your Ceiling. Scale Past $1M in 90 Days.",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/painter-success.jpg",
+          "alt": "Successful contractor reviewing project plans with a homeowner at a custom home build"
+        },
+        {
+          "src": "/images/don_warm.png",
+          "alt": "Don Smith — Business Coach"
+        }
+      ],
+      "keywords": [],
+      "source": "pages/contractor-accelerator.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/courses.html",
+      "type": "service",
+      "title": "Business Coaching Workshops & Courses | TrueXpanse – Don Smith",
+      "description": "Intensive business workshops, sales bootcamps, and self-paced courses with Don Smith. Massive Action Sales Bootcamp, Leadership Workshop, and AI-powered self-paced training.",
+      "headline": "Learn the System That Grows Your Business — in a Group.",
+      "cta": {
+        "label": "Get Notified of Events →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/courses.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/crm.html",
+      "type": "service",
+      "title": "GoHighLevel CRM Setup for Contractors | TrueXpanse",
+      "description": "Done-for-you GoHighLevel CRM setup for contractors. Automate follow-up, manage your pipeline, and never lose a lead again. Setup from $1,200. Free demo available.",
+      "headline": "Stop Letting Leads Go Cold. Automate Your Follow-Up.",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/crm.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/mat-content-studio.html",
+      "type": "service",
+      "title": "MAT Content Studio | Stop Staring at the Blank Post Box | TrueXpanse",
+      "description": "Generate, edit, and publish a week of professional Facebook, Instagram, and LinkedIn content in under 20 minutes. AI-written posts, AI images, one-click publish, KPI tracking — all in one platform. $197/mo, 7-day free trial.",
+      "headline": "Stop staring at the blank post box.",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/mat-content-studio.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/mat.html",
+      "type": "service",
+      "title": "Massive Action Tracker (MAT) | Business Sales Platform | TrueXpanse",
+      "description": "The Massive Action Tracker (MAT) is a sales platform with daily pipeline tracking, revenue goals, and Asa AI coaching. Plans from $197/mo, built by business coach Don Smith.",
+      "headline": "See Who's Actually Producing — in 60 Seconds.",
+      "cta": {
+        "label": "Book a Demo",
+        "href": "/pages/contact.html"
+      },
+      "images": [
+        {
+          "src": "/images/don_tech.jpg",
+          "alt": "Don Smith with MAT Platform"
+        }
+      ],
+      "keywords": [],
+      "source": "pages/mat.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/quantum-marketing.html",
+      "type": "service",
+      "title": "Marketing for Contractors & Home-Service Businesses | TrueXpanse",
+      "description": "The TrueXpanse Quantum Marketing Stack: a 9-step lead generation system for contractors and entrepreneurs. Goal → Target → KPIs → Engine → Cheerleader. Built with intention. Book a free strategy session.",
+      "headline": "The Lead Generation System That Turns Strangers Into Cheerleaders.",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/quantum-marketing.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/sales-team-accountability.html",
+      "type": "service",
+      "title": "Sales Team Time Accountability | Track Reps' Marketing, Sales & Execution Time | TrueXpanse",
+      "description": "MAT's Three Clocks track every sales rep's active time — down to the minute — across marketing, sales, and execution. Idle time is tracked too. Implemented and coached by TrueXpanse for sales organizations.",
+      "headline": "You Pay Your Reps for 40 Hours a Week. How Many of Them Are Real?",
+      "cta": {
+        "label": "Book a Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/sales-team-accountability.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/the-brake.html",
+      "type": "service",
+      "title": "Every Elevator Has a Brake. Does Your Business? | TrueXpanse",
+      "description": "You don't grow by being careful — you grow because something catches you when a month goes sideways. TrueXpanse + the Massive Action Tracker is the braking system for your business. Book a free strategy session.",
+      "headline": "Every elevator has a brake. Does your business?",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/the-brake.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/web-design.html",
+      "type": "service",
+      "title": "Contractor Web Design in San Luis Obispo, CA | TrueXpanse",
+      "description": "Professional websites built for contractors and service businesses. Fast, mobile-ready, GHL CRM-connected, MAT platform, and bi-monthly coaching included. Book a free strategy session today.",
+      "headline": "A Website That Works as Hard as You Do",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/homescreen.png",
+          "alt": "TrueXpanse website — real client example"
+        },
+        {
+          "src": "/images/homescreen.png",
+          "alt": "TrueXpanse business coaching website"
+        },
+        {
+          "src": "/images/pasoTech.jpg",
+          "alt": "Paso Robles Tech website"
+        },
+        {
+          "src": "/images/terraPaints.jpg",
+          "alt": "Terra Paints contractor website"
+        },
+        {
+          "src": "/images/smithSolar.jpg",
+          "alt": "Smith Solar website"
+        },
+        {
+          "src": "/images/hume.jpg",
+          "alt": "Hume website"
+        }
+      ],
+      "keywords": [],
+      "source": "pages/web-design.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/your-revenue-system.html",
+      "type": "service",
+      "title": "Your Revenue System — TrueXpanse Quantum Marketing",
+      "description": "The complete CRM + marketing architecture TrueXpanse builds for every Quantum Marketing client. Six columns. Thirteen pipeline stages. One revenue machine.",
+      "headline": "We don't set up a CRM. We install your revenue machine.",
+      "cta": null,
+      "images": [],
+      "keywords": [],
+      "source": "pages/your-revenue-system.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/blog/",
+      "type": "hub",
+      "title": "Blog | World-Class Sales & Marketing for Small Business | TrueXpanse",
+      "description": "Real frameworks for small business owners and entrepreneurs who want to win in sales and marketing — no hype, no fluff. From Don Smith, Business Coach (35+ years) in San Luis Obispo County, CA.",
+      "headline": "Real Sales & Marketing Strategy for Small Business Owners",
+      "cta": {
+        "label": "Book a Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "blog/index.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/blog/how-to-close-more-sales-small-business.html",
+      "type": "note",
+      "title": "How to Close More Sales: A Business Coach's 5-Pillar Playbook | TrueXpanse",
+      "description": "Hiring another rep is the expensive answer. The real answer is fixing the conversion math you already have. The 5-pillar sales playbook Don Smith uses with every coaching client — in priority order.",
+      "headline": "How to Close More Sales Without Hiring Another Rep: A Business Coach's 5-Pillar Playbook",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/don_primary.jpg",
+          "alt": "Don Smith, Business Coach"
+        }
+      ],
+      "keywords": [
+        "how to close more sales",
+        "sales coaching for small business",
+        "increase sales conversions",
+        "sales process for small business",
+        "business coach for sales",
+        "close more deals",
+        "sales follow-up system"
+      ],
+      "source": "blog/how-to-close-more-sales-small-business.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/blog/sales-marketing-strategy-small-business.html",
+      "type": "note",
+      "title": "Sales and Marketing Strategy for Small Business: The 90-Day System | TrueXpanse",
+      "description": "Most small business owners don't have a sales problem or a marketing problem — they have a system problem. The 6-part world-class sales and marketing system Don Smith installs with every coaching client. Built in 90 days.",
+      "headline": "The World-Class Sales and Marketing System Every Small Business Owner Needs (Built in 90 Days)",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/don_primary.jpg",
+          "alt": "Don Smith, Business Coach"
+        }
+      ],
+      "keywords": [
+        "sales and marketing strategy for small business",
+        "sales system for small business",
+        "marketing system",
+        "world-class sales strategy",
+        "business coach for entrepreneurs",
+        "how to scale a small business",
+        "sales process for service business"
+      ],
+      "source": "blog/sales-marketing-strategy-small-business.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/million-dollar-math-calculator.html",
+      "type": "tool",
+      "title": "The Million-Dollar Math Calculator | TrueXpanse",
+      "description": "Type your revenue goal and watch your exact daily activity number appear. Free interactive tool from Don Smith / TrueXpanse.",
+      "headline": "The Million-Dollar Math Calculator",
+      "cta": {
+        "label": "That's What the MAT Tracks — See If You Qualify →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "million-dollar-math-calculator.html",
+      "review": null,
+      "noindex": true
+    },
+    {
+      "url": "/million-dollar-math.html",
+      "type": "tool",
+      "title": "The Million-Dollar Math Worksheet — TrueXpanse",
+      "description": "",
+      "headline": "The Million-Dollar Math Worksheet",
+      "cta": null,
+      "images": [],
+      "keywords": [],
+      "source": "million-dollar-math.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/about.html",
+      "type": "about",
+      "title": "About Don Smith | Business Coach | TrueXpanse",
+      "description": "Don Smith is a Business Coach with 35+ years in business and 46+ years of leadership. Founder of TrueXpanse and the Massive Action Tracker. Based in San Luis Obispo County, CA.",
+      "headline": "35 Years of Business. 46 Years of Leadership. All of It for You.",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [
+        {
+          "src": "/images/don_tech.jpg",
+          "alt": "Don Smith – Business Coach, San Luis Obispo County CA"
+        },
+        {
+          "src": "/images/leadership_room.jpg",
+          "alt": "Don Smith leading a room — 46 years of leadership"
+        }
+      ],
+      "keywords": [],
+      "source": "pages/about.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/contact.html",
+      "type": "contact",
+      "title": "Contact Don Smith | Book a Free Strategy Session | TrueXpanse",
+      "description": "Book a free strategy session with Don Smith. No pitch — just your numbers and a clear action plan. San Luis Obispo County, CA. Call (805) 909-3420.",
+      "headline": "Book Your Free Strategy Session",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/contact.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/faq.html",
+      "type": "faq",
+      "title": "FAQ — Growing Your Business with TrueXpanse | Don Smith",
+      "description": "Straight answers on increasing revenue, winning attention, generating leads, and the principles Don Smith teaches business owners — plus what to expect from a free TrueXpanse strategy session and assessment. San Luis Obispo County, CA.",
+      "headline": "The Principles Behind Growing Your Business",
+      "cta": {
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/faq.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/privacy.html",
+      "type": "legal",
+      "title": "Privacy Policy | TrueXpanse",
+      "description": "TrueXpanse Privacy Policy. Learn how we collect, use, and protect your personal information when you use our website, MAT platform, and coaching services.",
+      "headline": "Privacy Policy",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/privacy.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/procrastination-tax.html",
+      "type": "tool",
+      "title": "Procrastination Tax Calculator | How Much Is Waiting Costing You? | TrueXpanse",
+      "description": "Calculate the real cost of delaying your marketing. The Procrastination Tax Calculator shows exactly how much revenue your business is losing every month you wait.",
+      "headline": "How Much Is Procrastination Costing Your Business?",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/procrastination-tax.html",
+      "review": null,
+      "noindex": false
+    },
+    {
+      "url": "/pages/roi-calculator.html",
+      "type": "tool",
+      "title": "Contractor ROI Calculator | TrueXpanse",
+      "description": "Free ROI calculator for contractors. Know your cost per lead, cost per acquisition, and return on ad spend before you spend a dollar on marketing.",
+      "headline": "Know Your Numbers Before You Spend a Dollar on Ads.",
+      "cta": {
+        "label": "Free Strategy Session",
+        "href": "/apply.html"
+      },
+      "images": [],
+      "keywords": [],
+      "source": "pages/roi-calculator.html",
+      "review": null,
+      "noindex": false
+    }
+  ],
+  "elements": {
+    "headlines": [
+      {
+        "url": "/",
+        "text": "Make Your Sales Predictable",
+        "source": "index.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/apply.html",
+        "text": "See If We're a Fit.",
+        "source": "apply.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/million-dollar-math-calculator.html",
+        "text": "The Million-Dollar Math Calculator",
+        "source": "million-dollar-math-calculator.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/million-dollar-math.html",
+        "text": "The Million-Dollar Math Worksheet",
+        "source": "million-dollar-math.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/get-found/",
+        "text": "Get Found Where Your Customers Are Already Looking.",
+        "source": "get-found/index.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/blog/",
+        "text": "Real Sales & Marketing Strategy for Small Business Owners",
+        "source": "blog/index.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/blog/how-to-close-more-sales-small-business.html",
+        "text": "How to Close More Sales Without Hiring Another Rep: A Business Coach's 5-Pillar Playbook",
+        "source": "blog/how-to-close-more-sales-small-business.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/blog/sales-marketing-strategy-small-business.html",
+        "text": "The World-Class Sales and Marketing System Every Small Business Owner Needs (Built in 90 Days)",
+        "source": "blog/sales-marketing-strategy-small-business.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/guides/business-growth-checklist.html",
+        "text": "7 Levers That Grow Your Business",
+        "source": "guides/business-growth-checklist.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/quantum-marketing.html",
+        "text": "The Lead Generation System That Turns Strangers Into Cheerleaders.",
+        "source": "pages/quantum-marketing.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/coaching.html",
+        "text": "Coaching That Gets You to $1M and Beyond.",
+        "source": "pages/coaching.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/about.html",
+        "text": "35 Years of Business. 46 Years of Leadership. All of It for You.",
+        "source": "pages/about.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/contact.html",
+        "text": "Book Your Free Strategy Session",
+        "source": "pages/contact.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/roi-calculator.html",
+        "text": "Know Your Numbers Before You Spend a Dollar on Ads.",
+        "source": "pages/roi-calculator.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/mat-content-studio.html",
+        "text": "Stop staring at the blank post box.",
+        "source": "pages/mat-content-studio.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/sales-team-accountability.html",
+        "text": "You Pay Your Reps for 40 Hours a Week. How Many of Them Are Real?",
+        "source": "pages/sales-team-accountability.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/crm.html",
+        "text": "Stop Letting Leads Go Cold. Automate Your Follow-Up.",
+        "source": "pages/crm.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/courses.html",
+        "text": "Learn the System That Grows Your Business — in a Group.",
+        "source": "pages/courses.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/web-design.html",
+        "text": "A Website That Works as Hard as You Do",
+        "source": "pages/web-design.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/mat.html",
+        "text": "See Who's Actually Producing — in 60 Seconds.",
+        "source": "pages/mat.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/the-brake.html",
+        "text": "Every elevator has a brake. Does your business?",
+        "source": "pages/the-brake.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/contractor-accelerator.html",
+        "text": "Break Your Ceiling. Scale Past $1M in 90 Days.",
+        "source": "pages/contractor-accelerator.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/procrastination-tax.html",
+        "text": "How Much Is Procrastination Costing Your Business?",
+        "source": "pages/procrastination-tax.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/faq.html",
+        "text": "The Principles Behind Growing Your Business",
+        "source": "pages/faq.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/privacy.html",
+        "text": "Privacy Policy",
+        "source": "pages/privacy.html",
+        "bot": "Copy Strategist"
+      },
+      {
+        "url": "/pages/your-revenue-system.html",
+        "text": "We don't set up a CRM. We install your revenue machine.",
+        "source": "pages/your-revenue-system.html",
+        "bot": "Copy Strategist"
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/don.png",
+        "alt": "Don Smith - Business Coach",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/don_primary.jpg",
+        "alt": "Don Smith, Business Coach",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/don_tech.jpg",
+        "alt": "Don Smith – Business Coach, San Luis Obispo County CA",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/don_warm.png",
+        "alt": "Don Smith — Business Coach",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/elCamino.jpg",
+        "alt": "El Camino website",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/home/redX.png",
+        "alt": "TrueXpanse",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/homescreen.png",
+        "alt": "TrueXpanse website — real client example",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/hume.jpg",
+        "alt": "Hume website",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/leadership_room.jpg",
+        "alt": "Don Smith coaching a leadership team",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/painter-success.jpg",
+        "alt": "Successful contractor reviewing project plans with a homeowner at a custom home build",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/pasoTech.jpg",
+        "alt": "Paso Robles Tech website",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/smithSolar.jpg",
+        "alt": "Smith Solar website",
+        "source": "truexpanse.com",
+        "real": true
+      },
+      {
+        "src": "/images/terraPaints.jpg",
+        "alt": "Terra Paints contractor website",
+        "source": "truexpanse.com",
+        "real": true
+      }
+    ],
+    "ctas": [
+      {
+        "url": "/",
+        "label": "Apply now",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/million-dollar-math-calculator.html",
+        "label": "That's What the MAT Tracks — See If You Qualify →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/get-found/",
+        "label": "Book a 20-Minute Discovery Call →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/blog/",
+        "label": "Book a Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/blog/how-to-close-more-sales-small-business.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/blog/sales-marketing-strategy-small-business.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/quantum-marketing.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/coaching.html",
+        "label": "🎯 Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/about.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/contact.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/roi-calculator.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/mat-content-studio.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/sales-team-accountability.html",
+        "label": "Book a Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/crm.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/courses.html",
+        "label": "Get Notified of Events →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/web-design.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/mat.html",
+        "label": "Book a Demo",
+        "href": "/pages/contact.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/the-brake.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/contractor-accelerator.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/procrastination-tax.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/faq.html",
+        "label": "Book a Free Strategy Session →",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      },
+      {
+        "url": "/pages/privacy.html",
+        "label": "Free Strategy Session",
+        "href": "/apply.html",
+        "bot": "Conversion Analyst"
+      }
+    ],
+    "hvco": [
+      {
+        "name": "Free Strategy Session",
+        "url": "/apply.html",
+        "form": "coaching-application",
+        "status": "live",
+        "bot": "Offer Builder"
+      },
+      {
+        "name": "The Business Growth Checklist",
+        "url": "/guides/business-growth-checklist.html",
+        "form": null,
+        "status": "live",
+        "bot": "Offer Builder"
+      },
+      {
+        "name": "Million-Dollar Math Calculator",
+        "url": "/million-dollar-math-calculator.html",
+        "form": null,
+        "status": "live",
+        "bot": "Offer Builder"
+      }
+    ],
+    "seo": {
+      "sitemap": "/sitemap.xml",
+      "llms": "/llms.txt",
+      "robots": "/robots.txt",
+      "bot": "Site Keeper"
+    },
+    "keywords": [],
+    "landingPages": [
+      {
+        "url": "/apply.html",
+        "headline": "See If We're a Fit.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/autopilot/",
+        "headline": "",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/get-found/",
+        "headline": "Get Found Where Your Customers Are Already Looking.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/guides/business-growth-checklist.html",
+        "headline": "7 Levers That Grow Your Business",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/coaching.html",
+        "headline": "Coaching That Gets You to $1M and Beyond.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/contractor-accelerator.html",
+        "headline": "Break Your Ceiling. Scale Past $1M in 90 Days.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/courses.html",
+        "headline": "Learn the System That Grows Your Business — in a Group.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/crm.html",
+        "headline": "Stop Letting Leads Go Cold. Automate Your Follow-Up.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/mat-content-studio.html",
+        "headline": "Stop staring at the blank post box.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/mat.html",
+        "headline": "See Who's Actually Producing — in 60 Seconds.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/quantum-marketing.html",
+        "headline": "The Lead Generation System That Turns Strangers Into Cheerleaders.",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/sales-team-accountability.html",
+        "headline": "You Pay Your Reps for 40 Hours a Week. How Many of Them Are Real?",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/the-brake.html",
+        "headline": "Every elevator has a brake. Does your business?",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/web-design.html",
+        "headline": "A Website That Works as Hard as You Do",
+        "status": "live",
+        "bot": "Site Builder"
+      },
+      {
+        "url": "/pages/your-revenue-system.html",
+        "headline": "We don't set up a CRM. We install your revenue machine.",
+        "status": "live",
+        "bot": "Site Builder"
+      }
+    ]
+  },
+  "forms": [
+    {
+      "name": "coaching-application",
+      "url": "/apply.html"
+    },
+    {
+      "name": "contact",
+      "url": "/pages/contact.html"
+    }
+  ],
+  "liveChanges": []
+}

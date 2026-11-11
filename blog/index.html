@@ -106,14 +106,16 @@
 <section class="blog-hero">
   <div class="container">
     <span class="blog-eyebrow">The TrueXpanse Blog</span>
-    <h1>Real Sales &amp; Marketing Strategy for Small Business Owners</h1>
-    <p>No hype. No "manifest your million." Just the frameworks, systems, and tactics that 35 years of business coaching has proven actually move revenue for contractors, service businesses, and entrepreneurs ready to do the work.</p>
+    <h1 data-edit="headline">Real Sales &amp; Marketing Strategy for Small Business Owners</h1>
+    <p data-edit="lede">No hype. No "manifest your million." Just the frameworks, systems, and tactics that 35 years of business coaching has proven actually move revenue for contractors, service businesses, and entrepreneurs ready to do the work.</p>
   </div>
 </section>
 
 <section style="background:var(--light);">
   <div class="container">
     <div class="post-grid">
+      <!-- Posts published from the Control Center appear here, newest first (edge function). -->
+      <template data-cc-card><article class="post-card"><div class="post-card-body"><span class="post-card-tag">__CC_TOPIC__</span><h2><a href="/blog/__CC_SLUG__/">__CC_TITLE__</a></h2><div class="post-meta">By <strong>__CC_AUTHOR__</strong> · January 1, 2000</div><p>__CC_SUMMARY__</p><a href="/blog/__CC_SLUG__/" class="btn-link">Read the post &rarr;</a></div></article></template><span data-cc-cards></span>
 
       <article class="post-card">
         <div class="post-card-body">
@@ -144,7 +146,7 @@
     <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);margin-bottom:1rem;">Ready to install the system in your business?</h2>
     <p style="color:var(--text2);font-size:1.1rem;line-height:1.7;margin-bottom:2rem;">Reading the playbook is step one. Installing it is step two. Book a free 20-minute Strategy Session — your numbers, your situation, no pitch.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <a href="/apply.html" class="btn btn-red btn-lg">Book a Free Strategy Session</a>
+      <a href="/apply.html" class="btn btn-red btn-lg" data-edit="cta">Book a Free Strategy Session</a>
       <a href="../pages/coaching.html" class="btn btn-outline btn-lg">See Coaching Options</a>
     </div>
   </div>
