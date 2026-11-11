@@ -2,7 +2,7 @@
   "site": {
     "name": "TrueXpanse",
     "origin": "https://truexpanse.com",
-    "generated": "2026-11-11T06:30:37+00:00"
+    "generated": "2026-11-11T17:46:01+00:00"
   },
   "pages": [
     {
@@ -679,79 +679,121 @@
         "src": "/images/don.png",
         "alt": "Don Smith - Business Coach",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/coaching.html"
+        ]
       },
       {
         "src": "/images/don_primary.jpg",
         "alt": "Don Smith, Business Coach",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/blog/how-to-close-more-sales-small-business.html",
+          "/blog/sales-marketing-strategy-small-business.html"
+        ]
       },
       {
         "src": "/images/don_tech.jpg",
         "alt": "Don Smith – Business Coach, San Luis Obispo County CA",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/about.html",
+          "/pages/mat.html"
+        ]
       },
       {
         "src": "/images/don_warm.png",
         "alt": "Don Smith — Business Coach",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/contractor-accelerator.html"
+        ]
       },
       {
         "src": "/images/elCamino.jpg",
         "alt": "El Camino website",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       },
       {
         "src": "/images/home/redX.png",
         "alt": "TrueXpanse",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/"
+        ]
       },
       {
         "src": "/images/homescreen.png",
         "alt": "TrueXpanse website — real client example",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       },
       {
         "src": "/images/hume.jpg",
         "alt": "Hume website",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       },
       {
         "src": "/images/leadership_room.jpg",
         "alt": "Don Smith coaching a leadership team",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/",
+          "/pages/about.html"
+        ]
       },
       {
         "src": "/images/painter-success.jpg",
         "alt": "Successful contractor reviewing project plans with a homeowner at a custom home build",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/contractor-accelerator.html"
+        ]
       },
       {
         "src": "/images/pasoTech.jpg",
         "alt": "Paso Robles Tech website",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       },
       {
         "src": "/images/smithSolar.jpg",
         "alt": "Smith Solar website",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       },
       {
         "src": "/images/terraPaints.jpg",
         "alt": "Terra Paints contractor website",
         "source": "truexpanse.com",
-        "real": true
+        "real": true,
+        "usedOn": [
+          "/pages/web-design.html"
+        ]
       }
     ],
     "ctas": [

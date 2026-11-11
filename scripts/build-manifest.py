@@ -64,7 +64,8 @@ for dirpath, dirs, files in os.walk(ROOT):
             src = absu(src, f)
             if src.startswith('/images/'):
                 imgs.append({'src': src, 'alt': alt})
-                images.setdefault(src, {'src': src, 'alt': alt, 'source': 'truexpanse.com', 'real': True})
+                images.setdefault(src, {'src': src, 'alt': alt, 'source': 'truexpanse.com', 'real': True, 'usedOn': []})
+                if u not in images[src]['usedOn']: images[src]['usedOn'].append(u)
         for m in re.finditer(r'<form\b[^>]*name="([^"]+)"[^>]*data-netlify', h):
             forms.append({'name': m.group(1), 'url': u})
         t = TYPE.get(f) or ('note' if f.startswith('blog/') else 'service' if f.startswith(('pages/', 'get-found/', 'autopilot/')) else 'page')
