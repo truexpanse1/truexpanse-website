@@ -95,8 +95,6 @@ nav {
 .nav-links a:hover { color: var(--slate); background: var(--light); }
 .nav-links a.active { color: var(--red); }
 .nav-cta { display: flex; align-items: center; gap: 10px; }
-.teamlink { display: inline-flex; align-items: center; gap: 6px; color: var(--slate); font-weight: 700; font-size: .78rem; padding: 9px 4px; white-space: nowrap; }
-.teamlink:hover { color: var(--red); }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--slate); border-radius: 2px; }
 
@@ -549,7 +547,7 @@ footer {
   .stats-strip { grid-template-columns: repeat(2,1fr); }
   .footer-grid { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: 1.2rem; }
-  .nav-links, .nav-cta .btn-outline, .nav-cta .teamlink { display: none; }
+  .nav-links, .nav-cta .btn-outline { display: none; }
   .hamburger   { display: flex; }
   .testimonial-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: repeat(2,1fr); }
