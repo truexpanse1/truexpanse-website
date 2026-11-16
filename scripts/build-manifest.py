@@ -68,6 +68,10 @@ for dirpath, dirs, files in os.walk(ROOT):
                 if u not in images[src]['usedOn']: images[src]['usedOn'].append(u)
         for m in re.finditer(r'<form\b[^>]*name="([^"]+)"[^>]*data-netlify', h):
             forms.append({'name': m.group(1), 'url': u})
+        # Forms that post into a Netlify form by script (e.g. /strategy-session's 2-step form -> coaching-application).
+        for m in re.finditer(r"'form-name'\s*:\s*'([^']+)'", h):
+            if not any(x['name'] == m.group(1) and x['url'] == u for x in forms):
+                forms.append({'name': m.group(1), 'url': u})
         t = TYPE.get(f) or ('note' if f.startswith('blog/') else 'service' if f.startswith(('pages/', 'get-found/', 'autopilot/')) else 'page')
         pages.append({'url': u, 'type': t, 'title': title, 'description': desc, 'headline': h1, 'cta': cta, 'images': imgs[:6],
                       'keywords': [k.strip() for k in H.unescape((re.search(r'<meta name="keywords" content="([^"]*)"', h) or [None, ''])[1]).split(',') if k.strip()][:8],
