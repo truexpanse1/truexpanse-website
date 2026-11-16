@@ -8,7 +8,9 @@
 //
 // Spots that can change are tagged in the templates: data-edit="headline" (the h1),
 // "lede" (the intro line under it) and "cta" (the page's main buttons), plus the
-// <title> and meta description. At the next release the helper writes live changes
+// <title> and meta description. Photos tagged data-edit-img="slot" on an <img> (not inside <picture>) are swapped the
+// same way: new src and alt, srcset dropped. Uploaded photos are served from /cc-media/ (a proxy in _redirects).
+// At the next release the helper writes live changes
 // into the source files, so the code stays the source of truth.
 //
 // Blog posts written in the Control Center (Blog & search) are served the same way: published posts
@@ -51,6 +53,52 @@ async function loadChanges(host: string, view: 'live' | 'demo'): Promise<Change[
   } catch {
     return hit?.rows ?? []; // keep the last good copy; never break the page
   }
+}
+
+type Img = { page_url: string; slot: string; src: string; alt: string; width: number | null; height: number | null; published_at: string };
+const imgCache = new Map<string, { at: number; rows: Img[] }>();
+async function loadImages(host: string, view: 'live' | 'demo'): Promise<Img[]> {
+  const key = `${host}|${view}`;
+  const hit = imgCache.get(key);
+  if (hit && Date.now() - hit.at < CACHE_MS) return hit.rows;
+  try {
+    const r = await fetch(`${SUPABASE_URL}/rest/v1/rpc/site_live_images`, {
+      method: 'POST', headers: { apikey: PUBLISHABLE_KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ p_host: host, p_view: view }), signal: AbortSignal.timeout(1500),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const rows = (await r.json()) as Img[];
+    const clean = Array.isArray(rows) ? rows.filter((x) => x && typeof x.page_url === 'string' && /^[a-z0-9][a-z0-9-]{0,39}$/.test(x.slot || '')
+      && /^\/[A-Za-z0-9/_.%-]+$/.test(x.src || '') && !x.src.includes('..') && !x.src.startsWith('//')) : [];
+    imgCache.set(key, { at: Date.now(), rows: clean });
+    return clean;
+  } catch {
+    return hit?.rows ?? [];
+  }
+}
+function setAttr(tag: string, name: string, val: string) {
+  const re = new RegExp(`\\s${name}="[^"]*"`);
+  const a = ` ${name}="${esc(val)}"`;
+  return re.test(tag) ? tag.replace(re, () => a) : tag.replace(/^<img\b/i, () => `<img${a}`);
+}
+/** Photo swaps: each <img data-edit-img="slot"> gets the published photo and description; srcset and sizes are dropped
+ *  (they would show the old photo). If the tag sets width and height, the height follows the new photo's shape. */
+export function applyImages(html: string, imgs: Img[]): { html: string; applied: number } {
+  let applied = 0;
+  let out = html;
+  for (const im of imgs) {
+    const re = new RegExp(`<img\\b[^>]*\\bdata-edit-img="${im.slot}"[^>]*>`, 'gi');
+    out = out.replace(re, (tag) => {
+      applied++;
+      let t = tag.replace(/\s(?:srcset|sizes)="[^"]*"/gi, '');
+      t = setAttr(t, 'src', im.src);
+      t = setAttr(t, 'alt', im.alt || '');
+      const w = Number((t.match(/\swidth="(\d+)"/) || [])[1]);
+      if (w && im.width && im.height && /\sheight="\d+"/.test(t)) t = t.replace(/\sheight="\d+"/, ` height="${Math.round((w * im.height) / im.width)}"`);
+      return t;
+    });
+  }
+  return { html: out, applied };
 }
 
 type Post = { slug: string; industry?: string | null; updated_at?: string; title: string; topic: string | null; summary: string | null; body_html: string; seo_title: string | null; seo_description: string | null; image: string | null; image_alt: string | null; author: string | null; jsonld: string | null; published_at: string; keywords: string[] | null };
@@ -164,7 +212,7 @@ export function applyToHtml(html: string, changes: Change[]): { html: string; ap
   return { html: out, applied };
 }
 
-export function applyToManifest(json: string, changes: Change[], posts: Post[] = []): string {
+export function applyToManifest(json: string, changes: Change[], posts: Post[] = [], imgs: Img[] = []): string {
   try {
     const m = JSON.parse(json);
     for (const p of posts) {
@@ -184,6 +232,15 @@ export function applyToManifest(json: string, changes: Change[], posts: Post[] =
       if (m.elements?.ctas && c.target === 'cta') for (const h of m.elements.ctas) if (h.url === c.page_url) h.label = c.after;
     }
     m.liveChanges = changes.map((c) => ({ url: c.page_url, target: c.target, publishedAt: c.published_at }));
+    for (const im of imgs) {
+      const p = (m.pages || []).find((x: any) => x.url === im.page_url);
+      const slot = (p?.images || []).find((x: any) => x.slot === im.slot);
+      if (!slot) continue;
+      slot.swappedFrom ||= { src: slot.src, alt: slot.alt };
+      slot.src = im.src;
+      slot.alt = im.alt;
+    }
+    m.liveImages = imgs.map((i) => ({ url: i.page_url, slot: i.slot, src: i.src, publishedAt: i.published_at }));
     return JSON.stringify(m, null, 2);
   } catch {
     return json;
@@ -229,21 +286,24 @@ export default async (req: Request, context: Context) => {
   const posts = wantsPosts ? await loadPosts(url.hostname, view) : [];
 
   const changes = isSitemap || isLlms ? [] : (await loadChanges(url.hostname, view)).filter((c) => isManifest || samePage(c.page_url, path));
+  const imgs = isSitemap || isLlms ? [] : (await loadImages(url.hostname, view)).filter((i) => isManifest || samePage(i.page_url, path));
   const headers = new Headers(res.headers);
   headers.delete('content-length');
   headers.delete('etag');
   headers.set('cache-control', 'public, max-age=0, must-revalidate');
   headers.set('x-approved-changes', String(changes.length));
+  headers.set('x-approved-images', String(imgs.length));
   if (q === 'demo') headers.append('set-cookie', 'cc_view=demo; Path=/; Secure; SameSite=Lax');
   if (q === 'live') headers.append('set-cookie', 'cc_view=; Path=/; Max-Age=0; Secure; SameSite=Lax');
   if (view === 'demo') headers.set('x-robots-tag', 'noindex, nofollow');
 
   headers.set('x-cc-posts', String(posts.length));
   const body = await res.text();
-  if (isManifest) return new Response(applyToManifest(body, changes, posts), { status: 200, headers });
+  if (isManifest) return new Response(applyToManifest(body, changes, posts, imgs), { status: 200, headers });
   if (isSitemap) return new Response(addToSitemap(body, posts), { status: 200, headers });
   if (isLlms) return new Response(addToLlms(body, posts), { status: 200, headers });
   let { html } = applyToHtml(body, changes);
+  if (imgs.length) html = applyImages(html, imgs).html;
   if (path === '/blog/') html = addCards(html, posts);
   if (view === 'demo') html = html.replace('</body>', `${RIBBON}</body>`);
   return new Response(html, { status: 200, headers });
@@ -251,5 +311,5 @@ export default async (req: Request, context: Context) => {
 
 export const config: Config = {
   path: '/*',
-  excludedPath: ['/css/*', '/js/*', '/images/*', '/downloads/*', '/robots.txt', '/*.ico', '/*.svg', '/*.png', '/*.jpg', '/*.jpeg', '/*.webp', '/*.gif', '/*.pdf', '/*.css', '/*.js', '/*.woff2', '/*.mp4'],
+  excludedPath: ['/css/*', '/js/*', '/images/*', '/cc-media/*', '/downloads/*', '/robots.txt', '/*.ico', '/*.svg', '/*.png', '/*.jpg', '/*.jpeg', '/*.webp', '/*.gif', '/*.pdf', '/*.css', '/*.js', '/*.woff2', '/*.mp4'],
 };

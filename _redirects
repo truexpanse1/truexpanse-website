@@ -1,3 +1,5 @@
+# Photos the owner swaps in from the Control Center (photo store, served from truexpanse.com) — 2026-11-16
+/cc-media/*  https://curjmqoiibjcrglqwtqh.supabase.co/storage/v1/object/public/site-images/:splat  200
 /grow    /autopilot    301
 /grow/*  /autopilot/:splat  301
 /guides/revenue-leak-checklist.html  /guides/business-growth-checklist.html  301

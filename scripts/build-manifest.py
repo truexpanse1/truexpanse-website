@@ -63,7 +63,8 @@ for dirpath, dirs, files in os.walk(ROOT):
             if not src or src.startswith('data:') or src.startswith('http'): continue
             src = absu(src, f)
             if src.startswith('/images/'):
-                imgs.append({'src': src, 'alt': alt})
+                slot = (re.search(r'\bdata-edit-img="([a-z0-9][a-z0-9-]{0,39})"', m.group(0)) or [None, None])[1]
+                imgs.append({'src': src, 'alt': alt, **({'slot': slot} if slot else {})})
                 images.setdefault(src, {'src': src, 'alt': alt, 'source': 'truexpanse.com', 'real': True, 'usedOn': []})
                 if u not in images[src]['usedOn']: images[src]['usedOn'].append(u)
         for m in re.finditer(r'<form\b[^>]*name="([^"]+)"[^>]*data-netlify', h):
@@ -73,7 +74,7 @@ for dirpath, dirs, files in os.walk(ROOT):
             if not any(x['name'] == m.group(1) and x['url'] == u for x in forms):
                 forms.append({'name': m.group(1), 'url': u})
         t = TYPE.get(f) or ('note' if f.startswith('blog/') else 'service' if f.startswith(('pages/', 'get-found/', 'autopilot/')) else 'page')
-        pages.append({'url': u, 'type': t, 'title': title, 'description': desc, 'headline': h1, 'cta': cta, 'images': imgs[:6],
+        pages.append({'url': u, 'type': t, 'title': title, 'description': desc, 'headline': h1, 'cta': cta, 'images': [i for n, i in enumerate(imgs) if i.get('slot') or sum(1 for j in imgs[:n] if not j.get('slot')) < 6],
                       'keywords': [k.strip() for k in H.unescape((re.search(r'<meta name="keywords" content="([^"]*)"', h) or [None, ''])[1]).split(',') if k.strip()][:8],
                       'source': f, 'review': None, 'noindex': noindex})
         if h1: headlines.append({'url': u, 'text': h1, 'source': f, 'bot': 'Copy Strategist'})
