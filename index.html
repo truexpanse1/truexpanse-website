@@ -443,7 +443,12 @@
     .device{background:#1D1D1F;border-radius:20px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.35)}
     .device .dots{display:flex;gap:6px;padding:4px 6px 12px}
     .device .dots i{width:9px;height:9px;border-radius:50%;background:#48484A;display:block}
-    .device .scr{border-radius:10px;overflow:hidden}
+    .device .scr{border-radius:10px;overflow:hidden;aspect-ratio:16/9;background:#fff}
+    .device .scr .shot{width:100%;height:100%;object-fit:cover;object-position:top left}
+    .device .scr .shot[hidden]{display:none}
+    .tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+    .tabs button{font:inherit;font-size:15px;font-weight:600;height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer}
+    .tabs button[aria-selected="true"]{background:var(--black);border-color:var(--black);color:#fff}
     .quote p{font-size:18px;line-height:1.5;color:var(--ink)}
     .quote .who{margin-top:22px;font-size:15px;font-weight:600}
     /* blog strip: Control Center posts are added first (newest), static posts fill; three show */
@@ -494,6 +499,8 @@
       .card{padding:26px 24px}
       .hero .btn{width:100%}
       .step{width:100%}
+      .tabs{gap:6px}
+      .tabs button{font-size:13px;padding:0 11px;height:36px}
     }
 
   </style>
@@ -573,7 +580,18 @@
       <p class="say">You set the targets. MAT records the work. Each week we look at the gap together.</p>
       <p style="margin-top:28px"><a class="link" href="/pages/mat.html">See how MAT works</a></p>
     </div>
-    <div class="device"><div class="dots"><i></i><i></i><i></i></div><div class="scr"><img src="/images/home/mat-day-view.jpg" data-edit-img="mat-screenshot-home" alt="The MAT Day view with today's targets" width="894" height="507" loading="lazy"></div></div>
+    <div class="shots">
+      <div class="device"><div class="dots"><i></i><i></i><i></i></div><div class="scr">
+        <img class="shot" id="shot-0" src="/images/home/mat-day.jpg" data-edit-img="mat-screen-day" alt="MAT Day view: today's call list and the lead card" width="1115" height="627" loading="lazy">
+        <img class="shot" id="shot-1" src="/images/home/mat-programs.jpg" data-edit-img="mat-screen-coaching" alt="MAT coaching programs, worked one step at a time" width="885" height="498" loading="lazy" hidden>
+        <img class="shot" id="shot-2" src="/images/home/mat-content.jpg" data-edit-img="mat-screen-marketing" alt="MAT content board for the month, ready for approval" width="1092" height="614" loading="lazy" hidden>
+      </div></div>
+      <div class="tabs" role="tablist" aria-label="MAT screens">
+        <button type="button" role="tab" aria-selected="true" aria-controls="shot-0">Your day</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="shot-1">Your coaching</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="shot-2">Your marketing</button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -660,6 +678,8 @@
 <script>
 (function(){var h=document.querySelector('.site-header'),b=h&&h.querySelector('.menu-btn');if(!b)return;
 b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+(function(){var tabs=document.querySelectorAll('.tabs [role=tab]');tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on?'true':'false');var img=document.getElementById(x.getAttribute('aria-controls'));if(img)img.hidden=!on;});});});})();
 </script>
 
 <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
