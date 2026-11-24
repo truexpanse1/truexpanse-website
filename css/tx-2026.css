@@ -267,3 +267,12 @@ footer.tx-foot{background:var(--mist);border-top:0;padding:64px 0 36px;font-fami
 }
 .qm-deliverable .check{color:#15803D!important}
 h1,h2,h3,h1 *,h2 *{text-transform:none!important}
+/* lead-magnet pop-up (js/lead-magnet.js injects its own red styles): black and grey like the rest of the site */
+#tx-lm-submit{background:#000!important;border-color:#000!important;color:#fff!important;box-shadow:none!important}
+#tx-lm-submit:hover{background:#1D1D1F!important;box-shadow:none!important}
+.tx-lm-eyebrow{color:var(--muted)!important}
+.tx-lm-field input:focus{border-color:var(--ink)!important}
+#tx-lm-close:hover{background:var(--mist)!important;color:var(--ink)!important}
+#tx-lm-close:focus-visible{outline-color:var(--ink)!important}
+.tx-lm-cover{background:linear-gradient(150deg,#000,#1D1D1F)!important}
+.tx-lm-cover .tx-lm-cv-eyebrow{color:#A1A1A6!important}
