@@ -34,8 +34,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css?v=20261112" />
+  <link rel="stylesheet" href="/css/tx-2026.css?v=20261124" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -43,7 +44,7 @@
 
   <style>
     /* ── Quantum Marketing page-specific ── */
-    .qm-display { font-family:'Anton','Inter',sans-serif;text-transform:uppercase; font-weight:800; letter-spacing:-0.02em; line-height:1.1; }
+    .qm-display { font-family:'Inter Tight','Inter',sans-serif;text-transform:uppercase; font-weight:800; letter-spacing:-0.02em; line-height:1.1; }
     .qm-eyebrow { font-size:0.72rem; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); }
 
     /* Reveal-on-scroll animation */
@@ -57,7 +58,7 @@
     .qm-tier { width:100%; background:#fff; border:2px solid var(--border); border-radius:14px; padding:26px 30px;
                display:grid; grid-template-columns:auto 1fr auto; gap:24px; align-items:center;
                transition:transform .3s, box-shadow .3s, border-color .3s; }
-    .qm-tier:hover { transform:translateY(-3px); box-shadow:0 16px 40px rgba(15,23,42,0.08); border-color:var(--red); }
+    .qm-tier:hover { transform:translateY(-3px); box-shadow:0 16px 40px rgba(0,0,0,0.08); border-color:var(--red); }
     .qm-tier .num { width:48px; height:48px; border-radius:50%; background:var(--red-soft); border:2px solid var(--red);
                     display:grid; place-items:center; font-family:'Inter',sans-serif; color:var(--red);
                     font-weight:800; font-size:18px; flex-shrink:0; }
@@ -65,9 +66,9 @@
     .qm-tier p { font-size:0.95rem; color:var(--text); line-height:1.65; }
     .qm-tier .ex { font-size:0.7rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase;
                    color:var(--red); background:var(--red-soft); padding:8px 14px; border-radius:999px;
-                   border:1px solid rgba(200,16,46,0.2); white-space:nowrap; }
+                   border:1px solid rgba(29,29,31,0.2); white-space:nowrap; }
     .qm-tier-1 { width:62%; border-color:var(--red); background:linear-gradient(135deg,#fff5f6 0%,#fff 100%);
-                 box-shadow:0 12px 40px rgba(200,16,46,0.12); }
+                 box-shadow:0 12px 40px rgba(29,29,31,0.12); }
     .qm-tier-2 { width:80%; }
     .qm-tier-3 { width:100%; }
 
@@ -75,7 +76,7 @@
     .qm-engine { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:8px; }
     .qm-step { background:#fff; border:2px solid var(--border); border-radius:14px; padding:26px 24px;
                position:relative; transition:transform .3s, border-color .3s, box-shadow .3s; }
-    .qm-step:hover { transform:translateY(-4px); border-color:var(--red); box-shadow:0 18px 40px rgba(15,23,42,0.08); }
+    .qm-step:hover { transform:translateY(-4px); border-color:var(--red); box-shadow:0 18px 40px rgba(0,0,0,0.08); }
     .qm-step .qm-step-num { font-family:'Inter',sans-serif; font-size:36px; color:var(--red);
                             line-height:1; margin-bottom:10px; font-weight:800; }
     .qm-step h4 { font-family:'Inter',sans-serif; font-size:1.25rem; color:var(--slate);
@@ -99,15 +100,15 @@
     .qm-arrow { font-family:'Inter',sans-serif; color:var(--red); font-size:2rem;
                 align-self:center; font-weight:800; }
     .qm-stage.final { background:linear-gradient(135deg,var(--slate) 0%,var(--navy) 100%); border-color:var(--red);
-                      box-shadow:0 18px 50px rgba(15,23,42,0.25); }
+                      box-shadow:0 18px 50px rgba(0,0,0,0.25); }
     .qm-stage.final h4, .qm-stage.final p { color:#fff; }
     .qm-stage.final p { color:rgba(255,255,255,0.78); }
 
     /* Foundation */
     .qm-foundation { background:linear-gradient(180deg,var(--slate) 0%,var(--navy) 100%); color:#fff;
                      border-radius:20px; padding:60px 40px; text-align:center;
-                     box-shadow:0 30px 70px rgba(15,23,42,0.18); }
-    .qm-foundation .qm-eyebrow { color:#ff8a96; }
+                     box-shadow:0 30px 70px rgba(0,0,0,0.18); }
+    .qm-foundation .qm-eyebrow { color:#A1A1A6; }
     .qm-foundation h3 { font-family:'Inter',sans-serif; font-weight:800; font-size:clamp(1.6rem,3.2vw,2.4rem);
                         color:#fff; max-width:760px; margin:14px auto 18px; line-height:1.2; }
     .qm-foundation .lede { color:rgba(255,255,255,0.78); font-size:1.05rem; max-width:680px; margin:0 auto;
@@ -116,7 +117,7 @@
     .qm-pillar { padding:24px 22px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
                  border-top:3px solid var(--red); border-radius:10px; text-align:left; }
     .qm-pillar h5 { font-size:0.7rem; font-weight:800; letter-spacing:0.16em; text-transform:uppercase;
-                    color:#ff8a96; margin-bottom:10px; font-family:'Inter',sans-serif; }
+                    color:#A1A1A6; margin-bottom:10px; font-family:'Inter',sans-serif; }
     .qm-pillar p { color:rgba(255,255,255,0.78); font-size:0.92rem; line-height:1.65; }
 
     /* Deliverables */
@@ -153,49 +154,28 @@
 <body>
 
 <!-- ── Navigation ── -->
-<header class="site-header">
-<div class="anbar">Free 30-minute strategy session with Don — no pitch, no pressure. <a href="/apply">Apply today →</a></div>
-<nav>
-  <div class="container nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/pages/about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="dropdown-trigger" onclick="this.parentNode.classList.toggle('open');return false;">Services &#9662;</a>
-        <ul class="dropdown-menu">
-          <li><a href="/pages/coaching.html"><span class="dd-icon">&#127919;</span>Business Coaching</a></li>
-          <li><a href="/pages/contractor-accelerator.html"><span class="dd-icon">&#128640;</span>Contractor Accelerator</a></li>
-          <li class="dropdown-divider"></li>
-          <li><a href="/pages/life-coaching.html"><span class="dd-icon">&#128155;</span>Life Coaching</a></li>
-          <li><a href="/pages/courses.html"><span class="dd-icon">&#128218;</span>Courses &amp; Workshops</a></li>
-        </ul>
-      </li>
-      <li><a href="/pages/mat.html">MAT App</a></li>
-      <li><a href="/pages/contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
-      <a href="https://app.truexpanse.com/" class="btn btn-outline" style="padding:9px 16px;font-size:0.78rem;">Client Login</a>
-      <a href="/apply.html" class="btn btn-red" style="padding:10px 18px;font-size:0.8rem;">Free Strategy Session</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+<header class="site-header tx-head">
+  <div class="tx-bar">
+    <a class="tx-logo" href="/" aria-label="TrueXpanse home"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" /></a>
+    <div class="tx-nav" role="navigation" aria-label="Main"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a></div>
+    <div class="tx-right">
+      <a class="tx-login" href="https://app.truexpanse.com/">Client login</a>
+      <a class="tx-btn" href="/strategy-session">Free strategy session</a>
+      <button class="tx-menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="tx-menu"><span></span></button>
     </div>
   </div>
-</nav>
+  <div class="tx-menu" id="tx-menu" role="navigation" aria-label="Mobile"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/contact.html">Contact</a><a href="https://app.truexpanse.com/">Client login</a></div>
 </header>
 
 <!-- ── HERO ── -->
 <section style="padding-top:0px;background:linear-gradient(180deg,var(--slate) 0%,var(--navy) 100%);overflow:hidden;position:relative;">
-  <div style="position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(200,16,46,0.18) 0%,transparent 60%);z-index:0;"></div>
+  <div style="position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(29,29,31,0.18) 0%,transparent 60%);z-index:0;"></div>
   <div class="container" style="position:relative;z-index:1;padding-top:90px;padding-bottom:90px;">
     <div style="text-align:center;max-width:920px;margin:0 auto;">
-      <div class="reveal" style="display:inline-flex;align-items:center;gap:8px;background:rgba(200,16,46,0.18);border:1px solid rgba(200,16,46,0.4);color:#ff8a96;font-size:0.72rem;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:1.8rem;">
+      <div class="reveal" style="display:inline-flex;align-items:center;gap:8px;background:rgba(29,29,31,0.18);border:1px solid rgba(29,29,31,0.4);color:#A1A1A6;font-size:0.72rem;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:1.8rem;">
         &#128293; Quantum Marketing &middot; The TrueXpanse System
       </div>
-      <h1 class="qm-display reveal delay-1" style="color:#fff;font-size:clamp(2.4rem,5.5vw,4.2rem);margin-bottom:1.4rem;">The Lead Generation System That<br/>Turns <em style="color:#ff8a96;font-style:normal;">Strangers Into Cheerleaders.</em></h1>
+      <h1 class="qm-display reveal delay-1" style="color:#fff;font-size:clamp(2.4rem,5.5vw,4.2rem);margin-bottom:1.4rem;">The Lead Generation System That<br/>Turns <em style="color:#A1A1A6;font-style:normal;">Strangers Into Cheerleaders.</em></h1>
       <h2 class="reveal delay-1" style="color:rgba(255,255,255,0.9);font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:800;margin-bottom:1.4rem;">Done-For-You Marketing for Contractors in San Luis Obispo County</h2>
       <p class="reveal delay-2" style="color:rgba(255,255,255,0.78);font-size:1.2rem;line-height:1.75;max-width:740px;margin:0 auto 2.4rem;">Most agencies sell you ads. We install a complete system &mdash; Goal &rarr; Target &rarr; KPIs &rarr; Engine &rarr; Wow. Engineered with intention. Built for outcomes that fund your next year.</p>
       <div class="reveal delay-3" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:2.6rem;">
@@ -349,7 +329,7 @@
       </div>
       <div class="qm-arrow reveal delay-2">&rarr;</div>
       <div class="qm-stage final reveal delay-2">
-        <div class="icon" style="color:#ff8a96;">&#10026;&#10026;&#10026;</div>
+        <div class="icon" style="color:#A1A1A6;">&#10026;&#10026;&#10026;</div>
         <h4>Cheerleader</h4>
         <p>We engineer the wow &mdash; onboarding, follow-through, surprise moments. They send their friends. Your acquisition cost approaches zero.</p>
       </div>
@@ -417,46 +397,18 @@
 </section>
 
 <!-- ── Footer ── -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-        <p>Helping business owners close the gap between where they are and where they should be.</p>
-        <div style="margin-top:1rem;font-size:0.85rem;color:var(--red);font-weight:700;">&#128222; (805) 909-3420</div>
-        <div style="margin-top:4px;font-size:0.85rem;color:rgba(255,255,255,0.4);">don@truexpanse.com</div>
-      </div>
-      <div class="footer-col">
-        <h4>Marketing</h4>
-        <ul>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Coaching</h4>
-        <ul>
-          <li><a href="contractor-accelerator.html">90-Day Accelerator</a></li>
-          <li><a href="coaching.html">Business Coaching</a></li>
-          <li><a href="courses.html">Workshops &amp; Courses</a></li>
-          <li><a href="life-coaching.html">Life Coaching</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="mat.html">MAT Platform</a></li>
-          <li><a href="about.html">About Don</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
+<footer class="tx-foot">
+  <div class="tx-wrap">
+    <div class="tx-fcols">
+      <div class="tx-brand"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" style="height:22px;width:auto;margin-bottom:14px" loading="lazy" /><p>Business, executive and sales coaching.<br />Atascadero, California</p></div>
+      <div><h4>Coaching</h4><a href="/pages/coaching.html">1-on-1 coaching</a><a href="/pages/contractor-accelerator.html">Contractor Accelerator</a><a href="/pages/sales-team-accountability.html">Sales team accountability</a><a href="/pages/courses.html">Courses &amp; workshops</a><a href="/strategy-session">Free strategy session</a></div>
+      <div><h4>MAT</h4><a href="/pages/mat.html">How MAT works</a><a href="/pages/mat-content-studio.html">Content Studio</a><a href="https://massiveactiontracker.com/">MAT login</a></div>
+      <div><h4>More ways we help</h4><a href="/pages/quantum-marketing.html">Marketing</a><a href="/get-found/">Get found</a><a href="/pages/web-design.html">Web design</a><a href="/pages/crm.html">CRM setup</a></div>
+      <div><h4>Company</h4><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/faq.html">FAQ</a><a href="/pages/contact.html">Contact</a><a href="/pages/life-coaching.html">Life coaching with Ruthie</a><a href="/partners.html">Partners</a></div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 TrueXpanse. All Rights Reserved.</span>
-      <div>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy.html">Terms of Service</a>
-        <a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team Login</a>
-      </div>
+    <div class="tx-fbottom">
+      <div><a href="https://app.truexpanse.com/">Client login</a><a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team login</a><a href="/pages/privacy.html">Privacy</a></div>
+      <span>&copy; 2026 TrueXpanse &middot; <a href="tel:+18059093420">(805) 909-3420</a> &middot; <a href="mailto:don@truexpanse.com">don@truexpanse.com</a></span>
     </div>
   </div>
 </footer>
@@ -487,5 +439,9 @@
   <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
        Counts every visit, not just Google-search estimates. No cookies. -->
   <script>(function(){try{if(navigator.sendBeacon)navigator.sendBeacon('https://truexpansemat.com/api/site-visit',JSON.stringify({t:'a8ab882a77384721',p:location.pathname,s:location.search,r:document.referrer}))}catch(e){}})();</script>
+<script>
+(function(){var h=document.querySelector('.tx-head'),b=h&&h.querySelector('.tx-menu-btn');if(!b)return;
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
 </body>
 </html>

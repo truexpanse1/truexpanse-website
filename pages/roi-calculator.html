@@ -40,8 +40,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css?v=20261112" />
+  <link rel="stylesheet" href="/css/tx-2026.css?v=20261124" />
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X7HWV0E14"></script>
   <script>
@@ -54,7 +55,7 @@
   <style>
     /* ── Calculator-specific styles ── */
     .calc-hero {
-      background: var(--navy, #0D1B2A);
+      background: var(--navy, #000000);
       padding: 120px 0 80px;
       text-align: center;
     }
@@ -104,7 +105,7 @@
     .calc-inputs h2 {
       font-size: 1.3rem;
       font-weight: 800;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       margin-bottom: 8px;
     }
     .calc-inputs .calc-subtitle {
@@ -119,7 +120,7 @@
       display: block;
       font-size: 0.82rem;
       font-weight: 700;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       margin-bottom: 6px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -144,7 +145,7 @@
       font-size: 1.05rem;
       font-family: 'Inter', sans-serif;
       font-weight: 600;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       border: 2px solid var(--border, #e2e8f0);
       border-radius: 10px;
       background: var(--light, #f8fafc);
@@ -152,7 +153,7 @@
       transition: border-color 0.2s;
     }
     .input-wrap input:focus {
-      border-color: var(--red, #C8102E);
+      border-color: var(--red, #1D1D1F);
     }
     .input-wrap input.has-prefix { padding-left: 30px; }
     .input-wrap input.has-suffix { padding-right: 30px; }
@@ -165,7 +166,7 @@
     .calc-results h2 {
       font-size: 1.3rem;
       font-weight: 800;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       margin-bottom: 8px;
     }
     .calc-results .calc-subtitle {
@@ -198,14 +199,14 @@
     .result-tile .result-value {
       font-size: 1.45rem;
       font-weight: 800;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
     }
     .result-tile.highlight {
       background: var(--red-soft, #fff1f3);
-      border-color: rgba(200,16,46,0.15);
+      border-color: rgba(29,29,31,0.15);
     }
     .result-tile.highlight .result-value {
-      color: var(--red, #C8102E);
+      color: var(--red, #1D1D1F);
     }
     .result-tile.full-width {
       grid-column: 1 / -1;
@@ -220,7 +221,7 @@
     .health-section h3 {
       font-size: 0.9rem;
       font-weight: 800;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       margin-bottom: 14px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -246,7 +247,7 @@
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
-    .health-green { background: #ecfdf5; color: #059669; }
+    .health-green { background: #ecfdf5; color: #047857; }
     .health-yellow { background: #fefce8; color: #ca8a04; }
     .health-red { background: #fef2f2; color: #dc2626; }
 
@@ -267,7 +268,7 @@
     .insight-card .insight-badge {
       display: inline-block;
       background: var(--red-soft, #fff1f3);
-      color: var(--red, #C8102E);
+      color: var(--red, #1D1D1F);
       font-size: 0.78rem;
       font-weight: 700;
       padding: 6px 16px;
@@ -279,7 +280,7 @@
     .insight-card h2 {
       font-size: 1.6rem;
       font-weight: 800;
-      color: var(--slate, #0f172a);
+      color: var(--slate, #1D1D1F);
       margin-bottom: 16px;
     }
     .insight-card p {
@@ -294,7 +295,7 @@
 
     /* ── CTA section ── */
     .roi-cta-section {
-      background: var(--navy, #0D1B2A);
+      background: var(--navy, #000000);
       padding: 80px 0;
       text-align: center;
     }
@@ -321,38 +322,17 @@
 <body>
 
 <!-- ── Navigation ── -->
-<header class="site-header">
-<div class="anbar">Free 30-minute strategy session with Don — no pitch, no pressure. <a href="/apply">Apply today →</a></div>
-<nav>
-  <div class="container nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/pages/about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="dropdown-trigger" onclick="this.parentNode.classList.toggle('open');return false;">Services &#9662;</a>
-        <ul class="dropdown-menu">
-          <li><a href="/pages/coaching.html"><span class="dd-icon">&#127919;</span>Business Coaching</a></li>
-          <li><a href="/pages/contractor-accelerator.html"><span class="dd-icon">&#128640;</span>Contractor Accelerator</a></li>
-          <li class="dropdown-divider"></li>
-          <li><a href="/pages/life-coaching.html"><span class="dd-icon">&#128155;</span>Life Coaching</a></li>
-          <li><a href="/pages/courses.html"><span class="dd-icon">&#128218;</span>Courses &amp; Workshops</a></li>
-        </ul>
-      </li>
-      <li><a href="/pages/mat.html">MAT App</a></li>
-      <li><a href="/pages/contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
-      <a href="https://app.truexpanse.com/" class="btn btn-outline" style="padding:9px 16px;font-size:0.78rem;">Client Login</a>
-      <a href="/apply.html" class="btn btn-red" style="padding:10px 18px;font-size:0.8rem;">Free Strategy Session</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+<header class="site-header tx-head">
+  <div class="tx-bar">
+    <a class="tx-logo" href="/" aria-label="TrueXpanse home"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" /></a>
+    <div class="tx-nav" role="navigation" aria-label="Main"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a></div>
+    <div class="tx-right">
+      <a class="tx-login" href="https://app.truexpanse.com/">Client login</a>
+      <a class="tx-btn" href="/strategy-session">Free strategy session</a>
+      <button class="tx-menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="tx-menu"><span></span></button>
     </div>
   </div>
-</nav>
+  <div class="tx-menu" id="tx-menu" role="navigation" aria-label="Mobile"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/contact.html">Contact</a><a href="https://app.truexpanse.com/">Client login</a></div>
 </header>
 
 <!-- ── Hero ── -->
@@ -484,47 +464,18 @@
 </section>
 
 <!-- ── Footer ── -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-        <p>Helping business owners close the gap between where they are and where they should be.</p>
-        <div style="margin-top:1rem;font-size:0.85rem;color:var(--red);font-weight:700;">&#128222; (805) 909-3420</div>
-        <div style="margin-top:4px;font-size:0.85rem;color:rgba(255,255,255,0.4);">don@truexpanse.com</div>
-      </div>
-      <div class="footer-col">
-        <h4>Coaching</h4>
-        <ul>
-          <li><a href="contractor-accelerator.html">90-Day Accelerator</a></li>
-          <li><a href="coaching.html">Business Coaching</a></li>
-          <li><a href="courses.html">Workshops & Courses</a></li>
-          <li><a href="life-coaching.html">Life Coaching</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="mat.html">MAT Platform</a></li>
-          <li><a href="https://massiveactiontracker.com/">Login to MAT</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Don</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
+<footer class="tx-foot">
+  <div class="tx-wrap">
+    <div class="tx-fcols">
+      <div class="tx-brand"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" style="height:22px;width:auto;margin-bottom:14px" loading="lazy" /><p>Business, executive and sales coaching.<br />Atascadero, California</p></div>
+      <div><h4>Coaching</h4><a href="/pages/coaching.html">1-on-1 coaching</a><a href="/pages/contractor-accelerator.html">Contractor Accelerator</a><a href="/pages/sales-team-accountability.html">Sales team accountability</a><a href="/pages/courses.html">Courses &amp; workshops</a><a href="/strategy-session">Free strategy session</a></div>
+      <div><h4>MAT</h4><a href="/pages/mat.html">How MAT works</a><a href="/pages/mat-content-studio.html">Content Studio</a><a href="https://massiveactiontracker.com/">MAT login</a></div>
+      <div><h4>More ways we help</h4><a href="/pages/quantum-marketing.html">Marketing</a><a href="/get-found/">Get found</a><a href="/pages/web-design.html">Web design</a><a href="/pages/crm.html">CRM setup</a></div>
+      <div><h4>Company</h4><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/faq.html">FAQ</a><a href="/pages/contact.html">Contact</a><a href="/pages/life-coaching.html">Life coaching with Ruthie</a><a href="/partners.html">Partners</a></div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 TrueXpanse. All Rights Reserved.</span>
-      <div>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy.html">Terms of Service</a>
-        <a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team Login</a>
-      </div>
+    <div class="tx-fbottom">
+      <div><a href="https://app.truexpanse.com/">Client login</a><a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team login</a><a href="/pages/privacy.html">Privacy</a></div>
+      <span>&copy; 2026 TrueXpanse &middot; <a href="tel:+18059093420">(805) 909-3420</a> &middot; <a href="mailto:don@truexpanse.com">don@truexpanse.com</a></span>
     </div>
   </div>
 </footer>
@@ -633,5 +584,9 @@
   <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
        Counts every visit, not just Google-search estimates. No cookies. -->
   <script>(function(){try{if(navigator.sendBeacon)navigator.sendBeacon('https://truexpansemat.com/api/site-visit',JSON.stringify({t:'a8ab882a77384721',p:location.pathname,s:location.search,r:document.referrer}))}catch(e){}})();</script>
+<script>
+(function(){var h=document.querySelector('.tx-head'),b=h&&h.querySelector('.tx-menu-btn');if(!b)return;
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
 </body>
 </html>

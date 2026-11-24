@@ -1,0 +1,269 @@
+/* TrueXpanse 2026 look (approved 2026-11-15 on /strategy-session).
+   Restrained and high-end: white and #F5F5F7 sections, #1D1D1F type, black pill buttons,
+   Inter Tight headlines in sentence case, two-tone black/grey headlines. Red lives ONLY in the logo.
+   Load AFTER css/styles.css. It remaps the old tokens and restyles the shared components, so a page's
+   markup (data-edit tags, forms, meta) never has to change to take the new look. */
+
+:root{
+  /* new tokens */
+  --ink:#1D1D1F; --soft:#86868B; --muted:#6E6E73; --black:#000;
+  --paper:#FFFFFF; --mist:#F5F5F7; --line:#E2E2E7; --line-strong:#D2D2D7; --body-ink:#3A3A3F;
+  --display:'Inter Tight','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  /* old tokens, remapped (styles.css and inline styles use these) */
+  --slate:#1D1D1F; --slate2:#3A3A3F; --text:#3A3A3F; --text2:#6E6E73;
+  --red:#1D1D1F; --red2:#000; --red-soft:#F5F5F7;
+  --blue:#1D1D1F; --white:#FFFFFF; --light:#F5F5F7; --light2:#F5F5F7; --border:#E2E2E7;
+  --navy:#000; --navy2:#1D1D1F;
+}
+
+/* ── base ── */
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);color:var(--body-ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4,h5,.display{font-family:var(--display);font-weight:600;text-transform:none;color:var(--ink);text-wrap:balance}
+h1,h2,.display{letter-spacing:-.03em;line-height:1.07}
+h1{font-size:clamp(2.2rem,5.4vw,4.1rem)}
+h2{font-size:clamp(1.75rem,3.8vw,2.75rem)}
+h3,h4,h5{letter-spacing:-.015em;line-height:1.2}
+h1 span,h2 span{color:var(--soft)}
+p{color:var(--body-ink);line-height:1.65}
+::selection{background:#D2D2D7;color:var(--ink)}
+:focus-visible{outline:3px solid #0071E3;outline-offset:2px}
+.label{font-size:.8rem;font-weight:600;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+
+/* ── buttons: black pills ── */
+.btn{border-radius:980px;font-family:var(--body);font-weight:500;font-size:.95rem;letter-spacing:-.005em;padding:13px 26px;box-shadow:none;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{transform:none!important;box-shadow:none!important}
+.btn-lg{padding:15px 30px;font-size:1rem;border-radius:980px}
+.btn-red,.btn-navy{background:var(--ink);color:#fff}
+.btn-red:hover,.btn-navy:hover{background:var(--black)}
+.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line-strong)}
+.btn-outline:hover{border-color:var(--ink);background:transparent}
+.btn-outline-white{border:1px solid rgba(255,255,255,.45);color:#fff}
+.btn-outline-white:hover{border-color:#fff;background:transparent}
+
+/* ── header / nav ── */
+.anbar{background:var(--mist);color:var(--ink);font-weight:500;font-size:.82rem;border-bottom:1px solid var(--line)}
+.anbar a{color:var(--ink);font-weight:600}
+nav{background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line);box-shadow:none}
+.nav-inner{height:60px}
+.nav-logo img{height:24px;width:auto}
+.nav-links a{text-transform:none;letter-spacing:0;font-weight:500;font-size:.88rem;color:var(--body-ink)}
+.nav-links a:hover{color:var(--ink);background:transparent}
+.nav-links a.active{color:var(--ink);font-weight:600}
+.dropdown-menu{border-color:var(--line);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.10)}
+.dropdown-menu li a{font-weight:500}
+.dropdown-menu li a:hover{background:var(--mist);color:var(--ink)}
+.hamburger span{background:var(--ink)}
+
+/* ── heroes ── */
+.hero{background:var(--paper)}
+.hero::before{display:none}
+.hero-eyebrow{background:transparent;border:0;padding:0;color:var(--muted);font-weight:600;letter-spacing:.06em;font-size:.8rem}
+.hero-title{color:var(--ink)}
+.hero-title span{color:var(--soft)}
+.hero-sub{color:var(--body-ink);font-size:1.15rem}
+.hero-stats{border-top:1px solid var(--line)}
+.hero-stat-num{font-family:var(--display);font-weight:600;color:var(--ink)}
+.hero-stat-num span{color:var(--soft)}
+.hero-stat-label{color:var(--muted);font-weight:500}
+.hero-photo{border-radius:18px;box-shadow:none}
+.hero-badge{background:var(--ink);box-shadow:none;border-radius:14px;font-weight:600}
+.page-hero{background:var(--paper);border-bottom:0;padding:120px 0 56px}
+.page-hero h1{color:var(--ink)}
+.page-hero p{color:var(--muted);font-size:1.2rem}
+.trust-bar{border-color:var(--line)}
+.trust-item{color:var(--muted);font-weight:500}
+
+/* ── sections ── */
+.section-light,.section-light2{background:var(--mist)}
+.section-dark{background:var(--black)}
+.section-dark h2,.section-dark h3{color:#F5F5F7}
+.section-dark p{color:#A1A1A6}
+.section-dark .label,.section-photo .label{color:var(--soft)}
+.section-dark h1 span,.section-dark h2 span,.section-photo h1 span,.section-photo h2 span{color:#A1A1A6}
+.section-photo-overlay{background:linear-gradient(135deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.62) 100%)}
+.section-photo p{color:#D2D2D7}
+.section-header p{color:var(--muted)}
+
+/* ── cards and lists ── */
+.card{border:1px solid var(--line);border-radius:18px;box-shadow:none}
+.card:hover{border-color:var(--line-strong);transform:none;box-shadow:none}
+.card-light{background:var(--mist);border-color:transparent}
+.card-light:hover{background:var(--mist);border-color:transparent}
+.card-accent{border-top:1px solid var(--line)}
+.card-title{font-family:var(--display);font-weight:600;letter-spacing:-.015em}
+.testimonial-card{border-color:var(--line);border-radius:18px;box-shadow:none}
+.testimonial-card:hover{transform:none;box-shadow:none}
+.testimonial-stars{color:var(--ink)}
+.testimonial-quote{font-style:normal;color:var(--body-ink)}
+.testimonial-avatar{background:var(--mist);border:1px solid var(--line);color:var(--ink);font-weight:600}
+.testimonial-name{font-weight:600}
+.guarantee-bar{background:var(--mist);border:1px solid var(--line);border-radius:18px}
+.step::before{background:var(--ink);font-family:var(--display);font-weight:600}
+.step-title{font-family:var(--display);font-weight:600}
+.split-img,.don-photo{border-radius:18px;box-shadow:none}
+.don-photo-badge{background:rgba(0,0,0,.78)}
+.feature-list li .fi{background:var(--mist);color:var(--ink);border-radius:50%}
+.ladder-step{border-color:var(--line);box-shadow:none;border-radius:14px}
+.ladder-step:hover{border-color:var(--line-strong);box-shadow:none}
+.lb-free{background:var(--ink);color:#fff}
+.lb-paid{background:var(--mist);color:var(--ink)}
+.lb-apply{background:var(--paper);color:var(--ink);border:1px solid var(--line-strong)}
+.stats-strip{border-color:var(--line);box-shadow:none;border-radius:18px}
+.stat-cell{border-color:var(--line)}
+.stat-num{font-family:var(--display);font-weight:600;color:var(--ink)}
+.stat-num span{color:var(--soft)}
+.stat-label{color:var(--muted);font-weight:500}
+.mat-cell{background:var(--mist);border-color:transparent;border-radius:14px}
+.mat-cell:hover{border-color:transparent;transform:none}
+.mat-cell-title{font-weight:600}
+.phase-badge{font-weight:600;letter-spacing:.06em}
+.phase-1{background:var(--ink);color:#fff}
+.phase-2{background:#6E6E73;color:#fff}
+.phase-3{background:#D2D2D7;color:var(--ink)}
+.portfolio-overlay{background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 55%)}
+.portfolio-item{border-radius:18px;box-shadow:none}
+
+/* ── closing call to action ── */
+.cta-section{background:var(--black);border-radius:22px}
+.cta-section::before{display:none}
+.cta-section h2{color:#F5F5F7}
+.cta-section h2 span{color:#A1A1A6}
+.cta-section p{color:#A1A1A6}
+.cta-section .btn-red{background:#fff;color:var(--ink)}
+.cta-section .btn-red:hover{background:#E8E8ED}
+
+/* ── footer: light ── */
+footer{background:var(--mist);border-top:1px solid var(--line)}
+.footer-brand img{filter:none;height:26px;width:auto}
+.footer-brand p{color:var(--muted)}
+.footer-col h4{color:var(--ink);font-weight:600;letter-spacing:.06em}
+.footer-col ul li a{color:var(--muted)}
+.footer-col ul li a:hover{color:var(--ink)}
+.footer-bottom{border-top:1px solid var(--line);color:var(--muted)}
+.footer-bottom a{color:var(--muted)}
+.footer-bottom a:hover{color:var(--ink)}
+
+/* ── forms (contact, apply, lead magnets) ── */
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],select,textarea{border-radius:10px;border-color:var(--line);font-family:var(--body)}
+input:focus,select:focus,textarea:focus{border-color:var(--ink)!important;box-shadow:0 0 0 3px rgba(0,113,227,.18)!important;outline:none}
+
+@media (max-width:768px){
+  .page-hero{padding:96px 0 40px}
+  .cta-section{border-radius:18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.fade-up-d1,.fade-up-d2,.fade-up-d3{opacity:1!important}}
+
+/* ── page heroes: white, like /strategy-session. The first section after the header is the hero on every
+   styles.css page; many set dark backgrounds and white text inline, so these rules use !important. ── */
+.site-header + section{background:var(--paper)!important;color:var(--ink);border-bottom:0!important;min-height:0!important}
+.site-header + section::before,.site-header + section::after{display:none!important}
+.site-header + section h1,.site-header + section h2,.site-header + section h3{color:var(--ink)!important}
+.site-header + section h1 span,.site-header + section h2 span{color:var(--soft)!important}
+.site-header + section p{color:var(--body-ink)!important}
+.site-header + section .label{color:var(--muted)!important}
+.site-header + section .btn-outline,.site-header + section .btn-outline-white{color:var(--ink)!important;border-color:var(--line-strong)!important;background:transparent!important}
+.site-header + section .btn-red,.site-header + section .btn-navy{background:var(--ink)!important;color:#fff!important}
+/* a photo hero keeps its photo, shown as a rounded card under the words */
+.site-header + .section-photo{flex-direction:column;align-items:stretch!important}
+.site-header + .section-photo .section-photo-overlay{display:none}
+.site-header + .section-photo > .container{order:1;width:100%}
+.site-header + .section-photo .section-photo-bg{position:relative;order:2;inset:auto;width:min(1040px,calc(100% - 40px));margin:0 auto 72px;aspect-ratio:16/7;border-radius:18px}
+
+/* ── dark bands keep a white primary button so it never disappears into black ── */
+.section-dark .btn-red,.section-photo:not(.site-header + section) .btn-red,
+section[style*="background:var(--navy)"]:not(.site-header + section) .btn-red,
+section[style*="background:var(--slate)"]:not(.site-header + section) .btn-red,
+div[style*="background:var(--navy)"] .btn-red,div[style*="background:var(--slate)"] .btn-red{background:#fff!important;color:var(--ink)!important}
+
+/* ── phones: keep the nav on one line ── */
+.nav-cta .btn{white-space:nowrap}
+@media (max-width:420px){
+  .nav-logo img{height:20px}
+  .nav-cta{gap:6px!important}
+  .nav-cta .btn-red{padding:8px 14px!important;font-size:.78rem!important}
+}
+
+/* ── phone menu. Most pages carry an inline toggleMenu() that only flips display:flex (no panel styles), and
+   js/nav.js adds .mobile-open. Either way the open menu becomes a clean white panel under the nav. ── */
+@media (max-width:768px){
+  .nav-links[style*="display: flex"],.nav-links[style*="display:flex"],.nav-links.mobile-open{
+    position:absolute!important;top:100%!important;left:0!important;right:0!important;flex-direction:column!important;align-items:stretch!important;
+    background:var(--paper)!important;padding:4px 20px 16px!important;border-bottom:1px solid var(--line)!important;
+    box-shadow:0 18px 40px rgba(0,0,0,.08)!important;z-index:999!important;gap:0!important;max-height:calc(100vh - 110px);overflow-y:auto}
+  .nav-links[style*="display: flex"] > li > a,.nav-links[style*="display:flex"] > li > a,.nav-links.mobile-open > li > a{
+    display:block;font-size:17px;padding:13px 2px;border-bottom:1px solid var(--line);border-radius:0}
+  .nav-links .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;display:none;box-shadow:none;border:0;padding:0 0 6px 12px;min-width:0}
+  .nav-links .has-dropdown.open .dropdown-menu{display:block}
+  .nav-links .dropdown-menu li a{font-size:15px;padding:10px 4px}
+}
+
+
+/* ── Shared header + footer (same markup as the homepage, 2026-11-24) ──
+   Classes are tx-* so the old nav/footer rules in styles.css never touch them. */
+.tx-head{background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(180%) blur(18px);backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid #E8E8ED}
+.tx-bar{max-width:1120px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.tx-logo img{height:26px;width:auto;display:block}
+.tx-nav{display:flex;gap:34px;font-family:var(--body);font-size:15px;font-weight:500}
+.tx-nav a{color:#424245;text-decoration:none}
+.tx-nav a:hover,.tx-login:hover{color:var(--ink)}
+.tx-right{display:flex;align-items:center;gap:22px;font-family:var(--body);font-size:15px;font-weight:500}
+.tx-login{color:#424245;text-decoration:none}
+.tx-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;border-radius:999px;background:#000;color:#fff!important;font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap}
+.tx-menu-btn{display:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-strong);background:#fff;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.tx-menu-btn span{display:block;width:16px;height:1.5px;background:var(--ink);box-shadow:0 5px 0 var(--ink),0 -5px 0 var(--ink)}
+.tx-menu{display:none;border-top:1px solid #E8E8ED;background:#fff}
+.tx-menu a{display:block;padding:14px 20px;font-family:var(--body);font-size:17px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid #F0F0F2}
+.tx-head.open .tx-menu{display:block}
+footer.tx-foot{background:var(--mist);border-top:0;padding:64px 0 36px;font-family:var(--body);font-size:14px;color:var(--muted)}
+.tx-foot .tx-wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.tx-fcols{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:28px}
+.tx-fcols h4{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink);margin:0 0 12px}
+.tx-fcols a{display:block;padding:4px 0;color:var(--muted);text-decoration:none}
+.tx-fcols a:hover,.tx-fbottom a:hover{color:var(--ink)}
+.tx-fcols p{color:var(--muted);margin:0;line-height:1.5}
+.tx-fbottom{margin-top:48px;padding-top:20px;border-top:1px solid var(--line-strong);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.tx-fbottom a{color:var(--muted);text-decoration:none;margin-right:16px}
+.tx-fbottom span a{margin:0}
+@media (max-width:980px){
+  .tx-nav,.tx-login{display:none}
+  .tx-menu-btn{display:inline-flex}
+  .tx-fcols{grid-template-columns:1fr 1fr}
+  .tx-fcols .tx-brand{grid-column:1/-1}
+}
+@media (max-width:600px){
+  .tx-bar,.tx-foot .tx-wrap{padding:0 20px}
+  .tx-right{gap:10px}
+  .tx-btn{height:38px;padding:0 15px;font-size:14px}
+  .tx-logo img{height:21px}
+}
+
+/* ── QA fixes 2026-11-24: text written for the old dark heroes, now on the white first section ── */
+.site-header + section [style*="color:#fff" i]:not([style*="background" i]),
+.site-header + section [style*="color: #fff" i]:not([style*="background" i]),
+.site-header + section [style*="color:white" i]:not([style*="background" i]){color:var(--ink)!important}
+.site-header + section [style*="color:rgba(255,255,255" i]:not([style*="background" i]),
+.site-header + section [style*="color:#A1A1A6" i]{color:var(--muted)!important}
+.site-header + section [style*="color:#22c55e" i]{color:#15803D!important}
+.site-header + section p strong,.site-header + section p em,.site-header + section h1 em,.site-header + section h2 em{color:inherit!important}
+.site-header + section.article-hero .eyebrow,.site-header + section.article-hero .meta,.site-header + section.article-hero .meta *{color:var(--muted)!important}
+.site-header + section.calc-hero strong{color:var(--ink)!important}
+.don-photo-badge .name{color:#fff!important}
+.don-photo-badge .title{color:rgba(255,255,255,.72)!important}
+.site-header + section :is(.blog-eyebrow,.gf-eyebrow,.hero-eyebrow,.eyebrow){color:var(--muted)!important}
+.don-photo-badge,.don-photo-badge div{color:#fff!important}
+.tx-lm-reassure{color:var(--muted)!important}
+/* former red accents take the colour of the text around them (they sat on navy and on white) */
+[style*="color:var(--red)" i]:not([style*="background" i]):not(.btn):not([class*="btn-"]){color:inherit!important}
+/* phones: stack the fixed grids/rows that ran off the screen (pre-existing on about, mat, life-coaching, web-design) */
+@media (max-width:600px){
+  .split{grid-template-columns:minmax(0,1fr)!important;gap:2.5rem!important}
+  .split > *{min-width:0}
+  [style*="grid-template-columns:repeat(2,1fr)" i],[style*="grid-template-columns:repeat(3,1fr)" i],[style*="grid-template-columns:1fr auto" i]{grid-template-columns:minmax(0,1fr)!important}
+  div:has(> [style*="flex:0 0 380px" i]){flex-direction:column!important}
+  [style*="flex:0 0 380px" i]{flex:0 0 auto!important;width:100%!important}
+  .split-img{height:auto!important;width:100%!important}
+}
+.qm-deliverable .check{color:#15803D!important}
+h1,h2,h3,h1 *,h2 *{text-transform:none!important}

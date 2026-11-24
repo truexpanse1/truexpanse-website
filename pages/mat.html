@@ -46,8 +46,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css?v=20261112" />
+  <link rel="stylesheet" href="/css/tx-2026.css?v=20261124" />
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X7HWV0E14"></script>
   <script>
@@ -60,47 +61,26 @@
 <body>
 
 <!-- ── Navigation ── -->
-<header class="site-header">
-<div class="anbar">Free 30-minute strategy session with Don — no pitch, no pressure. <a href="/apply">Apply today →</a></div>
-<nav>
-  <div class="container nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/pages/about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="dropdown-trigger" onclick="this.parentNode.classList.toggle('open');return false;">Services &#9662;</a>
-        <ul class="dropdown-menu">
-          <li><a href="/pages/coaching.html"><span class="dd-icon">&#127919;</span>Business Coaching</a></li>
-          <li><a href="/pages/contractor-accelerator.html"><span class="dd-icon">&#128640;</span>Contractor Accelerator</a></li>
-          <li class="dropdown-divider"></li>
-          <li><a href="/pages/life-coaching.html"><span class="dd-icon">&#128155;</span>Life Coaching</a></li>
-          <li><a href="/pages/courses.html"><span class="dd-icon">&#128218;</span>Courses &amp; Workshops</a></li>
-        </ul>
-      </li>
-      <li><a href="/pages/mat.html">MAT App</a></li>
-      <li><a href="/pages/contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
-      <a href="https://app.truexpanse.com/" class="btn btn-outline" style="padding:9px 16px;font-size:0.78rem;">Client Login</a>
-      <a href="/apply.html" class="btn btn-red" style="padding:10px 18px;font-size:0.8rem;">Free Strategy Session</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+<header class="site-header tx-head">
+  <div class="tx-bar">
+    <a class="tx-logo" href="/" aria-label="TrueXpanse home"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" /></a>
+    <div class="tx-nav" role="navigation" aria-label="Main"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a></div>
+    <div class="tx-right">
+      <a class="tx-login" href="https://app.truexpanse.com/">Client login</a>
+      <a class="tx-btn" href="/strategy-session">Free strategy session</a>
+      <button class="tx-menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="tx-menu"><span></span></button>
     </div>
   </div>
-</nav>
+  <div class="tx-menu" id="tx-menu" role="navigation" aria-label="Mobile"><a href="/pages/coaching.html">Coaching</a><a href="/pages/mat.html">MAT</a><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/contact.html">Contact</a><a href="https://app.truexpanse.com/">Client login</a></div>
 </header>
 
 <!-- ── Hero ── -->
 <section style="padding-top:0px;background:var(--navy);min-height:60vh;display:flex;align-items:center;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 60% 50%,rgba(200,16,46,0.12) 0%,transparent 65%);pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 60% 50%,rgba(29,29,31,0.12) 0%,transparent 65%);pointer-events:none;"></div>
   <div class="container" style="padding-top:60px;padding-bottom:60px;position:relative;z-index:1;">
     <div class="split" style="align-items:center;">
       <div>
-        <span class="label" style="color:#ff8a96;">Massive Action Tracker (MAT)</span>
+        <span class="label" style="color:#A1A1A6;">Massive Action Tracker (MAT)</span>
         <h1 style="color:#fff;margin-bottom:1rem;" data-edit="headline">See Who's Actually<br/>Producing — in 60 Seconds.</h1>
         <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;margin-bottom:2rem;max-width:480px;" data-edit="lede">The simple sales platform that tracks your pipeline, your daily activity, and your revenue in one place — so you always know who's producing and what to do next. Run your own numbers, or your whole team's.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -263,8 +243,8 @@
     <!-- Program Cards Grid -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:48px;">
 
-      <div style="background:linear-gradient(135deg,#0D1B2A 0%,#1e3a5f 100%);border-radius:14px;padding:24px;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(200,16,46,0.25),transparent 70%);"></div>
+      <div style="background:linear-gradient(135deg,#000000 0%,#1e3a5f 100%);border-radius:14px;padding:24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(29,29,31,0.25),transparent 70%);"></div>
         <div style="font-size:1.6rem;margin-bottom:8px;">&#9733;</div>
         <div style="font-size:0.95rem;font-weight:800;color:#fff;margin-bottom:4px;">Zero to Domination</div>
         <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;">The complete business domination system</div>
@@ -272,7 +252,7 @@
       </div>
 
       <div style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);border-radius:14px;padding:24px;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(200,16,46,0.2),transparent 70%);"></div>
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(29,29,31,0.2),transparent 70%);"></div>
         <div style="font-size:1.6rem;margin-bottom:8px;">&#128176;</div>
         <div style="font-size:0.95rem;font-weight:800;color:#fff;margin-bottom:4px;">Massive Action Sales System</div>
         <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;">Advanced sales training program</div>
@@ -280,7 +260,7 @@
       </div>
 
       <div style="background:linear-gradient(135deg,#0b3d0b 0%,#1a472a 100%);border-radius:14px;padding:24px;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(200,16,46,0.2),transparent 70%);"></div>
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(29,29,31,0.2),transparent 70%);"></div>
         <div style="font-size:1.6rem;margin-bottom:8px;">&#128640;</div>
         <div style="font-size:0.95rem;font-weight:800;color:#fff;margin-bottom:4px;">90-Day Contractor Growth</div>
         <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;">12-week contractor accelerator</div>
@@ -288,7 +268,7 @@
       </div>
 
       <div style="background:linear-gradient(135deg,#2d1b4e 0%,#1a1a3e 100%);border-radius:14px;padding:24px;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(200,16,46,0.2),transparent 70%);"></div>
+        <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(29,29,31,0.2),transparent 70%);"></div>
         <div style="font-size:1.6rem;margin-bottom:8px;">&#128161;</div>
         <div style="font-size:0.95rem;font-weight:800;color:#fff;margin-bottom:4px;">Quantum Growth Marketing</div>
         <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5;">9-week marketing mastery</div>
@@ -351,7 +331,7 @@
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:780px;margin:0 auto;">
 
       <!-- MAT Pro -->
-      <div style="background:var(--white);border:2px solid var(--red);border-radius:16px;padding:32px;text-align:center;box-shadow:0 8px 40px rgba(200,16,46,0.12);position:relative;">
+      <div style="background:var(--white);border:2px solid var(--red);border-radius:16px;padding:32px;text-align:center;box-shadow:0 8px 40px rgba(29,29,31,0.12);position:relative;">
         <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-size:0.68rem;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;padding:4px 16px;border-radius:100px;">Most Popular</div>
         <div style="font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:var(--red);margin-bottom:12px;">MAT Pro</div>
         <div style="font-size:2.4rem;font-weight:900;color:var(--slate);letter-spacing:-0.04em;line-height:1;">$97<span style="font-size:1rem;color:var(--text2);font-weight:600;">/mo</span></div>
@@ -375,7 +355,7 @@
         <div style="font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.4);margin-bottom:12px;">MAT Nation</div>
         <div style="font-size:2.4rem;font-weight:900;color:#fff;letter-spacing:-0.04em;line-height:1;">$197<span style="font-size:1rem;color:rgba(255,255,255,0.4);font-weight:600;">/mo</span></div>
         <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);margin:4px 0 4px;">7-day free trial · cancel anytime</div>
-        <div style="font-size:0.8rem;color:#ff8a96;font-weight:800;margin-bottom:20px;">or $1,970/year — save 2 months</div>
+        <div style="font-size:0.8rem;color:#A1A1A6;font-weight:800;margin-bottom:20px;">or $1,970/year — save 2 months</div>
         <ul style="list-style:none;text-align:left;margin-bottom:24px;display:flex;flex-direction:column;gap:8px;">
           <li style="font-size:0.85rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;"><span style="color:var(--red);font-weight:900;">✓</span>Everything in MAT Pro</li>
           <li style="font-size:0.85rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;"><span style="color:var(--red);font-weight:900;">✓</span>Full Team Sales Platform</li>
@@ -397,7 +377,7 @@
 <section class="section section-light" style="border-top:1px solid var(--border);">
   <div class="container">
     <div class="cta-section">
-      <span class="label" style="color:#ff8a96;">Get Started Today</span>
+      <span class="label" style="color:#A1A1A6;">Get Started Today</span>
       <h2 style="color:#fff;margin-bottom:1rem;">Your Numbers.<br/>Your Accountability. Your Results.</h2>
       <p style="max-width:500px;margin:0 auto 2rem;color:rgba(255,255,255,0.68);">Try MAT free and see what it feels like to have your pipeline, activity, and revenue all in one place — with an AI coach available every morning.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
@@ -409,47 +389,18 @@
 </section>
 
 <!-- ── Footer ── -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" />
-        <p>Helping business owners close the gap between where they are and where they should be.</p>
-        <div style="margin-top:1rem;font-size:0.85rem;color:var(--red);font-weight:700;">📞 (805) 909-3420</div>
-        <div style="margin-top:4px;font-size:0.85rem;color:rgba(255,255,255,0.4);">don@truexpanse.com</div>
-      </div>
-      <div class="footer-col">
-        <h4>Coaching</h4>
-        <ul>
-          <li><a href="contractor-accelerator.html">90-Day Accelerator</a></li>
-          <li><a href="coaching.html">Business Coaching</a></li>
-          <li><a href="courses.html">Workshops & Courses</a></li>
-          <li><a href="life-coaching.html">Life Coaching</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="mat.html">MAT Platform</a></li>
-          <li><a href="https://massiveactiontracker.com/">Login to MAT</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Don</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
+<footer class="tx-foot">
+  <div class="tx-wrap">
+    <div class="tx-fcols">
+      <div class="tx-brand"><img src="https://truexpanse.com/images/truexpanse-logo.png" alt="TrueXpanse" width="426" height="85" style="height:22px;width:auto;margin-bottom:14px" loading="lazy" /><p>Business, executive and sales coaching.<br />Atascadero, California</p></div>
+      <div><h4>Coaching</h4><a href="/pages/coaching.html">1-on-1 coaching</a><a href="/pages/contractor-accelerator.html">Contractor Accelerator</a><a href="/pages/sales-team-accountability.html">Sales team accountability</a><a href="/pages/courses.html">Courses &amp; workshops</a><a href="/strategy-session">Free strategy session</a></div>
+      <div><h4>MAT</h4><a href="/pages/mat.html">How MAT works</a><a href="/pages/mat-content-studio.html">Content Studio</a><a href="https://massiveactiontracker.com/">MAT login</a></div>
+      <div><h4>More ways we help</h4><a href="/pages/quantum-marketing.html">Marketing</a><a href="/get-found/">Get found</a><a href="/pages/web-design.html">Web design</a><a href="/pages/crm.html">CRM setup</a></div>
+      <div><h4>Company</h4><a href="/pages/about.html">About Don</a><a href="/blog/">Blog</a><a href="/pages/faq.html">FAQ</a><a href="/pages/contact.html">Contact</a><a href="/pages/life-coaching.html">Life coaching with Ruthie</a><a href="/partners.html">Partners</a></div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 TrueXpanse. All Rights Reserved.</span>
-      <div>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy.html">Terms of Service</a>
-        <a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team Login</a>
-      </div>
+    <div class="tx-fbottom">
+      <div><a href="https://app.truexpanse.com/">Client login</a><a href="https://truexpanse-control-center.netlify.app/" rel="nofollow">Team login</a><a href="/pages/privacy.html">Privacy</a></div>
+      <span>&copy; 2026 TrueXpanse &middot; <a href="tel:+18059093420">(805) 909-3420</a> &middot; <a href="mailto:don@truexpanse.com">don@truexpanse.com</a></span>
     </div>
   </div>
 </footer>
@@ -461,5 +412,9 @@
   <!-- First-party pageview beacon → MAT SEO page → Real Traffic (2026-08-31).
        Counts every visit, not just Google-search estimates. No cookies. -->
   <script>(function(){try{if(navigator.sendBeacon)navigator.sendBeacon('https://truexpansemat.com/api/site-visit',JSON.stringify({t:'a8ab882a77384721',p:location.pathname,s:location.search,r:document.referrer}))}catch(e){}})();</script>
+<script>
+(function(){var h=document.querySelector('.tx-head'),b=h&&h.querySelector('.tx-menu-btn');if(!b)return;
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
 </body>
 </html>
