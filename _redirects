@@ -6,3 +6,11 @@
 # Sales Engine intensive ran 2026-07-18 and is over — send its traffic to the strategy-session application (2026-10-07)
 /outcome-engine     /apply  301!
 /outcome-engine/*   /apply  301!
+
+# Old homepage copies (2026-11-24): send them to the live homepage
+/home.html       /  301!
+/home            /  301!
+/index-old.html  /  301!
+/index-old       /  301!
+/index-v2.html   /  301!
+/index-v2        /  301!

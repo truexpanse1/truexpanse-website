@@ -282,7 +282,8 @@ export default async (req: Request, context: Context) => {
   const isSitemap = url.pathname === '/sitemap.xml';
   const isLlms = url.pathname === '/llms.txt';
   if (res.status !== 200 || (!isHtml && !isManifest && !isSitemap && !isLlms)) return res;
-  const wantsPosts = isManifest || isSitemap || isLlms || path === '/blog/';
+  const cardPage = path === '/blog/' || path === '/'; // pages with a <template data-cc-card> strip (homepage added 2026-11-24)
+  const wantsPosts = isManifest || isSitemap || isLlms || cardPage;
   const posts = wantsPosts ? await loadPosts(url.hostname, view) : [];
 
   const changes = isSitemap || isLlms ? [] : (await loadChanges(url.hostname, view)).filter((c) => isManifest || samePage(c.page_url, path));
@@ -304,7 +305,7 @@ export default async (req: Request, context: Context) => {
   if (isLlms) return new Response(addToLlms(body, posts), { status: 200, headers });
   let { html } = applyToHtml(body, changes);
   if (imgs.length) html = applyImages(html, imgs).html;
-  if (path === '/blog/') html = addCards(html, posts);
+  if (cardPage) html = addCards(html, posts);
   if (view === 'demo') html = html.replace('</body>', `${RIBBON}</body>`);
   return new Response(html, { status: 200, headers });
 };
